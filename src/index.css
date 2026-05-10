@@ -925,9 +925,13 @@ body::before {
 }
 
 /* untappd beer rows */
-.bz-list {
+.bz-list,
+.bz-favs {
   display: grid;
   gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .bz-row {
   display: grid;

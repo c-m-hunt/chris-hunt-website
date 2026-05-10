@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T12:20:30.502Z",
+  "generatedAt": "2026-05-10T16:04:36.565Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
@@ -784,6 +784,73 @@
       "imageUrl": "https://assets.untappd.com/badges/bdg_DraftCity_lg.jpg",
       "earnedAt": "2024-06-30T21:59:51.000Z",
       "level": 1
+    }
+  ],
+  "favourites": [
+    {
+      "id": "1506088",
+      "beer": "Rosie's Pig Rhubarb Cloudy Cider",
+      "brewery": "Westons Cider",
+      "beerStyle": "Cider - Other Fruit",
+      "beerAbv": 4,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1506088_035cb_sm.jpeg",
+      "rating": 5,
+      "count": 2,
+      "firstCheckedInAt": "2018-11-03T22:06:32.000Z",
+      "recentCheckedInAt": "2019-08-26T17:31:37.000Z",
+      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/797112716"
+    },
+    {
+      "id": "25462",
+      "beer": "Rekorderlig Wild Berries (Skogsbär)",
+      "brewery": "Åbro Bryggeri",
+      "beerStyle": "Cider - Other Fruit",
+      "beerAbv": 4.5,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-RekorderligWildBerriesCider_25462.jpeg",
+      "rating": 4.5,
+      "count": 3,
+      "firstCheckedInAt": "2016-07-12T14:51:29.000Z",
+      "recentCheckedInAt": "2018-07-15T14:33:25.000Z",
+      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/625349269"
+    },
+    {
+      "id": "44019",
+      "beer": "Stowford Press Medium Dry Cider",
+      "brewery": "Westons Cider",
+      "beerStyle": "Cider - Dry",
+      "beerAbv": 4.5,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-44019_3dd0a_sm.jpeg",
+      "rating": 4.5,
+      "count": 1,
+      "firstCheckedInAt": "2016-07-28T17:00:05.000Z",
+      "recentCheckedInAt": "2016-07-28T17:00:05.000Z",
+      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/341286328"
+    },
+    {
+      "id": "1126639",
+      "beer": "Strongbow Cloudy Apple",
+      "brewery": "Bulmers Cider",
+      "beerStyle": "Cider - Traditional / Apfelwein",
+      "beerAbv": 4,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1126639_0f8a9_sm.jpeg",
+      "rating": 4.5,
+      "count": 4,
+      "firstCheckedInAt": "2016-07-31T12:23:58.000Z",
+      "recentCheckedInAt": "2016-07-31T15:48:32.000Z",
+      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/342876556"
+    },
+    {
+      "id": "384038",
+      "beer": "Hazy Hog",
+      "brewery": "Hogs Back Brewery",
+      "beerStyle": "Cider - Traditional / Apfelwein",
+      "beerAbv": 5,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-384038_38788_sm.jpeg",
+      "rating": 4.5,
+      "count": 3,
+      "firstCheckedInAt": "2016-08-23T17:52:58.000Z",
+      "recentCheckedInAt": "2016-09-06T17:29:51.000Z",
+      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/357514596"
     }
   ]
 }

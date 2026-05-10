@@ -41,6 +41,20 @@ export interface UntappdBadge {
   level: number | null
 }
 
+export interface UntappdFavourite {
+  id: string
+  beer: string
+  brewery: string
+  beerStyle: string | null
+  beerAbv: number | null
+  beerLabel: string | null
+  rating: number
+  count: number
+  firstCheckedInAt: string | null
+  recentCheckedInAt: string | null
+  recentCheckinUrl: string | null
+}
+
 export interface UntappdData {
   generatedAt: string
   username: string
@@ -49,4 +63,5 @@ export interface UntappdData {
   stats: UntappdStats
   lifetime: UntappdLifetime | null
   badges: UntappdBadge[]
+  favourites: UntappdFavourite[]
 }

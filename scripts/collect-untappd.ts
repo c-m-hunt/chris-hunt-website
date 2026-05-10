@@ -9,6 +9,7 @@ import type {
   UntappdBadge,
   UntappdCheckin,
   UntappdData,
+  UntappdFavourite,
   UntappdLifetime,
   UntappdTopBrewery,
 } from '../src/types/untappd.ts'
@@ -118,6 +119,31 @@ interface ApiBadgesResponse {
   meta: { code: number; error_detail?: string; error_type?: string }
   response: {
     items?: ApiBadgeItem[]
+  }
+}
+
+interface ApiBeerInBeers {
+  bid?: number
+  beer_name?: string
+  beer_label?: string
+  beer_style?: string
+  beer_abv?: number
+}
+
+interface ApiBeersItem {
+  rating_score?: number
+  count?: number
+  first_created_at?: string
+  recent_created_at?: string
+  recent_checkin_id?: number
+  beer?: ApiBeerInBeers
+  brewery?: ApiBrewery
+}
+
+interface ApiBeersResponse {
+  meta: { code: number; error_detail?: string; error_type?: string }
+  response: {
+    beers?: { items?: ApiBeersItem[] }
   }
 }
 
@@ -232,6 +258,54 @@ async function fetchBadges(
   })
 }
 
+async function fetchFavourites(
+  username: string,
+  clientId: string,
+  clientSecret: string,
+  limit = 5
+): Promise<UntappdFavourite[]> {
+  const params = new URLSearchParams({
+    client_id: clientId,
+    client_secret: clientSecret,
+    sort: 'highest_rated_you',
+    limit: String(Math.max(limit, 5)),
+  })
+  const url = `${API_BASE}/user/beers/${username}?${params.toString()}`
+  const res = await fetch(url)
+  if (!res.ok) {
+    console.warn(`[untappd] /user/beers -> HTTP ${res.status}`)
+    return []
+  }
+  const data = (await res.json()) as ApiBeersResponse
+  if (data.meta?.code !== 200) {
+    console.warn(`[untappd] /user/beers API code ${data.meta?.code}`)
+    return []
+  }
+  const items = data.response.beers?.items ?? []
+  return items.slice(0, limit).map((item) => {
+    const recentId = item.recent_checkin_id
+    return {
+      id: String(item.beer?.bid ?? ''),
+      beer: item.beer?.beer_name?.trim() || 'Unknown beer',
+      brewery: item.brewery?.brewery_name?.trim() || 'Unknown brewery',
+      beerStyle: item.beer?.beer_style?.trim() || null,
+      beerAbv: typeof item.beer?.beer_abv === 'number' ? item.beer.beer_abv : null,
+      beerLabel: item.beer?.beer_label?.trim() || null,
+      rating: typeof item.rating_score === 'number' ? item.rating_score : 0,
+      count: typeof item.count === 'number' ? item.count : 0,
+      firstCheckedInAt: item.first_created_at
+        ? new Date(item.first_created_at).toISOString()
+        : null,
+      recentCheckedInAt: item.recent_created_at
+        ? new Date(item.recent_created_at).toISOString()
+        : null,
+      recentCheckinUrl: recentId
+        ? `https://untappd.com/user/${username}/checkin/${recentId}`
+        : null,
+    }
+  })
+}
+
 async function fetchPage(
   username: string,
   clientId: string,
@@ -316,9 +390,10 @@ async function main(): Promise<void> {
             (rated.reduce((s, c) => s + c.rating, 0) / rated.length) * 100
           ) / 100
 
-    const [lifetime, badges] = await Promise.all([
+    const [lifetime, badges, favourites] = await Promise.all([
       fetchUserInfo(username, clientId, clientSecret),
       fetchBadges(username, clientId, clientSecret),
+      fetchFavourites(username, clientId, clientSecret),
     ])
 
     const data: UntappdData = {
@@ -333,6 +408,7 @@ async function main(): Promise<void> {
       },
       lifetime,
       badges,
+      favourites,
     }
 
     await writeJson(dataPath('untappd'), data)

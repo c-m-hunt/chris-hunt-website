@@ -148,9 +148,15 @@ function InstagramPanel() {
 function UntappdPanel() {
   const lifetime = untappd.lifetime
   const badges = untappd.badges ?? []
+  const favourites = (untappd.favourites ?? []).slice(0, 5)
   const checkins = untappd.checkins.slice(0, 8)
 
-  if (!lifetime && badges.length === 0 && checkins.length === 0) {
+  if (
+    !lifetime &&
+    badges.length === 0 &&
+    favourites.length === 0 &&
+    checkins.length === 0
+  ) {
     return <EmptyState message="No check-ins yet." />
   }
 
@@ -208,6 +214,44 @@ function UntappdPanel() {
               </li>
             ))}
           </ul>
+        </>
+      ) : null}
+
+      {favourites.length > 0 ? (
+        <>
+          <h3 className="bz-subhead">Top rated</h3>
+          <ol className="bz-favs">
+            {favourites.map((f) => (
+              <li key={f.id} className="bz-row">
+                <span className="bz-cap" aria-hidden="true">
+                  {f.beerLabel ? (
+                    <img src={f.beerLabel} alt="" loading="lazy" />
+                  ) : (
+                    f.beer.replace(/[^A-Za-z0-9]+/g, '').slice(0, 2).toUpperCase() || '🍺'
+                  )}
+                </span>
+                <div>
+                  <div className="bz-name">
+                    {f.recentCheckinUrl ? (
+                      <a href={f.recentCheckinUrl} target="_blank" rel="noreferrer">
+                        {f.beer}
+                      </a>
+                    ) : (
+                      f.beer
+                    )}
+                  </div>
+                  <div className="bz-meta">
+                    {f.brewery}
+                    {f.beerStyle ? ` · ${f.beerStyle}` : null}
+                    {f.beerAbv ? ` · ${f.beerAbv}%` : null}
+                    {' · '}
+                    {f.count}× check-in{f.count === 1 ? '' : 's'}
+                  </div>
+                </div>
+                <span className="bz-rating">{f.rating.toFixed(2)} ★</span>
+              </li>
+            ))}
+          </ol>
         </>
       ) : null}
 
