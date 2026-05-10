@@ -458,6 +458,71 @@ async function main(): Promise<void> {
   let playerName = 'Chris Hunt'
   let totalMatchesProcessed = 0
 
+  // Build the JSON snapshot from the current season accumulator state and
+  // write it to disk. Called after each season completes so that a timeout
+  // mid-run still produces useful partial data (the cricket back-catalogue
+  // can't always finish in a single CI window on a cold cache).
+  async function writeSnapshot(): Promise<void> {
+    const careerBat = newBat()
+    const careerBowl = newBowl()
+    const careerField = newField()
+    for (const s of seasonAcc) {
+      for (const m of s.bat.matches) careerBat.matches.add(m)
+      careerBat.innings += s.bat.innings
+      careerBat.notOuts += s.bat.notOuts
+      careerBat.runs += s.bat.runs
+      careerBat.balls += s.bat.balls
+      careerBat.fours += s.bat.fours
+      careerBat.sixes += s.bat.sixes
+      careerBat.ducks += s.bat.ducks
+      careerBat.fifties += s.bat.fifties
+      careerBat.hundreds += s.bat.hundreds
+      if (s.bat.highScore > careerBat.highScore) {
+        careerBat.highScore = s.bat.highScore
+        careerBat.highScoreNotOut = s.bat.highScoreNotOut
+      }
+      for (const m of s.bowl.matches) careerBowl.matches.add(m)
+      careerBowl.innings += s.bowl.innings
+      careerBowl.balls += s.bowl.balls
+      careerBowl.maidens += s.bowl.maidens
+      careerBowl.runs += s.bowl.runs
+      careerBowl.wickets += s.bowl.wickets
+      careerBowl.fiveWicketHauls += s.bowl.fiveWicketHauls
+      const isBetter =
+        s.bowl.best.wickets > careerBowl.best.wickets ||
+        (s.bowl.best.wickets === careerBowl.best.wickets &&
+          s.bowl.best.runs < careerBowl.best.runs)
+      if (s.bowl.best.matchId !== 0 && (careerBowl.best.matchId === 0 || isBetter)) {
+        careerBowl.best = { ...s.bowl.best }
+      }
+      careerField.catches += s.field.catches
+      careerField.stumpings += s.field.stumpings
+      careerField.runOuts += s.field.runOuts
+    }
+    const career: CricketCareer = {
+      batting: finaliseBatting(careerBat),
+      bowling: finaliseBowling(careerBowl),
+      fielding: finaliseFielding(careerField),
+    }
+    const seasonsOut: CricketSeason[] = seasonAcc
+      .map((s) => ({
+        year: s.year,
+        batting: finaliseBatting(s.bat),
+        bowling: finaliseBowling(s.bowl),
+        fielding: finaliseFielding(s.field),
+      }))
+      .sort((a, b) => b.year - a.year)
+    const data: CricketData = {
+      generatedAt: nowIso(),
+      playerId: playerIdNum,
+      playerName,
+      club: { id: SITE_ID, name: 'Hutton CC' },
+      career,
+      seasons: seasonsOut,
+    }
+    await writeJson(dataPath('cricket'), data)
+  }
+
   try {
     for (const year of seasons) {
       console.log(`[cricket] season ${year}: listing matches`)
@@ -529,79 +594,22 @@ async function main(): Promise<void> {
           acc.field.stumpings +
           acc.field.runOuts >
           0
-      if (seasonHasData) seasonAcc.push(acc)
-    }
-
-    // Build career roll-up by combining the season accumulators directly so
-    // matches dedupe correctly.
-    const careerBat = newBat()
-    const careerBowl = newBowl()
-    const careerField = newField()
-    for (const s of seasonAcc) {
-      for (const m of s.bat.matches) careerBat.matches.add(m)
-      careerBat.innings += s.bat.innings
-      careerBat.notOuts += s.bat.notOuts
-      careerBat.runs += s.bat.runs
-      careerBat.balls += s.bat.balls
-      careerBat.fours += s.bat.fours
-      careerBat.sixes += s.bat.sixes
-      careerBat.ducks += s.bat.ducks
-      careerBat.fifties += s.bat.fifties
-      careerBat.hundreds += s.bat.hundreds
-      if (s.bat.highScore > careerBat.highScore) {
-        careerBat.highScore = s.bat.highScore
-        careerBat.highScoreNotOut = s.bat.highScoreNotOut
+      if (seasonHasData) {
+        seasonAcc.push(acc)
+        // Snapshot after each completed season so a timeout mid-run still
+        // leaves usable JSON on disk.
+        await writeSnapshot()
+        console.log(
+          `[cricket] season ${year}: ok (${matches.length} matches scanned, snapshot written)`
+        )
       }
-
-      for (const m of s.bowl.matches) careerBowl.matches.add(m)
-      careerBowl.innings += s.bowl.innings
-      careerBowl.balls += s.bowl.balls
-      careerBowl.maidens += s.bowl.maidens
-      careerBowl.runs += s.bowl.runs
-      careerBowl.wickets += s.bowl.wickets
-      careerBowl.fiveWicketHauls += s.bowl.fiveWicketHauls
-      const isBetter =
-        s.bowl.best.wickets > careerBowl.best.wickets ||
-        (s.bowl.best.wickets === careerBowl.best.wickets &&
-          s.bowl.best.runs < careerBowl.best.runs)
-      if (s.bowl.best.matchId !== 0 && (careerBowl.best.matchId === 0 || isBetter)) {
-        careerBowl.best = { ...s.bowl.best }
-      }
-
-      careerField.catches += s.field.catches
-      careerField.stumpings += s.field.stumpings
-      careerField.runOuts += s.field.runOuts
     }
 
-    const career: CricketCareer = {
-      batting: finaliseBatting(careerBat),
-      bowling: finaliseBowling(careerBowl),
-      fielding: finaliseFielding(careerField),
-    }
-
-    const seasonsOut: CricketSeason[] = seasonAcc
-      .map((s) => ({
-        year: s.year,
-        batting: finaliseBatting(s.bat),
-        bowling: finaliseBowling(s.bowl),
-        fielding: finaliseFielding(s.field),
-      }))
-      .sort((a, b) => b.year - a.year)
-
-    const data: CricketData = {
-      generatedAt: nowIso(),
-      playerId: playerIdNum,
-      playerName,
-      club: { id: SITE_ID, name: 'Hutton CC' },
-      career,
-      seasons: seasonsOut,
-    }
-
-    await writeJson(dataPath('cricket'), data)
+    await writeSnapshot()
     console.log(
-      `[cricket] processed ${totalMatchesProcessed} matches across ${seasonsOut.length} seasons`
+      `[cricket] processed ${totalMatchesProcessed} matches across ${seasonAcc.length} seasons`
     )
-    logWrote(SOURCE, seasonsOut.length)
+    logWrote(SOURCE, seasonAcc.length)
   } catch (err) {
     logError(SOURCE, err)
     process.exit(1)
