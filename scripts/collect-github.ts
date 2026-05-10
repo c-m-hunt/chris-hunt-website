@@ -38,6 +38,18 @@ interface RestRepo {
   forks_count: number
   fork: boolean
   archived: boolean
+  pushed_at: string
+}
+
+// Repos pushed within this window are considered "active" and contribute to
+// the language byte breakdown. Older repos still count toward star/fork totals
+// but their languages are excluded from the last-year mix.
+const ACTIVE_WINDOW_MS = 365 * 24 * 60 * 60 * 1000
+function isActive(pushedAt: string | null | undefined): boolean {
+  if (!pushedAt) return false
+  const t = Date.parse(pushedAt)
+  if (!Number.isFinite(t)) return false
+  return Date.now() - t <= ACTIVE_WINDOW_MS
 }
 
 interface RestUser {
@@ -197,9 +209,10 @@ async function collectViaRest(
   const nonForkRepos = repos.filter((r) => !r.fork)
   const totalStars = nonForkRepos.reduce((s, r) => s + r.stargazers_count, 0)
   const totalForks = nonForkRepos.reduce((s, r) => s + r.forks_count, 0)
+  const activeRepos = nonForkRepos.filter((r) => isActive(r.pushed_at))
 
   const perRepoLangs: Array<Record<string, number>> = []
-  for (const repo of nonForkRepos) {
+  for (const repo of activeRepos) {
     try {
       const langs = await fetchJson<Record<string, number>>(
         `https://api.github.com/repos/${username}/${repo.name}/languages`,
@@ -248,6 +261,7 @@ interface GqlLanguageEdge {
 }
 
 interface GqlRepoNode {
+  pushedAt: string | null
   stargazerCount: number
   forkCount: number
   languages: { totalSize: number; edges: GqlLanguageEdge[] }
@@ -308,6 +322,7 @@ query AggregateStats($login: String!) {
     ) {
       totalCount
       nodes {
+        pushedAt
         stargazerCount
         forkCount
         isFork
@@ -350,6 +365,7 @@ async function collectViaGraphql(
 
   const totals = new Map<string, { bytes: number; color: string | null }>()
   for (const r of repoNodes) {
+    if (!isActive(r.pushedAt)) continue
     for (const e of r.languages.edges) {
       const existing = totals.get(e.node.name) ?? { bytes: 0, color: null }
       existing.bytes += e.size

@@ -1220,19 +1220,6 @@ body::before {
   overflow-x: auto;
   position: relative;
 }
-.cr-table-wrap::before {
-  content: 'ROOKIE SEASON';
-  position: absolute;
-  top: -14px;
-  right: 24px;
-  background: var(--pink);
-  color: var(--ink);
-  font-family: var(--f-display);
-  font-size: 13px;
-  letter-spacing: 0.1em;
-  padding: 4px 10px;
-  transform: rotate(-3deg);
-}
 .cr-table-title {
   font-family: var(--f-display);
   font-size: 20px;

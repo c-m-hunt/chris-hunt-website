@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T12:20:28.382Z",
+  "generatedAt": "2026-05-10T13:14:17.041Z",
   "username": "c-m-hunt",
   "profile": {
     "name": "Chris Hunt",
@@ -18,61 +18,61 @@
   "stats": {
     "totalStars": 8,
     "totalForks": 2,
-    "contributionsLastYear": 1651,
+    "contributionsLastYear": 1652,
     "contributionsSource": "html"
   },
   "languages": [
     {
       "name": "Jupyter Notebook",
-      "bytes": 25306581,
-      "percent": 62.2,
+      "bytes": 22086957,
+      "percent": 69.4,
       "color": "#DA5B0B"
     },
     {
       "name": "TypeScript",
-      "bytes": 8862363,
-      "percent": 21.8,
+      "bytes": 8459667,
+      "percent": 26.6,
       "color": "#3178c6"
     },
     {
-      "name": "HTML",
-      "bytes": 4679408,
-      "percent": 11.5,
-      "color": "#e34c26"
-    },
-    {
       "name": "Python",
-      "bytes": 565582,
-      "percent": 1.4,
+      "bytes": 467718,
+      "percent": 1.5,
       "color": "#3572A5"
     },
     {
       "name": "PLpgSQL",
       "bytes": 338330,
-      "percent": 0.8,
+      "percent": 1.1,
       "color": "#336790"
     },
     {
+      "name": "HTML",
+      "bytes": 112932,
+      "percent": 0.4,
+      "color": "#e34c26"
+    },
+    {
       "name": "JavaScript",
-      "bytes": 273189,
-      "percent": 0.7,
+      "bytes": 75214,
+      "percent": 0.2,
       "color": "#f1e05a"
     },
     {
-      "name": "Go",
-      "bytes": 168941,
-      "percent": 0.4,
-      "color": "#00ADD8"
+      "name": "Dart",
+      "bytes": 60591,
+      "percent": 0.2,
+      "color": "#00B4AB"
     },
     {
-      "name": "PHP",
-      "bytes": 86611,
+      "name": "CSS",
+      "bytes": 53242,
       "percent": 0.2,
-      "color": "#4F5D95"
+      "color": "#663399"
     }
   ],
   "contributionCalendar": {
-    "totalContributions": 1651,
+    "totalContributions": 1652,
     "weeks": [
       [
         {
@@ -2001,7 +2001,7 @@
       [
         {
           "date": "2026-05-10",
-          "count": 5,
+          "count": 6,
           "level": 1
         }
       ]
