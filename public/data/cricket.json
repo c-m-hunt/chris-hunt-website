@@ -1,0 +1,90 @@
+{
+  "generatedAt": "2026-05-09T16:16:07.837Z",
+  "playerId": 12761,
+  "playerName": "Chris Hunt",
+  "club": {
+    "id": 7644,
+    "name": "Hutton CC"
+  },
+  "career": {
+    "batting": {
+      "matches": 1,
+      "innings": 1,
+      "notOuts": 1,
+      "runs": 7,
+      "highScore": 7,
+      "highScoreNotOut": true,
+      "average": 0,
+      "strikeRate": 41.18,
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 2,
+      "sixes": 0,
+      "ducks": 0
+    },
+    "bowling": {
+      "matches": 1,
+      "innings": 1,
+      "overs": 9,
+      "maidens": 3,
+      "runs": 27,
+      "wickets": 3,
+      "average": 9,
+      "economy": 3,
+      "strikeRate": 18,
+      "bestBowling": {
+        "wickets": 3,
+        "runs": 27,
+        "matchId": 3887442
+      },
+      "fiveWicketHauls": 0
+    },
+    "fielding": {
+      "catches": 0,
+      "stumpings": 0,
+      "runOuts": 0
+    }
+  },
+  "seasons": [
+    {
+      "year": 2019,
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "notOuts": 1,
+        "runs": 7,
+        "highScore": 7,
+        "highScoreNotOut": true,
+        "average": 0,
+        "strikeRate": 41.18,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 2,
+        "sixes": 0,
+        "ducks": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "innings": 1,
+        "overs": 9,
+        "maidens": 3,
+        "runs": 27,
+        "wickets": 3,
+        "average": 9,
+        "economy": 3,
+        "strikeRate": 18,
+        "bestBowling": {
+          "wickets": 3,
+          "runs": 27,
+          "matchId": 3887442
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 0,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    }
+  ]
+}

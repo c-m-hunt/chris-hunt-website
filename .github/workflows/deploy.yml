@@ -1,0 +1,78 @@
+# Builds the Vite SPA and deploys it to GitHub Pages. Triggered on every push
+# to the default branch, on demand, and after `refresh-data.yml` succeeds — so
+# a successful data refresh auto-publishes.
+#
+# Required setup: Settings → Pages → Build and deployment → Source = GitHub Actions.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_run:
+    # Auto-deploy when refresh-data finishes successfully on main.
+    workflows: ['refresh-data']
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Don't cancel an in-flight deploy — Pages doesn't like overlapping uploads.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Only run if the trigger wasn't a failed workflow_run.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        env:
+          # `BASE_PATH` is read by vite.config.ts. Defaults below assume project
+          # pages at <user>.github.io/chris-hunt-website/. If you set the
+          # `CUSTOM_DOMAIN` repo variable (custom domain) or rename to
+          # `<user>.github.io`, this step rewrites BASE_PATH to `/`.
+          BASE_PATH: ${{ vars.CUSTOM_DOMAIN != '' && '/' || '/chris-hunt-website/' }}
+        run: npm run build
+
+      - name: Write CNAME for custom domain
+        # Only when the `CUSTOM_DOMAIN` repo variable is set. We write to dist/
+        # rather than committing a CNAME file so toggling the variable is enough.
+        if: ${{ vars.CUSTOM_DOMAIN != '' }}
+        run: echo "${{ vars.CUSTOM_DOMAIN }}" > dist/CNAME
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,122 @@
+# Refreshes the JSON files in `public/data/` by running every collector and
+# committing the results back to the default branch. The successful run of
+# this workflow triggers `deploy.yml` so a refresh ships automatically.
+#
+# Secrets / variables: see the "Deployment & secrets" section of README.md.
+name: refresh-data
+
+on:
+  schedule:
+    # Daily at 04:00 UTC. Adjust if you want a different cadence.
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  # Needed so the bot commit can be pushed back to the default branch.
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # ---- Secrets (set under Settings → Secrets and variables → Actions → Secrets) ----
+      GH_PAT: ${{ secrets.GH_PAT }}
+      PLAY_CRICKET_API_TOKEN: ${{ secrets.PLAY_CRICKET_API_TOKEN }}
+      INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+      INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+      INSTAGRAM_SESSIONID: ${{ secrets.INSTAGRAM_SESSIONID }}
+      SETLISTFM_API_KEY: ${{ secrets.SETLISTFM_API_KEY }}
+      UNTAPPD_CLIENT_ID: ${{ secrets.UNTAPPD_CLIENT_ID }}
+      UNTAPPD_CLIENT_SECRET: ${{ secrets.UNTAPPD_CLIENT_SECRET }}
+      TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+      SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+      SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+      SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+      # ---- Variables (set under Settings → Secrets and variables → Actions → Variables) ----
+      GITHUB_USERNAME: ${{ vars.GITHUB_USERNAME }}
+      UNTAPPD_USERNAME: ${{ vars.UNTAPPD_USERNAME }}
+      TWITTER_USERNAME: ${{ vars.TWITTER_USERNAME }}
+      SETLISTFM_USERNAME: ${{ vars.SETLISTFM_USERNAME }}
+      PLAY_CRICKET_PLAYER_ID: ${{ vars.PLAY_CRICKET_PLAYER_ID }}
+      INSTAGRAM_ENABLED: ${{ vars.INSTAGRAM_ENABLED }}
+      TWITTER_ENABLED: ${{ vars.TWITTER_ENABLED }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Required so we can push the refresh commit back via the actions token.
+          persist-credentials: true
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          # 20 = current LTS. `rettiwt-core` (twitter collector dep) breaks on
+          # very old Node and on bleeding-edge majors (25+). Stay on LTS.
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Setup Python 3.12
+        # Only needed when Instagram scraping is enabled — saves ~10s/run otherwise.
+        if: env.INSTAGRAM_ENABLED == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Cache cricket per-match JSON
+        # Match details never change once recorded, so we can keep the cache
+        # forever. This is what makes daily cricket runs fast after run #1.
+        uses: actions/cache@v4
+        with:
+          path: .cache/cricket
+          key: cricket-cache-v1
+
+      - name: Cache Instagram session
+        # Persisting the IG session between runs avoids re-logging in (which is
+        # a major flag for IG). Skip when IG is disabled.
+        if: env.INSTAGRAM_ENABLED == 'true'
+        uses: actions/cache@v4
+        with:
+          path: .cache/instagram
+          key: instagram-session-v1
+
+      - name: Install Node deps
+        run: npm ci
+
+      - name: Install instagrapi
+        if: env.INSTAGRAM_ENABLED == 'true'
+        run: python3 -m pip install --upgrade pip instagrapi
+
+      - name: Run all collectors
+        # `collect:all` exits 0 unless EVERY collector fails, so we already get
+        # partial-success behaviour. `continue-on-error: true` is belt-and-braces
+        # so a hard crash here doesn't skip the change-detection step below.
+        continue-on-error: true
+        run: npm run collect:all
+
+      - name: Detect data changes
+        id: diff
+        run: |
+          if [ -n "$(git status --porcelain public/data)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Detected changes under public/data:"
+            git status --short public/data
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No data changes — skipping commit."
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          git commit -m "chore: refresh data $(date -u +%Y-%m-%d)"
+          git push

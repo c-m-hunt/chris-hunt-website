@@ -1,0 +1,298 @@
+{
+  "generatedAt": "2026-05-10T09:34:49.525Z",
+  "nowPlaying": {
+    "isPlaying": false,
+    "progressMs": 0,
+    "track": null
+  },
+  "topArtists": [
+    {
+      "id": "5Rsu72e1qrjIUtxH6Zmy9K",
+      "name": "Gene",
+      "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174bce5e2ea48f7f198c507b73e",
+      "genres": [
+        "britpop",
+        "madchester"
+      ]
+    },
+    {
+      "id": "3btzEQD6sugImIHPMRgkwV",
+      "name": "Wolf Alice",
+      "url": "https://open.spotify.com/artist/3btzEQD6sugImIHPMRgkwV",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174517744f1b17b914a3ac923b7",
+      "genres": [
+        "indie"
+      ]
+    },
+    {
+      "id": "0fgYKF9Avljex0L9Wt5b8Z",
+      "name": "Echo & the Bunnymen",
+      "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z",
+      "imageUrl": "https://i.scdn.co/image/2bff77f9ef0e1bbb46d40607f15893e4f09403d5",
+      "genres": [
+        "new wave",
+        "post-punk",
+        "gothic rock"
+      ]
+    },
+    {
+      "id": "2evydP72Z45DouM4uMGsIE",
+      "name": "Ash",
+      "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000517498682e9f2a5bd699d19fc54a",
+      "genres": [
+        "britpop",
+        "power pop"
+      ]
+    },
+    {
+      "id": "5fScAXreYFnuqwOgBsJgSd",
+      "name": "The Charlatans",
+      "url": "https://open.spotify.com/artist/5fScAXreYFnuqwOgBsJgSd",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000517432f1361e85bd5e0f0943b139",
+      "genres": [
+        "madchester",
+        "britpop"
+      ]
+    },
+    {
+      "id": "1tpXaFf2F55E7kVJON4j4G",
+      "name": "Black Rebel Motorcycle Club",
+      "url": "https://open.spotify.com/artist/1tpXaFf2F55E7kVJON4j4G",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174671e6bba4b119e7b9675f1a4",
+      "genres": [
+        "southern gothic",
+        "garage rock",
+        "blues rock"
+      ]
+    },
+    {
+      "id": "3iejrAcqxYoVgyxp6zkWgs",
+      "name": "Shed Seven",
+      "url": "https://open.spotify.com/artist/3iejrAcqxYoVgyxp6zkWgs",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051744e2bad0461555bce665deff7",
+      "genres": [
+        "britpop",
+        "madchester"
+      ]
+    },
+    {
+      "id": "3rIZMv9rysU7JkLzEaC5Jp",
+      "name": "Snow Patrol",
+      "url": "https://open.spotify.com/artist/3rIZMv9rysU7JkLzEaC5Jp",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051749b328846dc38b0a620da1ce2",
+      "genres": []
+    },
+    {
+      "id": "6zlR5ttMfMNmwf2lecU9Cc",
+      "name": "Sam Fender",
+      "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
+      "genres": []
+    },
+    {
+      "id": "11wRdbnoYqRddKBrpHt4Ue",
+      "name": "Kasabian",
+      "url": "https://open.spotify.com/artist/11wRdbnoYqRddKBrpHt4Ue",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051748fafeb8428e1f8873d078d03",
+      "genres": [
+        "britpop",
+        "indie",
+        "indie rock"
+      ]
+    }
+  ],
+  "topTracks": [
+    {
+      "id": "0w3xM9vQtoAn05Iqf7MyGb",
+      "name": "Olympian",
+      "url": "https://open.spotify.com/track/0w3xM9vQtoAn05Iqf7MyGb",
+      "durationMs": 325173,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Olympian",
+        "url": "https://open.spotify.com/album/63pLihcr6nXOYNy0mzUWdV",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e020d8a62430369b60b0edbc2d1",
+        "releaseDate": "1995-01-01"
+      }
+    },
+    {
+      "id": "4zlRCThoy7Wops9GF11kQX",
+      "name": "Nothing Lasts Forever",
+      "url": "https://open.spotify.com/track/4zlRCThoy7Wops9GF11kQX",
+      "durationMs": 235173,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Evergreen (Expanded)",
+        "url": "https://open.spotify.com/album/7ynWqEk1YxxZ2TYf1v6imE",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02ac3c6b9e1431a93333de893b",
+        "releaseDate": "1997-01-01"
+      }
+    },
+    {
+      "id": "35E2eKIEXXnP5q9L51iOAk",
+      "name": "The Killing Moon",
+      "url": "https://open.spotify.com/track/35E2eKIEXXnP5q9L51iOAk",
+      "durationMs": 348293,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Ocean Rain (Expanded; 2007 Remaster)",
+        "url": "https://open.spotify.com/album/3V4j1tMdQqpq8nwW02UOiW",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0292a84c02e896fcad44c70351",
+        "releaseDate": "1984-05-04"
+      }
+    },
+    {
+      "id": "0R9kzxELIjM21HyfN8v2cG",
+      "name": "A Life Less Ordinary - 2011 Remaster",
+      "url": "https://open.spotify.com/track/0R9kzxELIjM21HyfN8v2cG",
+      "durationMs": 256653,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Ash",
+          "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE"
+        }
+      ],
+      "album": {
+        "name": "’94 - ’04: The Singles",
+        "url": "https://open.spotify.com/album/0uV5GeV3nhXpRJon6fAFwS",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02fa5aa19f591040818ec864d9",
+        "releaseDate": "2019-05-31"
+      }
+    },
+    {
+      "id": "7sO3MetCgc75SWlOyTifgQ",
+      "name": "Going Up",
+      "url": "https://open.spotify.com/track/7sO3MetCgc75SWlOyTifgQ",
+      "durationMs": 239466,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Crocodiles (Expanded; 2007 Remaster)",
+        "url": "https://open.spotify.com/album/0TXcd8jwKkHP3IamgFHeRJ",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e023bd77b6b6b09c2fd932c7e50",
+        "releaseDate": "1980-07-18"
+      }
+    },
+    {
+      "id": "1SXfmiR8dii7Tbe4n4IwKh",
+      "name": "We Could Be Kings",
+      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
+      "durationMs": 315333,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Drawn To The Deep End",
+        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
+        "releaseDate": "1997-01-01"
+      }
+    },
+    {
+      "id": "5kdSAdohifQTqXMcszp43M",
+      "name": "Jump in the Line",
+      "url": "https://open.spotify.com/track/5kdSAdohifQTqXMcszp43M",
+      "durationMs": 207232,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Ash",
+          "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE"
+        }
+      ],
+      "album": {
+        "name": "Ad Astra",
+        "url": "https://open.spotify.com/album/7hTO36Q2JbuQLjSOcXqrIL",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0252419c9a9ede9b1ef1dfe5ed",
+        "releaseDate": "2025-10-03"
+      }
+    },
+    {
+      "id": "63Tl9k1sH8tznn3bqoMuyF",
+      "name": "Waka Waka (This Time for Africa) - K-Mix",
+      "url": "https://open.spotify.com/track/63Tl9k1sH8tznn3bqoMuyF",
+      "durationMs": 183946,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Shakira",
+          "url": "https://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp"
+        }
+      ],
+      "album": {
+        "name": "Sale el Sol",
+        "url": "https://open.spotify.com/album/3gR578qnw47M30LVBTjrlW",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e024214ddc9e33e76de6a8ee888",
+        "releaseDate": "2010-10-19"
+      }
+    },
+    {
+      "id": "0ZJ3raOAZl4rZYVOAqIXjv",
+      "name": "Heads Will Roll",
+      "url": "https://open.spotify.com/track/0ZJ3raOAZl4rZYVOAqIXjv",
+      "durationMs": 213106,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Porcupine (Expanded; 2004 Remaster)",
+        "url": "https://open.spotify.com/album/4brJ6hWYqPj1sccgk390dC",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02aa3c0529b9fc1fee2d0acc66",
+        "releaseDate": "1983-02-04"
+      }
+    },
+    {
+      "id": "1eRyJZwEo3ewJq4hDzFhXO",
+      "name": "Bedbugs and Ballyhoo",
+      "url": "https://open.spotify.com/track/1eRyJZwEo3ewJq4hDzFhXO",
+      "durationMs": 209120,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Echo & The Bunnymen",
+        "url": "https://open.spotify.com/album/6HvylYOCXVdHFtpODOiQCo",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0268bd6aaa6e1bf0efcdb43ba8",
+        "releaseDate": "1987-07-06"
+      }
+    }
+  ]
+}

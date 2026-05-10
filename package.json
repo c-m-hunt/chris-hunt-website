@@ -1,0 +1,48 @@
+{
+  "name": "chris-hunt-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"*.{ts,tsx,js,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"*.{ts,tsx,js,json,md}\"",
+    "preview": "vite preview",
+    "collect:github": "tsx scripts/collect-github.ts",
+    "collect:untappd": "tsx scripts/collect-untappd.ts",
+    "collect:cricket": "tsx scripts/collect-cricket.ts",
+    "collect:twitter": "tsx scripts/collect-twitter.ts",
+    "collect:instagram": "tsx scripts/collect-instagram.ts",
+    "collect:setlist": "tsx scripts/collect-setlist.ts",
+    "collect:spotify": "tsx scripts/collect-spotify.ts",
+    "collect:all": "tsx scripts/collect-all.ts",
+    "spotify:auth-url": "tsx scripts/spotify-auth.ts --url",
+    "spotify:auth": "tsx scripts/spotify-auth.ts"
+  },
+  "dependencies": {
+    "lucide-react": "^0.460.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.5.0",
+    "prettier": "^3.3.3",
+    "rettiwt-api": "^7.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.58.2",
+    "vite": "^8.0.10"
+  }
+}

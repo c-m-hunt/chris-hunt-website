@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.vite/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# Test/coverage output
+coverage/
+.nyc_output/
+
+# Cache from data collectors
+.cache/
+scripts/.cache/
+
+# Playwright MCP session artefacts (auth-flow snapshots, not for commit)
+.playwright-mcp/
