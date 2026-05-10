@@ -36,7 +36,8 @@ import {
 } from './lib/util.ts'
 
 const SOURCE = 'cricket'
-const SITE_ID = 7644 // Hutton CC, see research/niche-apis.md
+const DEFAULT_SITE_ID = 5819 // Southend on Sea & EMT CC
+const DEFAULT_CLUB_NAME = 'Southend on Sea & EMT CC'
 const BASE_URL = 'https://play-cricket.com/api/v2'
 const REQUEST_GAP_MS = 500 // self-imposed ~2 req/s
 const CACHE_SUBDIR = join(CACHE_DIR, 'cricket')
@@ -414,10 +415,11 @@ async function fetchJson<T>(url: string): Promise<T> {
 }
 
 async function listMatches(
+  siteId: number,
   season: number,
   token: string
 ): Promise<MatchListEntry[]> {
-  const url = `${BASE_URL}/matches.json?site_id=${SITE_ID}&season=${season}&api_token=${token}`
+  const url = `${BASE_URL}/matches.json?site_id=${siteId}&season=${season}&api_token=${token}`
   const json = await fetchJson<MatchListResponse>(url)
   return json.matches ?? []
 }
@@ -446,6 +448,15 @@ async function main(): Promise<void> {
   }
   const playerId = playerIdRaw
   const playerIdNum = parseInt(playerIdRaw, 10)
+
+  const siteIdRaw = process.env.PLAY_CRICKET_SITE_ID?.trim()
+  const siteId = siteIdRaw ? parseInt(siteIdRaw, 10) : DEFAULT_SITE_ID
+  if (!Number.isFinite(siteId) || siteId <= 0) {
+    logError(SOURCE, new Error(`PLAY_CRICKET_SITE_ID must be a positive integer (got ${siteIdRaw})`))
+    process.exit(1)
+  }
+  const clubName =
+    process.env.PLAY_CRICKET_CLUB_NAME?.trim() || DEFAULT_CLUB_NAME
 
   const opts = parseCli(process.argv.slice(2))
   const currentYear = new Date().getUTCFullYear()
@@ -516,7 +527,7 @@ async function main(): Promise<void> {
       generatedAt: nowIso(),
       playerId: playerIdNum,
       playerName,
-      club: { id: SITE_ID, name: 'Hutton CC' },
+      club: { id: siteId, name: clubName },
       career,
       seasons: seasonsOut,
     }
@@ -528,7 +539,7 @@ async function main(): Promise<void> {
       console.log(`[cricket] season ${year}: listing matches`)
       let matches: MatchListEntry[] = []
       try {
-        matches = await listMatches(year, token)
+        matches = await listMatches(siteId, year, token)
       } catch (err) {
         console.warn(
           `[cricket] failed to list matches for ${year}: ${(err as Error).message}`
