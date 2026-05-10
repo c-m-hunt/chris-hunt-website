@@ -91,7 +91,9 @@ jobs:
 
       - name: Install instagrapi
         if: env.INSTAGRAM_ENABLED == 'true'
-        run: python3 -m pip install --upgrade pip instagrapi
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
 
       - name: Run all collectors
         # `collect:all` exits 0 unless EVERY collector fails, so we already get
