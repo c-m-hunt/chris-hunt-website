@@ -1253,8 +1253,7 @@ body::before {
   text-align: right;
   white-space: nowrap;
 }
-.cr-table th:first-child,
-.cr-table td:first-child {
+.cr-table tbody td:first-child {
   text-align: left;
 }
 .cr-table thead tr:first-child th {

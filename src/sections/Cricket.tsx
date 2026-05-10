@@ -78,11 +78,12 @@ export function CricketSection() {
             <thead>
               <tr>
                 <th rowSpan={2}>Season</th>
+                <th rowSpan={2}>Mat</th>
                 <th colSpan={5}>Bowling</th>
                 <th colSpan={6}>Batting</th>
               </tr>
               <tr>
-                <th>Overs</th>
+                <th className="col-divider">Overs</th>
                 <th>Wkts</th>
                 <th>Avg</th>
                 <th>Econ</th>
@@ -99,7 +100,8 @@ export function CricketSection() {
               {seasons.map((s) => (
                 <tr key={s.year}>
                   <td>{s.year}</td>
-                  <td>{s.bowling.overs}</td>
+                  <td>{s.batting.matches}</td>
+                  <td className="col-divider">{s.bowling.overs}</td>
                   <td>{s.bowling.wickets}</td>
                   <td>{formatAverage(s.bowling.average)}</td>
                   <td>{s.bowling.economy.toFixed(2)}</td>
