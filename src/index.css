@@ -881,10 +881,19 @@ body::before {
   color: var(--ink);
   font-family: var(--f-display);
   font-size: 11px;
+  line-height: 1.15;
   letter-spacing: 0.06em;
   padding: 4px 8px;
   text-transform: uppercase;
   max-width: calc(100% - 20px);
+  /* White halo lifts the chip off any underlying photo content. */
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    0 0 6px rgba(255, 255, 255, 0.65);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
 }
 .ig-card .badge-carousel {
   position: absolute;
