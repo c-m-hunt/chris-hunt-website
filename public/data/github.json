@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T13:14:17.041Z",
+  "generatedAt": "2026-05-10T13:19:08.316Z",
   "username": "c-m-hunt",
   "profile": {
     "name": "Chris Hunt",
@@ -18,61 +18,61 @@
   "stats": {
     "totalStars": 8,
     "totalForks": 2,
-    "contributionsLastYear": 1652,
+    "contributionsLastYear": 1653,
     "contributionsSource": "html"
   },
   "languages": [
     {
-      "name": "Jupyter Notebook",
-      "bytes": 22086957,
-      "percent": 69.4,
-      "color": "#DA5B0B"
-    },
-    {
       "name": "TypeScript",
-      "bytes": 8459667,
-      "percent": 26.6,
+      "bytes": 8460325,
+      "percent": 87,
       "color": "#3178c6"
     },
     {
       "name": "Python",
       "bytes": 467718,
-      "percent": 1.5,
+      "percent": 4.8,
       "color": "#3572A5"
     },
     {
       "name": "PLpgSQL",
       "bytes": 338330,
-      "percent": 1.1,
+      "percent": 3.5,
       "color": "#336790"
     },
     {
       "name": "HTML",
       "bytes": 112932,
-      "percent": 0.4,
+      "percent": 1.2,
       "color": "#e34c26"
     },
     {
       "name": "JavaScript",
       "bytes": 75214,
-      "percent": 0.2,
+      "percent": 0.8,
       "color": "#f1e05a"
     },
     {
       "name": "Dart",
       "bytes": 60591,
-      "percent": 0.2,
+      "percent": 0.6,
       "color": "#00B4AB"
     },
     {
       "name": "CSS",
-      "bytes": 53242,
-      "percent": 0.2,
+      "bytes": 52962,
+      "percent": 0.5,
       "color": "#663399"
+    },
+    {
+      "name": "HCL",
+      "bytes": 36002,
+      "percent": 0.4,
+      "color": "#844FBA"
     }
   ],
   "contributionCalendar": {
-    "totalContributions": 1652,
+    "totalContributions": 1653,
     "weeks": [
       [
         {
@@ -2001,8 +2001,8 @@
       [
         {
           "date": "2026-05-10",
-          "count": 6,
-          "level": 1
+          "count": 7,
+          "level": 2
         }
       ]
     ]

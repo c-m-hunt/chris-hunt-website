@@ -52,6 +52,11 @@ function isActive(pushedAt: string | null | undefined): boolean {
   return Date.now() - t <= ACTIVE_WINDOW_MS
 }
 
+// Languages whose byte counts are dominated by non-code content
+// (`.ipynb` files inline base64-encoded chart outputs, so bytes correlate
+// with figures rendered, not code written).
+const EXCLUDED_LANGUAGES = new Set(['Jupyter Notebook'])
+
 interface RestUser {
   name: string | null
   bio: string | null
@@ -91,6 +96,7 @@ function aggregateLanguages(
   const totals = new Map<string, number>()
   for (const repo of perRepoBytes) {
     for (const [lang, bytes] of Object.entries(repo)) {
+      if (EXCLUDED_LANGUAGES.has(lang)) continue
       totals.set(lang, (totals.get(lang) ?? 0) + bytes)
     }
   }
@@ -367,6 +373,7 @@ async function collectViaGraphql(
   for (const r of repoNodes) {
     if (!isActive(r.pushedAt)) continue
     for (const e of r.languages.edges) {
+      if (EXCLUDED_LANGUAGES.has(e.node.name)) continue
       const existing = totals.get(e.node.name) ?? { bytes: 0, color: null }
       existing.bytes += e.size
       if (!existing.color && e.node.color) existing.color = e.node.color
