@@ -1,62 +1,142 @@
 {
-  "generatedAt": "2026-05-10T12:27:44.638Z",
+  "generatedAt": "2026-05-10T13:44:59.550Z",
   "playerId": 12761,
   "playerName": "Chris Hunt",
   "club": {
-    "id": 7644,
-    "name": "Hutton CC"
+    "id": 5819,
+    "name": "Southend on Sea & EMT CC"
   },
   "career": {
     "batting": {
-      "matches": 4,
-      "innings": 4,
-      "notOuts": 4,
-      "runs": 18,
-      "highScore": 10,
-      "highScoreNotOut": true,
-      "average": 0,
-      "strikeRate": 105.88,
+      "matches": 262,
+      "innings": 134,
+      "notOuts": 57,
+      "runs": 772,
+      "highScore": 39,
+      "highScoreNotOut": false,
+      "average": 10.03,
+      "strikeRate": 86.35,
       "fifties": 0,
       "hundreds": 0,
-      "fours": 2,
-      "sixes": 0,
-      "ducks": 0
+      "fours": 71,
+      "sixes": 6,
+      "ducks": 17
     },
     "bowling": {
-      "matches": 4,
-      "innings": 4,
-      "overs": 36.3,
-      "maidens": 5,
-      "runs": 133,
-      "wickets": 7,
-      "average": 19,
-      "economy": 3.64,
-      "strikeRate": 31.3,
+      "matches": 262,
+      "innings": 262,
+      "overs": 2105.1,
+      "maidens": 310,
+      "runs": 8407,
+      "wickets": 324,
+      "average": 25.95,
+      "economy": 3.99,
+      "strikeRate": 39,
       "bestBowling": {
-        "wickets": 4,
-        "runs": 58,
-        "matchId": 2166771
+        "wickets": 5,
+        "runs": 12,
+        "matchId": 6957719
       },
-      "fiveWicketHauls": 0
+      "fiveWicketHauls": 2
     },
     "fielding": {
-      "catches": 0,
+      "catches": 24,
       "stumpings": 0,
-      "runOuts": 0
+      "runOuts": 3
     }
   },
   "seasons": [
     {
-      "year": 2019,
+      "year": 2026,
       "batting": {
         "matches": 1,
         "innings": 1,
         "notOuts": 1,
-        "runs": 7,
-        "highScore": 7,
+        "runs": 24,
+        "highScore": 24,
         "highScoreNotOut": true,
-        "average": 0,
-        "strikeRate": 41.18,
+        "average": null,
+        "strikeRate": 133.33,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 5,
+        "sixes": 0,
+        "ducks": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "innings": 1,
+        "overs": 8,
+        "maidens": 2,
+        "runs": 37,
+        "wickets": 3,
+        "average": 12.33,
+        "economy": 4.63,
+        "strikeRate": 16,
+        "bestBowling": {
+          "wickets": 3,
+          "runs": 37,
+          "matchId": 7463065
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 0,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2025,
+      "batting": {
+        "matches": 15,
+        "innings": 12,
+        "notOuts": 2,
+        "runs": 58,
+        "highScore": 17,
+        "highScoreNotOut": false,
+        "average": 5.8,
+        "strikeRate": 45.67,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 6,
+        "sixes": 0,
+        "ducks": 2
+      },
+      "bowling": {
+        "matches": 15,
+        "innings": 15,
+        "overs": 103.4,
+        "maidens": 17,
+        "runs": 466,
+        "wickets": 14,
+        "average": 33.29,
+        "economy": 4.5,
+        "strikeRate": 44.4,
+        "bestBowling": {
+          "wickets": 5,
+          "runs": 12,
+          "matchId": 6957719
+        },
+        "fiveWicketHauls": 1
+      },
+      "fielding": {
+        "catches": 0,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2024,
+      "batting": {
+        "matches": 14,
+        "innings": 7,
+        "notOuts": 3,
+        "runs": 24,
+        "highScore": 8,
+        "highScoreNotOut": false,
+        "average": 6,
+        "strikeRate": 32.43,
         "fifties": 0,
         "hundreds": 0,
         "fours": 2,
@@ -64,15 +144,215 @@
         "ducks": 0
       },
       "bowling": {
-        "matches": 1,
-        "innings": 1,
-        "overs": 9,
-        "maidens": 3,
-        "runs": 27,
-        "wickets": 3,
-        "average": 9,
-        "economy": 3,
-        "strikeRate": 18,
+        "matches": 14,
+        "innings": 14,
+        "overs": 100.4,
+        "maidens": 12,
+        "runs": 416,
+        "wickets": 23,
+        "average": 18.09,
+        "economy": 4.13,
+        "strikeRate": 26.3,
+        "bestBowling": {
+          "wickets": 4,
+          "runs": 16,
+          "matchId": 6586696
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 0,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2023,
+      "batting": {
+        "matches": 19,
+        "innings": 12,
+        "notOuts": 5,
+        "runs": 52,
+        "highScore": 10,
+        "highScoreNotOut": false,
+        "average": 7.43,
+        "strikeRate": 44.07,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 5,
+        "sixes": 0,
+        "ducks": 1
+      },
+      "bowling": {
+        "matches": 21,
+        "innings": 21,
+        "overs": 159,
+        "maidens": 22,
+        "runs": 636,
+        "wickets": 33,
+        "average": 19.27,
+        "economy": 4,
+        "strikeRate": 28.9,
+        "bestBowling": {
+          "wickets": 3,
+          "runs": 3,
+          "matchId": 5664330
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 5,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2022,
+      "batting": {
+        "matches": 22,
+        "innings": 14,
+        "notOuts": 6,
+        "runs": 113,
+        "highScore": 33,
+        "highScoreNotOut": false,
+        "average": 14.13,
+        "strikeRate": 70.19,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 18,
+        "sixes": 0,
+        "ducks": 1
+      },
+      "bowling": {
+        "matches": 21,
+        "innings": 21,
+        "overs": 160.3,
+        "maidens": 16,
+        "runs": 717,
+        "wickets": 21,
+        "average": 34.14,
+        "economy": 4.47,
+        "strikeRate": 45.9,
+        "bestBowling": {
+          "wickets": 4,
+          "runs": 40,
+          "matchId": 5237276
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 1,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2021,
+      "batting": {
+        "matches": 21,
+        "innings": 11,
+        "notOuts": 5,
+        "runs": 87,
+        "highScore": 25,
+        "highScoreNotOut": false,
+        "average": 14.5,
+        "strikeRate": 60.84,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 9,
+        "sixes": 0,
+        "ducks": 2
+      },
+      "bowling": {
+        "matches": 20,
+        "innings": 20,
+        "overs": 132,
+        "maidens": 20,
+        "runs": 610,
+        "wickets": 10,
+        "average": 61,
+        "economy": 4.62,
+        "strikeRate": 79.2,
+        "bestBowling": {
+          "wickets": 3,
+          "runs": 23,
+          "matchId": 4647228
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 0,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2020,
+      "batting": {
+        "matches": 10,
+        "innings": 6,
+        "notOuts": 2,
+        "runs": 34,
+        "highScore": 13,
+        "highScoreNotOut": true,
+        "average": 8.5,
+        "strikeRate": 79.07,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 3,
+        "sixes": 1,
+        "ducks": 1
+      },
+      "bowling": {
+        "matches": 10,
+        "innings": 10,
+        "overs": 61.4,
+        "maidens": 13,
+        "runs": 157,
+        "wickets": 11,
+        "average": 14.27,
+        "economy": 2.55,
+        "strikeRate": 33.6,
+        "bestBowling": {
+          "wickets": 3,
+          "runs": 17,
+          "matchId": 4459577
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 2,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2019,
+      "batting": {
+        "matches": 15,
+        "innings": 13,
+        "notOuts": 3,
+        "runs": 134,
+        "highScore": 39,
+        "highScoreNotOut": false,
+        "average": 13.4,
+        "strikeRate": 159.52,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 9,
+        "sixes": 3,
+        "ducks": 2
+      },
+      "bowling": {
+        "matches": 16,
+        "innings": 16,
+        "overs": 127.4,
+        "maidens": 10,
+        "runs": 654,
+        "wickets": 19,
+        "average": 34.42,
+        "economy": 5.12,
+        "strikeRate": 40.3,
         "bestBowling": {
           "wickets": 3,
           "runs": 27,
@@ -81,7 +361,167 @@
         "fiveWicketHauls": 0
       },
       "fielding": {
-        "catches": 0,
+        "catches": 2,
+        "stumpings": 0,
+        "runOuts": 2
+      }
+    },
+    {
+      "year": 2018,
+      "batting": {
+        "matches": 15,
+        "innings": 5,
+        "notOuts": 2,
+        "runs": 42,
+        "highScore": 23,
+        "highScoreNotOut": false,
+        "average": 14,
+        "strikeRate": 82.35,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 6,
+        "sixes": 1,
+        "ducks": 0
+      },
+      "bowling": {
+        "matches": 15,
+        "innings": 15,
+        "overs": 119,
+        "maidens": 15,
+        "runs": 492,
+        "wickets": 17,
+        "average": 28.94,
+        "economy": 4.13,
+        "strikeRate": 42,
+        "bestBowling": {
+          "wickets": 4,
+          "runs": 42,
+          "matchId": 3553016
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 3,
+        "stumpings": 0,
+        "runOuts": 1
+      }
+    },
+    {
+      "year": 2017,
+      "batting": {
+        "matches": 15,
+        "innings": 7,
+        "notOuts": 3,
+        "runs": 44,
+        "highScore": 22,
+        "highScoreNotOut": true,
+        "average": 11,
+        "strikeRate": 137.5,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 5,
+        "sixes": 1,
+        "ducks": 2
+      },
+      "bowling": {
+        "matches": 15,
+        "innings": 15,
+        "overs": 157.1,
+        "maidens": 24,
+        "runs": 627,
+        "wickets": 22,
+        "average": 28.5,
+        "economy": 3.99,
+        "strikeRate": 42.9,
+        "bestBowling": {
+          "wickets": 4,
+          "runs": 42,
+          "matchId": 3018241
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 2,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2016,
+      "batting": {
+        "matches": 16,
+        "innings": 11,
+        "notOuts": 4,
+        "runs": 33,
+        "highScore": 11,
+        "highScoreNotOut": false,
+        "average": 4.71,
+        "strikeRate": 122.22,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 1,
+        "sixes": 0,
+        "ducks": 1
+      },
+      "bowling": {
+        "matches": 16,
+        "innings": 16,
+        "overs": 121,
+        "maidens": 23,
+        "runs": 491,
+        "wickets": 16,
+        "average": 30.69,
+        "economy": 4.06,
+        "strikeRate": 45.4,
+        "bestBowling": {
+          "wickets": 3,
+          "runs": 48,
+          "matchId": 2695051
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 1,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2015,
+      "batting": {
+        "matches": 17,
+        "innings": 6,
+        "notOuts": 6,
+        "runs": 23,
+        "highScore": 14,
+        "highScoreNotOut": true,
+        "average": null,
+        "strikeRate": 230,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 0,
+        "sixes": 0,
+        "ducks": 0
+      },
+      "bowling": {
+        "matches": 17,
+        "innings": 17,
+        "overs": 152,
+        "maidens": 30,
+        "runs": 533,
+        "wickets": 16,
+        "average": 33.31,
+        "economy": 3.51,
+        "strikeRate": 57,
+        "bestBowling": {
+          "wickets": 3,
+          "runs": 23,
+          "matchId": 2428618
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 2,
         "stumpings": 0,
         "runOuts": 0
       }
@@ -89,39 +529,39 @@
     {
       "year": 2014,
       "batting": {
-        "matches": 1,
-        "innings": 1,
-        "notOuts": 1,
-        "runs": 0,
-        "highScore": 0,
+        "matches": 15,
+        "innings": 5,
+        "notOuts": 2,
+        "runs": 24,
+        "highScore": 12,
         "highScoreNotOut": false,
-        "average": 0,
+        "average": 8,
         "strikeRate": null,
         "fifties": 0,
         "hundreds": 0,
         "fours": 0,
         "sixes": 0,
-        "ducks": 0
+        "ducks": 1
       },
       "bowling": {
-        "matches": 1,
-        "innings": 1,
-        "overs": 16.3,
-        "maidens": 1,
-        "runs": 58,
-        "wickets": 4,
-        "average": 14.5,
-        "economy": 3.52,
-        "strikeRate": 24.8,
+        "matches": 15,
+        "innings": 15,
+        "overs": 161.3,
+        "maidens": 24,
+        "runs": 517,
+        "wickets": 31,
+        "average": 16.68,
+        "economy": 3.2,
+        "strikeRate": 31.3,
         "bestBowling": {
-          "wickets": 4,
-          "runs": 58,
-          "matchId": 2166771
+          "wickets": 5,
+          "runs": 22,
+          "matchId": 2166758
         },
-        "fiveWicketHauls": 0
+        "fiveWicketHauls": 1
       },
       "fielding": {
-        "catches": 0,
+        "catches": 1,
         "stumpings": 0,
         "runOuts": 0
       }
@@ -129,34 +569,114 @@
     {
       "year": 2013,
       "batting": {
-        "matches": 1,
-        "innings": 1,
-        "notOuts": 1,
-        "runs": 10,
+        "matches": 18,
+        "innings": 4,
+        "notOuts": 2,
+        "runs": 16,
         "highScore": 10,
         "highScoreNotOut": true,
-        "average": 0,
+        "average": 8,
+        "strikeRate": 320,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 1,
+        "sixes": 0,
+        "ducks": 0
+      },
+      "bowling": {
+        "matches": 18,
+        "innings": 18,
+        "overs": 163.2,
+        "maidens": 27,
+        "runs": 531,
+        "wickets": 26,
+        "average": 20.42,
+        "economy": 3.25,
+        "strikeRate": 37.7,
+        "bestBowling": {
+          "wickets": 4,
+          "runs": 56,
+          "matchId": 1998500
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 4,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2012,
+      "batting": {
+        "matches": 11,
+        "innings": 4,
+        "notOuts": 2,
+        "runs": 7,
+        "highScore": 5,
+        "highScoreNotOut": false,
+        "average": 3.5,
+        "strikeRate": 700,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 1,
+        "sixes": 0,
+        "ducks": 1
+      },
+      "bowling": {
+        "matches": 11,
+        "innings": 11,
+        "overs": 77,
+        "maidens": 16,
+        "runs": 270,
+        "wickets": 9,
+        "average": 30,
+        "economy": 3.51,
+        "strikeRate": 51.3,
+        "bestBowling": {
+          "wickets": 2,
+          "runs": 10,
+          "matchId": 560886
+        },
+        "fiveWicketHauls": 0
+      },
+      "fielding": {
+        "catches": 1,
+        "stumpings": 0,
+        "runOuts": 0
+      }
+    },
+    {
+      "year": 2011,
+      "batting": {
+        "matches": 16,
+        "innings": 7,
+        "notOuts": 2,
+        "runs": 27,
+        "highScore": 11,
+        "highScoreNotOut": false,
+        "average": 5.4,
         "strikeRate": null,
         "fifties": 0,
         "hundreds": 0,
         "fours": 0,
         "sixes": 0,
-        "ducks": 0
+        "ducks": 2
       },
       "bowling": {
-        "matches": 1,
-        "innings": 1,
-        "overs": 8,
-        "maidens": 1,
-        "runs": 30,
-        "wickets": 0,
-        "average": 0,
-        "economy": 3.75,
-        "strikeRate": 0,
+        "matches": 16,
+        "innings": 16,
+        "overs": 129.2,
+        "maidens": 18,
+        "runs": 476,
+        "wickets": 20,
+        "average": 23.8,
+        "economy": 3.68,
+        "strikeRate": 38.8,
         "bestBowling": {
-          "wickets": 0,
-          "runs": 0,
-          "matchId": 0
+          "wickets": 4,
+          "runs": 22,
+          "matchId": 1628803
         },
         "fiveWicketHauls": 0
       },
@@ -167,36 +687,36 @@
       }
     },
     {
-      "year": 2011,
+      "year": 2010,
       "batting": {
-        "matches": 1,
-        "innings": 1,
-        "notOuts": 1,
-        "runs": 1,
-        "highScore": 1,
+        "matches": 22,
+        "innings": 9,
+        "notOuts": 7,
+        "runs": 30,
+        "highScore": 9,
         "highScoreNotOut": true,
-        "average": 0,
+        "average": 15,
         "strikeRate": null,
         "fifties": 0,
         "hundreds": 0,
         "fours": 0,
         "sixes": 0,
-        "ducks": 0
+        "ducks": 1
       },
       "bowling": {
-        "matches": 1,
-        "innings": 1,
-        "overs": 3,
-        "maidens": 0,
-        "runs": 18,
-        "wickets": 0,
-        "average": 0,
-        "economy": 6,
-        "strikeRate": 0,
+        "matches": 21,
+        "innings": 21,
+        "overs": 171.4,
+        "maidens": 21,
+        "runs": 777,
+        "wickets": 33,
+        "average": 23.55,
+        "economy": 4.53,
+        "strikeRate": 31.2,
         "bestBowling": {
-          "wickets": 0,
-          "runs": 0,
-          "matchId": 0
+          "wickets": 3,
+          "runs": 28,
+          "matchId": 1350948
         },
         "fiveWicketHauls": 0
       },

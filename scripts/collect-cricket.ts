@@ -140,7 +140,15 @@ function ballsToOvers(balls: number): number {
 }
 
 const NOT_OUT_CODES = new Set(['', 'no', 'not out'])
-const DID_NOT_BAT_CODES = new Set(['dnb', 'tdnb', 'absent', 'abs'])
+const DID_NOT_BAT_CODES = new Set([
+  'dnb',
+  'tdnb',
+  'did not bat',
+  'timed did not bat',
+  'absent',
+  'absent hurt',
+  'abs',
+])
 
 function isNotOut(row: BatRow): boolean {
   const code = (row.how_out ?? '').toLowerCase().trim()
@@ -154,7 +162,20 @@ function isNotOut(row: BatRow): boolean {
 
 function isDidNotBat(row: BatRow): boolean {
   const code = (row.how_out ?? '').toLowerCase().trim()
-  return DID_NOT_BAT_CODES.has(code)
+  if (DID_NOT_BAT_CODES.has(code)) return true
+  // Heuristic for placeholder rows: a teammate listed in the bat order but
+  // never got to bat shows up with empty how_out, no bowler, and zero stats.
+  // Without this we'd count them as a "not out" innings (since isNotOut
+  // returns true on empty bowler_id) and grossly inflate innings/notOuts.
+  if (code !== '') return false
+  const bowlerEmpty = !(row.bowler_id ?? '').trim()
+  if (!bowlerEmpty) return false
+  const noActivity =
+    toNumber(row.runs) === 0 &&
+    toNumber(row.balls) === 0 &&
+    toNumber(row.fours) === 0 &&
+    toNumber(row.sixes) === 0
+  return noActivity
 }
 
 function emptyBatting(): CricketBatting {
@@ -165,7 +186,7 @@ function emptyBatting(): CricketBatting {
     runs: 0,
     highScore: 0,
     highScoreNotOut: false,
-    average: 0,
+    average: null,
     strikeRate: null,
     fifties: 0,
     hundreds: 0,
@@ -183,7 +204,7 @@ function emptyBowling(): CricketBowling {
     maidens: 0,
     runs: 0,
     wickets: 0,
-    average: 0,
+    average: null,
     economy: 0,
     strikeRate: 0,
     bestBowling: { wickets: 0, runs: 0, matchId: 0 },
@@ -347,7 +368,7 @@ function finaliseBatting(acc: BattingAccumulator): CricketBatting {
   out.ducks = acc.ducks
   const dismissals = acc.innings - acc.notOuts
   out.average =
-    dismissals > 0 ? Math.round((acc.runs / dismissals) * 100) / 100 : 0
+    dismissals > 0 ? Math.round((acc.runs / dismissals) * 100) / 100 : null
   out.strikeRate =
     acc.balls > 0 ? Math.round((acc.runs / acc.balls) * 10000) / 100 : null
   return out
@@ -362,7 +383,7 @@ function finaliseBowling(acc: BowlingAccumulator): CricketBowling {
   out.runs = acc.runs
   out.wickets = acc.wickets
   out.average =
-    acc.wickets > 0 ? Math.round((acc.runs / acc.wickets) * 100) / 100 : 0
+    acc.wickets > 0 ? Math.round((acc.runs / acc.wickets) * 100) / 100 : null
   out.economy =
     acc.balls > 0 ? Math.round(((acc.runs * 6) / acc.balls) * 100) / 100 : 0
   out.strikeRate =

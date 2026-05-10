@@ -13,6 +13,10 @@ function bestBowling(wickets: number, runs: number): string {
   return `${wickets}-${runs}`
 }
 
+function formatAverage(value: number | null): string {
+  return value == null ? 'N/A' : value.toFixed(2)
+}
+
 export function CricketSection() {
   const { career, seasons, club, playerName, playerId } = cricket
   const hasSeasons = seasons.length > 0
@@ -74,41 +78,41 @@ export function CricketSection() {
             <thead>
               <tr>
                 <th rowSpan={2}>Season</th>
-                <th colSpan={6}>Batting</th>
                 <th colSpan={5}>Bowling</th>
+                <th colSpan={6}>Batting</th>
               </tr>
               <tr>
-                <th>Inn</th>
+                <th>Overs</th>
+                <th>Wkts</th>
+                <th>Avg</th>
+                <th>Econ</th>
+                <th>Best</th>
+                <th className="col-divider">Inn</th>
                 <th>NO</th>
                 <th>Runs</th>
                 <th>HS</th>
                 <th>Avg</th>
                 <th>50s</th>
-                <th className="col-divider">Overs</th>
-                <th>Wkts</th>
-                <th>Avg</th>
-                <th>Econ</th>
-                <th>Best</th>
               </tr>
             </thead>
             <tbody>
               {seasons.map((s) => (
                 <tr key={s.year}>
                   <td>{s.year}</td>
-                  <td>{s.batting.innings}</td>
+                  <td>{s.bowling.overs}</td>
+                  <td>{s.bowling.wickets}</td>
+                  <td>{formatAverage(s.bowling.average)}</td>
+                  <td>{s.bowling.economy.toFixed(2)}</td>
+                  <td>{bestBowling(s.bowling.bestBowling.wickets, s.bowling.bestBowling.runs)}</td>
+                  <td className="col-divider">{s.batting.innings}</td>
                   <td>{s.batting.notOuts}</td>
                   <td>{s.batting.runs}</td>
                   <td>
                     {s.batting.highScore}
                     {s.batting.highScoreNotOut ? '*' : ''}
                   </td>
-                  <td>{s.batting.average.toFixed(2)}</td>
+                  <td>{formatAverage(s.batting.average)}</td>
                   <td>{s.batting.fifties}</td>
-                  <td className="col-divider">{s.bowling.overs}</td>
-                  <td>{s.bowling.wickets}</td>
-                  <td>{s.bowling.average.toFixed(2)}</td>
-                  <td>{s.bowling.economy.toFixed(2)}</td>
-                  <td>{bestBowling(s.bowling.bestBowling.wickets, s.bowling.bestBowling.runs)}</td>
                 </tr>
               ))}
             </tbody>

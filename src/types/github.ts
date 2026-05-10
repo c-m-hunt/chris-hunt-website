@@ -22,7 +22,8 @@ export interface GitHubStats {
 
 export interface GitHubLanguage {
   name: string
-  bytes: number
+  /** Number of public repos with this as their primary language (active in the last year). */
+  repos: number
   percent: number
   color: string
 }

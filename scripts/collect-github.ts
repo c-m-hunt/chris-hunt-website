@@ -89,26 +89,24 @@ async function fetchJson<T>(
   return (await res.json()) as T
 }
 
-function aggregateLanguages(
-  perRepoBytes: Array<Record<string, number>>,
+function aggregatePrimaryLanguages(
+  primaries: Array<string | null>,
   limit = 8
 ): GitHubLanguage[] {
-  const totals = new Map<string, number>()
-  for (const repo of perRepoBytes) {
-    for (const [lang, bytes] of Object.entries(repo)) {
-      if (EXCLUDED_LANGUAGES.has(lang)) continue
-      totals.set(lang, (totals.get(lang) ?? 0) + bytes)
-    }
+  const counts = new Map<string, number>()
+  for (const lang of primaries) {
+    if (!lang || EXCLUDED_LANGUAGES.has(lang)) continue
+    counts.set(lang, (counts.get(lang) ?? 0) + 1)
   }
-  const grand = Array.from(totals.values()).reduce((a, b) => a + b, 0)
+  const grand = Array.from(counts.values()).reduce((a, b) => a + b, 0)
   if (grand === 0) return []
-  return Array.from(totals.entries())
-    .sort((a, b) => b[1] - a[1])
+  return Array.from(counts.entries())
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .slice(0, limit)
-    .map(([name, bytes]) => ({
+    .map(([name, repos]) => ({
       name,
-      bytes,
-      percent: Math.round((bytes / grand) * 1000) / 10,
+      repos,
+      percent: Math.round((repos / grand) * 1000) / 10,
       color: colorFor(name),
     }))
 }
@@ -215,21 +213,11 @@ async function collectViaRest(
   const nonForkRepos = repos.filter((r) => !r.fork)
   const totalStars = nonForkRepos.reduce((s, r) => s + r.stargazers_count, 0)
   const totalForks = nonForkRepos.reduce((s, r) => s + r.forks_count, 0)
-  const activeRepos = nonForkRepos.filter((r) => isActive(r.pushed_at))
-
-  const perRepoLangs: Array<Record<string, number>> = []
-  for (const repo of activeRepos) {
-    try {
-      const langs = await fetchJson<Record<string, number>>(
-        `https://api.github.com/repos/${username}/${repo.name}/languages`,
-        headers
-      )
-      perRepoLangs.push(langs)
-    } catch (err) {
-      console.warn(`[github] /languages call failed: ${(err as Error).message}`)
-      break
-    }
-  }
+  // REST `/users/{user}/repos` excludes private repos, so r.language already
+  // reflects only public primaries — no extra filter needed here.
+  const activePrimaries = nonForkRepos
+    .filter((r) => isActive(r.pushed_at))
+    .map((r) => r.language)
 
   const calendar = await fetchContributionCalendar(username)
 
@@ -256,23 +244,19 @@ async function collectViaRest(
       contributionsLastYear: calendar?.totalContributions ?? null,
       contributionsSource: calendar ? 'html' : 'unavailable',
     },
-    languages: aggregateLanguages(perRepoLangs),
+    languages: aggregatePrimaryLanguages(activePrimaries),
     contributionCalendar: calendar,
   }
-}
-
-interface GqlLanguageEdge {
-  size: number
-  node: { name: string; color: string | null }
 }
 
 interface GqlRepoNode {
   pushedAt: string | null
   stargazerCount: number
   forkCount: number
-  languages: { totalSize: number; edges: GqlLanguageEdge[] }
   isFork: boolean
   isArchived: boolean
+  isPrivate: boolean
+  primaryLanguage: { name: string; color: string | null } | null
 }
 
 interface GqlResponse {
@@ -325,6 +309,7 @@ query AggregateStats($login: String!) {
       ownerAffiliations: OWNER
       isFork: false
       isArchived: false
+      privacy: PUBLIC
     ) {
       totalCount
       nodes {
@@ -333,10 +318,8 @@ query AggregateStats($login: String!) {
         forkCount
         isFork
         isArchived
-        languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
-          totalSize
-          edges { size node { name color } }
-        }
+        isPrivate
+        primaryLanguage { name color }
       }
     }
   }
@@ -369,28 +352,33 @@ async function collectViaGraphql(
   const totalStars = repoNodes.reduce((s, r) => s + r.stargazerCount, 0)
   const totalForks = repoNodes.reduce((s, r) => s + r.forkCount, 0)
 
-  const totals = new Map<string, { bytes: number; color: string | null }>()
+  // Count primary languages across active public repos. We capture the
+  // GraphQL-supplied colour the first time we see each language so the bar
+  // matches GitHub's palette without needing colorFor() to know the rare ones.
+  const counts = new Map<string, { count: number; color: string | null }>()
   for (const r of repoNodes) {
+    if (r.isPrivate) continue
     if (!isActive(r.pushedAt)) continue
-    for (const e of r.languages.edges) {
-      if (EXCLUDED_LANGUAGES.has(e.node.name)) continue
-      const existing = totals.get(e.node.name) ?? { bytes: 0, color: null }
-      existing.bytes += e.size
-      if (!existing.color && e.node.color) existing.color = e.node.color
-      totals.set(e.node.name, existing)
+    const lang = r.primaryLanguage?.name
+    if (!lang || EXCLUDED_LANGUAGES.has(lang)) continue
+    const existing = counts.get(lang) ?? { count: 0, color: null }
+    existing.count += 1
+    if (!existing.color && r.primaryLanguage?.color) {
+      existing.color = r.primaryLanguage.color
     }
+    counts.set(lang, existing)
   }
-  const grand = Array.from(totals.values()).reduce((a, b) => a + b.bytes, 0)
+  const grand = Array.from(counts.values()).reduce((a, b) => a + b.count, 0)
   const languages: GitHubLanguage[] =
     grand === 0
       ? []
-      : Array.from(totals.entries())
-          .sort((a, b) => b[1].bytes - a[1].bytes)
+      : Array.from(counts.entries())
+          .sort((a, b) => b[1].count - a[1].count || a[0].localeCompare(b[0]))
           .slice(0, 8)
           .map(([name, v]) => ({
             name,
-            bytes: v.bytes,
-            percent: Math.round((v.bytes / grand) * 1000) / 10,
+            repos: v.count,
+            percent: Math.round((v.count / grand) * 1000) / 10,
             color: v.color ?? colorFor(name),
           }))
 

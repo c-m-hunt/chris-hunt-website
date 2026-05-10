@@ -11,7 +11,8 @@ export interface CricketBatting {
   runs: number
   highScore: number
   highScoreNotOut: boolean
-  average: number
+  /** null when there are no completed innings (always not out / DNB only). */
+  average: number | null
   strikeRate?: number | null
   fifties: number
   hundreds: number
@@ -27,7 +28,8 @@ export interface CricketBowling {
   maidens: number
   runs: number
   wickets: number
-  average: number
+  /** null when no wickets taken (avg = runs / wickets is undefined). */
+  average: number | null
   economy: number
   strikeRate: number
   bestBowling: CricketBestBowling
