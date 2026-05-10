@@ -60,7 +60,15 @@ function TwitterPanel() {
     <ul className="tw-grid">
       {twitter.posts.map((p) => (
         <li key={p.id} className="tw-card" data-kind={p.is_reply ? 'reply' : 'post'}>
-          <span className="pin">{p.is_reply ? 'REPLY' : 'POST'}</span>
+          <a
+            className="pin"
+            href={p.url}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={p.is_reply ? 'View reply on X' : 'View post on X'}
+          >
+            {p.is_reply ? 'REPLY' : 'POST'}
+          </a>
           <div className="meta">
             <span className="handle">
               <a href={p.url} target="_blank" rel="noreferrer">
