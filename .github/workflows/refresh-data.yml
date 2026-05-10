@@ -22,7 +22,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75
     env:
       # ---- Secrets (set under Settings → Secrets and variables → Actions → Secrets) ----
       GH_PAT: ${{ secrets.GH_PAT }}
@@ -95,12 +95,44 @@ jobs:
           python3 -m pip install --upgrade pip
           python3 -m pip install -r requirements.txt
 
-      - name: Run all collectors
-        # `collect:all` exits 0 unless EVERY collector fails, so we already get
-        # partial-success behaviour. `continue-on-error: true` is belt-and-braces
-        # so a hard crash here doesn't skip the change-detection step below.
+      # Run each collector as its own step with `continue-on-error: true` so
+      # one slow / failing source doesn't block the others. Cricket gets a
+      # generous step-level timeout because the first cold-cache run iterates
+      # ~1500 matches at a 500ms throttle.
+      - name: Collect github
         continue-on-error: true
-        run: npm run collect:all
+        timeout-minutes: 5
+        run: npm run collect:github
+
+      - name: Collect untappd
+        continue-on-error: true
+        timeout-minutes: 5
+        run: npm run collect:untappd
+
+      - name: Collect twitter
+        continue-on-error: true
+        timeout-minutes: 5
+        run: npm run collect:twitter
+
+      - name: Collect instagram
+        continue-on-error: true
+        timeout-minutes: 10
+        run: npm run collect:instagram
+
+      - name: Collect setlist
+        continue-on-error: true
+        timeout-minutes: 5
+        run: npm run collect:setlist
+
+      - name: Collect spotify
+        continue-on-error: true
+        timeout-minutes: 5
+        run: npm run collect:spotify
+
+      - name: Collect cricket
+        continue-on-error: true
+        timeout-minutes: 50
+        run: npm run collect:cricket
 
       - name: Detect data changes
         id: diff
