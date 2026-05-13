@@ -5,8 +5,11 @@
 //
 // CLI flags:
 //   --no-cache         skip the on-disk cache and force-refetch everything
-//   --seasons 2024     restrict to one or more comma-separated seasons
-//                      (smoke-testing aid; default is 2010..currentYear)
+//   --seasons 2024     restrict to one or more comma-separated seasons.
+//                      When set, existing cricket.json is loaded and the
+//                      fresh seasons are merged with historical ones so that
+//                      passing --seasons $(date +%Y) on the daily cron only
+//                      re-fetches the current year (all others preserved).
 
 import 'dotenv/config'
 
@@ -359,6 +362,7 @@ function finaliseBatting(acc: BattingAccumulator): CricketBatting {
   out.innings = acc.innings
   out.notOuts = acc.notOuts
   out.runs = acc.runs
+  out.balls = acc.balls
   out.highScore = acc.highScore
   out.highScoreNotOut = acc.highScoreNotOut
   out.fifties = acc.fifties
@@ -372,6 +376,97 @@ function finaliseBatting(acc: BattingAccumulator): CricketBatting {
   out.strikeRate =
     acc.balls > 0 ? Math.round((acc.runs / acc.balls) * 10000) / 100 : null
   return out
+}
+
+function finalisedOversToApproxBalls(overs: number): number {
+  const whole = Math.floor(overs)
+  const rem = Math.round((overs - whole) * 10)
+  return whole * 6 + rem
+}
+
+// Recompute career totals from an array of already-finalised CricketSeason
+// objects. Used in incremental mode when merging fresh seasons with historical
+// data loaded from the existing JSON (where raw accumulators aren't available).
+function computeCareerFromFinalised(seasons: CricketSeason[]): CricketCareer {
+  let batMatches = 0, innings = 0, notOuts = 0, runs = 0, balls = 0
+  let highScore = 0, highScoreNotOut = false
+  let fifties = 0, hundreds = 0, fours = 0, sixes = 0, ducks = 0
+
+  let bowlMatches = 0, bowlInnings = 0, bowlBalls = 0
+  let maidens = 0, bowlRuns = 0, wickets = 0
+  let best: CricketBestBowling = { wickets: 0, runs: 0, matchId: 0 }
+  let fiveWicketHauls = 0
+
+  let catches = 0, stumpings = 0, runOuts = 0
+
+  for (const s of seasons) {
+    const b = s.batting
+    batMatches += b.matches
+    innings += b.innings
+    notOuts += b.notOuts
+    runs += b.runs
+    balls += b.balls ?? 0
+    fours += b.fours
+    sixes += b.sixes
+    ducks += b.ducks
+    fifties += b.fifties
+    hundreds += b.hundreds
+    if (b.highScore > highScore) {
+      highScore = b.highScore
+      highScoreNotOut = b.highScoreNotOut
+    }
+
+    const bw = s.bowling
+    bowlMatches += bw.matches
+    bowlInnings += bw.innings
+    bowlBalls += finalisedOversToApproxBalls(bw.overs)
+    maidens += bw.maidens
+    bowlRuns += bw.runs
+    wickets += bw.wickets
+    fiveWicketHauls += bw.fiveWicketHauls
+    const isBetter =
+      bw.bestBowling.wickets > best.wickets ||
+      (bw.bestBowling.wickets === best.wickets && bw.bestBowling.runs < best.runs)
+    if (bw.bestBowling.matchId !== 0 && (best.matchId === 0 || isBetter)) {
+      best = { ...bw.bestBowling }
+    }
+
+    catches += s.fielding.catches
+    stumpings += s.fielding.stumpings
+    runOuts += s.fielding.runOuts
+  }
+
+  const dismissals = innings - notOuts
+  return {
+    batting: {
+      matches: batMatches, innings, notOuts, runs, balls,
+      highScore, highScoreNotOut,
+      average: dismissals > 0 ? Math.round((runs / dismissals) * 100) / 100 : null,
+      strikeRate: balls > 0 ? Math.round((runs / balls) * 10000) / 100 : null,
+      fifties, hundreds, fours, sixes, ducks,
+    },
+    bowling: {
+      matches: bowlMatches, innings: bowlInnings,
+      overs: ballsToOvers(bowlBalls),
+      maidens, runs: bowlRuns, wickets,
+      average: wickets > 0 ? Math.round((bowlRuns / wickets) * 100) / 100 : null,
+      economy: bowlBalls > 0 ? Math.round(((bowlRuns * 6) / bowlBalls) * 100) / 100 : 0,
+      strikeRate: wickets > 0 ? Math.round((bowlBalls / wickets) * 10) / 10 : 0,
+      bestBowling: best,
+      fiveWicketHauls,
+    },
+    fielding: { catches, stumpings, runOuts },
+  }
+}
+
+async function loadExistingData(file: string): Promise<CricketData | null> {
+  if (!existsSync(file)) return null
+  try {
+    const raw = await readFile(file, 'utf8')
+    return JSON.parse(raw) as CricketData
+  } catch {
+    return null
+  }
 }
 
 function finaliseBowling(acc: BowlingAccumulator): CricketBowling {
@@ -486,71 +581,101 @@ async function main(): Promise<void> {
       ? opts.seasons
       : Array.from({ length: currentYear - 2010 + 1 }, (_, i) => 2010 + i)
 
+  // In incremental mode (explicit --seasons), load the existing JSON so we can
+  // merge historical seasons that aren't being re-fetched this run.
+  let historicalSeasons: CricketSeason[] | null = null
+  if (opts.seasons && opts.seasons.length > 0) {
+    const existing = await loadExistingData(dataPath('cricket'))
+    if (existing) {
+      historicalSeasons = existing.seasons
+      console.log(
+        `[cricket] incremental mode: loaded ${historicalSeasons.length} historical seasons from existing JSON`
+      )
+    }
+  }
+
   const seasonAcc: SeasonAccumulator[] = []
   let playerName = 'Chris Hunt'
   let totalMatchesProcessed = 0
 
   // Build the JSON snapshot from the current season accumulator state and
   // write it to disk. Called after each season completes so that a timeout
-  // mid-run still produces useful partial data (the cricket back-catalogue
-  // can't always finish in a single CI window on a cold cache).
-  async function writeSnapshot(): Promise<void> {
-    const careerBat = newBat()
-    const careerBowl = newBowl()
-    const careerField = newField()
-    for (const s of seasonAcc) {
-      for (const m of s.bat.matches) careerBat.matches.add(m)
-      careerBat.innings += s.bat.innings
-      careerBat.notOuts += s.bat.notOuts
-      careerBat.runs += s.bat.runs
-      careerBat.balls += s.bat.balls
-      careerBat.fours += s.bat.fours
-      careerBat.sixes += s.bat.sixes
-      careerBat.ducks += s.bat.ducks
-      careerBat.fifties += s.bat.fifties
-      careerBat.hundreds += s.bat.hundreds
-      if (s.bat.highScore > careerBat.highScore) {
-        careerBat.highScore = s.bat.highScore
-        careerBat.highScoreNotOut = s.bat.highScoreNotOut
+  // mid-run still produces useful partial data.
+  //
+  // historicalSeasons: seasons loaded from existing JSON that are NOT being
+  // re-fetched in this run. When set (incremental mode), they are merged with
+  // the freshly computed seasons and career is recomputed across the full set.
+  async function writeSnapshot(historicalSeasons: CricketSeason[] | null): Promise<void> {
+    const freshSeasons: CricketSeason[] = seasonAcc.map((s) => ({
+      year: s.year,
+      batting: finaliseBatting(s.bat),
+      bowling: finaliseBowling(s.bowl),
+      fielding: finaliseFielding(s.field),
+    }))
+
+    let allSeasons: CricketSeason[]
+    let career: CricketCareer
+
+    if (historicalSeasons) {
+      // Incremental: merge historical (not re-fetched) with fresh (re-fetched)
+      allSeasons = [
+        ...historicalSeasons.filter((h) => !freshSeasons.some((f) => f.year === h.year)),
+        ...freshSeasons,
+      ].sort((a, b) => b.year - a.year)
+      career = computeCareerFromFinalised(allSeasons)
+    } else {
+      // Full run: compute career directly from raw accumulators (exact)
+      allSeasons = freshSeasons.sort((a, b) => b.year - a.year)
+      const careerBat = newBat()
+      const careerBowl = newBowl()
+      const careerField = newField()
+      for (const s of seasonAcc) {
+        for (const m of s.bat.matches) careerBat.matches.add(m)
+        careerBat.innings += s.bat.innings
+        careerBat.notOuts += s.bat.notOuts
+        careerBat.runs += s.bat.runs
+        careerBat.balls += s.bat.balls
+        careerBat.fours += s.bat.fours
+        careerBat.sixes += s.bat.sixes
+        careerBat.ducks += s.bat.ducks
+        careerBat.fifties += s.bat.fifties
+        careerBat.hundreds += s.bat.hundreds
+        if (s.bat.highScore > careerBat.highScore) {
+          careerBat.highScore = s.bat.highScore
+          careerBat.highScoreNotOut = s.bat.highScoreNotOut
+        }
+        for (const m of s.bowl.matches) careerBowl.matches.add(m)
+        careerBowl.innings += s.bowl.innings
+        careerBowl.balls += s.bowl.balls
+        careerBowl.maidens += s.bowl.maidens
+        careerBowl.runs += s.bowl.runs
+        careerBowl.wickets += s.bowl.wickets
+        careerBowl.fiveWicketHauls += s.bowl.fiveWicketHauls
+        const isBetter =
+          s.bowl.best.wickets > careerBowl.best.wickets ||
+          (s.bowl.best.wickets === careerBowl.best.wickets &&
+            s.bowl.best.runs < careerBowl.best.runs)
+        if (s.bowl.best.matchId !== 0 && (careerBowl.best.matchId === 0 || isBetter)) {
+          careerBowl.best = { ...s.bowl.best }
+        }
+        careerField.catches += s.field.catches
+        careerField.stumpings += s.field.stumpings
+        careerField.runOuts += s.field.runOuts
       }
-      for (const m of s.bowl.matches) careerBowl.matches.add(m)
-      careerBowl.innings += s.bowl.innings
-      careerBowl.balls += s.bowl.balls
-      careerBowl.maidens += s.bowl.maidens
-      careerBowl.runs += s.bowl.runs
-      careerBowl.wickets += s.bowl.wickets
-      careerBowl.fiveWicketHauls += s.bowl.fiveWicketHauls
-      const isBetter =
-        s.bowl.best.wickets > careerBowl.best.wickets ||
-        (s.bowl.best.wickets === careerBowl.best.wickets &&
-          s.bowl.best.runs < careerBowl.best.runs)
-      if (s.bowl.best.matchId !== 0 && (careerBowl.best.matchId === 0 || isBetter)) {
-        careerBowl.best = { ...s.bowl.best }
+      career = {
+        batting: finaliseBatting(careerBat),
+        bowling: finaliseBowling(careerBowl),
+        fielding: finaliseFielding(careerField),
       }
-      careerField.catches += s.field.catches
-      careerField.stumpings += s.field.stumpings
-      careerField.runOuts += s.field.runOuts
     }
-    const career: CricketCareer = {
-      batting: finaliseBatting(careerBat),
-      bowling: finaliseBowling(careerBowl),
-      fielding: finaliseFielding(careerField),
-    }
-    const seasonsOut: CricketSeason[] = seasonAcc
-      .map((s) => ({
-        year: s.year,
-        batting: finaliseBatting(s.bat),
-        bowling: finaliseBowling(s.bowl),
-        fielding: finaliseFielding(s.field),
-      }))
-      .sort((a, b) => b.year - a.year)
+
     const data: CricketData = {
       generatedAt: nowIso(),
       playerId: playerIdNum,
       playerName,
       club: { id: siteId, name: clubName },
       career,
-      seasons: seasonsOut,
+      seasons: allSeasons,
     }
     await writeJson(dataPath('cricket'), data)
   }
@@ -630,14 +755,14 @@ async function main(): Promise<void> {
         seasonAcc.push(acc)
         // Snapshot after each completed season so a timeout mid-run still
         // leaves usable JSON on disk.
-        await writeSnapshot()
+        await writeSnapshot(historicalSeasons)
         console.log(
           `[cricket] season ${year}: ok (${matches.length} matches scanned, snapshot written)`
         )
       }
     }
 
-    await writeSnapshot()
+    await writeSnapshot(historicalSeasons)
     console.log(
       `[cricket] processed ${totalMatchesProcessed} matches across ${seasonAcc.length} seasons`
     )

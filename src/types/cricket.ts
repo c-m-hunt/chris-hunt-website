@@ -14,6 +14,8 @@ export interface CricketBatting {
   /** null when there are no completed innings (always not out / DNB only). */
   average: number | null
   strikeRate?: number | null
+  /** Total balls faced — stored so career strikeRate can be recomputed when merging incremental runs. */
+  balls?: number
   fifties: number
   hundreds: number
   fours: number

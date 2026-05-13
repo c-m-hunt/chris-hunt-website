@@ -22,7 +22,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 30
     env:
       # ---- Secrets (set under Settings → Secrets and variables → Actions → Secrets) ----
       GH_PAT: ${{ secrets.GH_PAT }}
@@ -133,8 +133,11 @@ jobs:
 
       - name: Collect cricket
         continue-on-error: true
-        timeout-minutes: 50
-        run: npm run collect:cricket
+        timeout-minutes: 10
+        # Only re-fetch the current year's matches. The collector loads the
+        # existing cricket.json and merges the updated season with historical
+        # data, so 16 years of history are preserved without re-fetching them.
+        run: npm run collect:cricket -- --seasons $(date -u +%Y)
 
       - name: Detect data changes
         id: diff
