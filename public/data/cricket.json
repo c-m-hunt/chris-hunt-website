@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T07:22:24.994Z",
+  "generatedAt": "2026-05-13T09:04:35.755Z",
   "playerId": 12761,
   "playerName": "Chris Hunt",
   "club": {
@@ -12,10 +12,11 @@
       "innings": 134,
       "notOuts": 57,
       "runs": 772,
+      "balls": 18,
       "highScore": 39,
       "highScoreNotOut": false,
       "average": 10.03,
-      "strikeRate": 86.35,
+      "strikeRate": 4288.89,
       "fifties": 0,
       "hundreds": 0,
       "fours": 71,
@@ -61,7 +62,8 @@
         "hundreds": 0,
         "fours": 5,
         "sixes": 0,
-        "ducks": 0
+        "ducks": 0,
+        "balls": 18
       },
       "bowling": {
         "matches": 1,
