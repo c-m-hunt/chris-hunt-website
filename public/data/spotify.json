@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T06:51:59.237Z",
+  "generatedAt": "2026-05-15T07:31:16.399Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -238,6 +238,25 @@
       }
     },
     {
+      "id": "6uarvsJtpQmkzGrDBIGzOf",
+      "name": "For The Dead",
+      "url": "https://open.spotify.com/track/6uarvsJtpQmkzGrDBIGzOf",
+      "durationMs": 204946,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Be My Light, Be My Guide EP",
+        "url": "https://open.spotify.com/album/1RnMqqK1QoOG8quEbDoKnR",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0224d23a36cd93e982bb107c59",
+        "releaseDate": "1994-12-01"
+      }
+    },
+    {
       "id": "63Tl9k1sH8tznn3bqoMuyF",
       "name": "Waka Waka (This Time for Africa) - K-Mix",
       "url": "https://open.spotify.com/track/63Tl9k1sH8tznn3bqoMuyF",
@@ -273,25 +292,6 @@
         "url": "https://open.spotify.com/album/4brJ6hWYqPj1sccgk390dC",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e02aa3c0529b9fc1fee2d0acc66",
         "releaseDate": "1983-02-04"
-      }
-    },
-    {
-      "id": "1eRyJZwEo3ewJq4hDzFhXO",
-      "name": "Bedbugs and Ballyhoo",
-      "url": "https://open.spotify.com/track/1eRyJZwEo3ewJq4hDzFhXO",
-      "durationMs": 209120,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
-        }
-      ],
-      "album": {
-        "name": "Echo & The Bunnymen",
-        "url": "https://open.spotify.com/album/6HvylYOCXVdHFtpODOiQCo",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0268bd6aaa6e1bf0efcdb43ba8",
-        "releaseDate": "1987-07-06"
       }
     }
   ]
