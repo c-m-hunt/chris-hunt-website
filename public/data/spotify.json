@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T08:13:04.731Z",
+  "generatedAt": "2026-05-19T07:54:50.696Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -78,13 +78,6 @@
       ]
     },
     {
-      "id": "3rIZMv9rysU7JkLzEaC5Jp",
-      "name": "Snow Patrol",
-      "url": "https://open.spotify.com/artist/3rIZMv9rysU7JkLzEaC5Jp",
-      "imageUrl": "https://i.scdn.co/image/ab676161000051749b328846dc38b0a620da1ce2",
-      "genres": []
-    },
-    {
       "id": "11wRdbnoYqRddKBrpHt4Ue",
       "name": "Kasabian",
       "url": "https://open.spotify.com/artist/11wRdbnoYqRddKBrpHt4Ue",
@@ -94,6 +87,13 @@
         "indie",
         "indie rock"
       ]
+    },
+    {
+      "id": "3rIZMv9rysU7JkLzEaC5Jp",
+      "name": "Snow Patrol",
+      "url": "https://open.spotify.com/artist/3rIZMv9rysU7JkLzEaC5Jp",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051749b328846dc38b0a620da1ce2",
+      "genres": []
     },
     {
       "id": "14Gi3Uph96lpNB3utkoVAD",
