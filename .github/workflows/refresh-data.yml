@@ -81,12 +81,18 @@ jobs:
 
       - name: Cache Instagram session
         # Persisting the IG session between runs avoids re-logging in (which is
-        # a major flag for IG). Skip when IG is disabled.
+        # a major flag for IG). Dynamic primary key + restore-keys prefix so
+        # every run saves a fresh entry: when the python collector self-heals
+        # after a `login_required` (sessionid rotation), the new session.json
+        # actually rolls forward into the next run instead of getting stuck on
+        # a stale static cache. Skip when IG is disabled.
         if: env.INSTAGRAM_ENABLED == 'true'
         uses: actions/cache@v4
         with:
           path: .cache/instagram
-          key: instagram-session-v1
+          key: instagram-session-v2-${{ github.run_id }}
+          restore-keys: |
+            instagram-session-v2-
 
       - name: Install Node deps
         run: npm ci
@@ -98,40 +104,51 @@ jobs:
           python3 -m pip install -r requirements.txt
 
       # Run each collector as its own step with `continue-on-error: true` so
-      # one slow / failing source doesn't block the others. Cricket gets a
-      # generous step-level timeout because the first cold-cache run iterates
-      # ~1500 matches at a 500ms throttle.
+      # one slow / failing source doesn't block the others. Each step has an
+      # `id:` so the final `Report collector outcomes` step can inspect the
+      # individual outcomes and fail the job if any *critical* collector broke
+      # (twitter is best-effort because rettiwt-api breaks ~quarterly when X
+      # rotates its internal endpoints). Cricket gets a generous step-level
+      # timeout because the first cold-cache run iterates ~1500 matches at a
+      # 500ms throttle.
       - name: Collect github
+        id: collect-github
         continue-on-error: true
         timeout-minutes: 5
         run: npm run collect:github
 
       - name: Collect untappd
+        id: collect-untappd
         continue-on-error: true
         timeout-minutes: 5
         run: npm run collect:untappd
 
       - name: Collect twitter
+        id: collect-twitter
         continue-on-error: true
         timeout-minutes: 5
         run: npm run collect:twitter
 
       - name: Collect instagram
+        id: collect-instagram
         continue-on-error: true
         timeout-minutes: 10
         run: npm run collect:instagram
 
       - name: Collect setlist
+        id: collect-setlist
         continue-on-error: true
         timeout-minutes: 5
         run: npm run collect:setlist
 
       - name: Collect spotify
+        id: collect-spotify
         continue-on-error: true
         timeout-minutes: 5
         run: npm run collect:spotify
 
       - name: Collect cricket
+        id: collect-cricket
         continue-on-error: true
         timeout-minutes: 10
         # Only re-fetch the current year's matches. The collector loads the
@@ -159,3 +176,59 @@ jobs:
           git add public/data
           git commit -m "chore: refresh data $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Report collector outcomes
+        # Last step on purpose: lets partial-success data still get committed
+        # above, then surfaces any collector failure as a failed job so GitHub
+        # sends its default "workflow failed" email. Twitter is intentionally
+        # excluded from the critical set — rettiwt-api breaks too often to
+        # page on.
+        if: always()
+        env:
+          GITHUB_OUTCOME: ${{ steps.collect-github.outcome }}
+          UNTAPPD_OUTCOME: ${{ steps.collect-untappd.outcome }}
+          TWITTER_OUTCOME: ${{ steps.collect-twitter.outcome }}
+          INSTAGRAM_OUTCOME: ${{ steps.collect-instagram.outcome }}
+          SETLIST_OUTCOME: ${{ steps.collect-setlist.outcome }}
+          SPOTIFY_OUTCOME: ${{ steps.collect-spotify.outcome }}
+          CRICKET_OUTCOME: ${{ steps.collect-cricket.outcome }}
+        run: |
+          {
+            echo "## Collector outcomes"
+            echo
+            echo "| Collector | Outcome | Critical |"
+            echo "| --- | --- | --- |"
+            echo "| github    | $GITHUB_OUTCOME    | yes |"
+            echo "| untappd   | $UNTAPPD_OUTCOME   | yes |"
+            echo "| twitter   | $TWITTER_OUTCOME   | no  |"
+            echo "| instagram | $INSTAGRAM_OUTCOME | yes |"
+            echo "| setlist   | $SETLIST_OUTCOME   | yes |"
+            echo "| spotify   | $SPOTIFY_OUTCOME   | yes |"
+            echo "| cricket   | $CRICKET_OUTCOME   | yes |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          failed=()
+          for entry in \
+            "github:$GITHUB_OUTCOME" \
+            "untappd:$UNTAPPD_OUTCOME" \
+            "instagram:$INSTAGRAM_OUTCOME" \
+            "setlist:$SETLIST_OUTCOME" \
+            "spotify:$SPOTIFY_OUTCOME" \
+            "cricket:$CRICKET_OUTCOME"; do
+            name="${entry%%:*}"
+            outcome="${entry##*:}"
+            if [ "$outcome" = "failure" ]; then
+              failed+=("$name")
+            fi
+          done
+
+          if [ "$TWITTER_OUTCOME" = "failure" ]; then
+            echo "::warning::twitter collector failed (non-critical)"
+          fi
+
+          if [ ${#failed[@]} -gt 0 ]; then
+            joined="${failed[*]}"
+            echo "::error::critical collector(s) failed: $joined"
+            exit 1
+          fi
+          echo "All critical collectors succeeded."

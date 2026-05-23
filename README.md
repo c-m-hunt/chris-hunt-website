@@ -135,7 +135,7 @@ instagrapi's full login flow trips IG's IP-blacklist almost immediately from a n
 3. Paste it into `.env` as `INSTAGRAM_SESSIONID=…`.
 4. First `npm run collect:instagram` run uses `login_by_sessionid()` and dumps a full instagrapi `session.json` to `.cache/instagram/`. Subsequent runs reuse the cached session and don't need the bootstrap.
 
-IG sessions last 1–3 months. When it expires, the collector errors out and you redo step 1–3.
+IG sessions last 1–3 months. When it expires the collector errors out with `fetch failed: login_required` (often preceded by `Public user lookup failed ... 429`). Redo step 1–3 and update the `INSTAGRAM_SESSIONID` repo secret — the script will detect the stale cached session, drop `.cache/instagram/session.json`, and re-bootstrap on the next run.
 
 ### Caches
 
@@ -145,8 +145,8 @@ Both `.cache/cricket/` and `.cache/instagram/` are gitignored. The CI workflow p
 
 The repo ships two GitHub Actions workflows under `.github/workflows/`:
 
-- **`refresh-data.yml`** &mdash; runs every collector daily at 04:00 UTC (and on demand), commits any changes under `public/data/` back to `main`.
-- **`deploy.yml`** &mdash; builds the Vite SPA and deploys to GitHub Pages. Triggered on push to `main`, on demand, and when `refresh-data.yml` finishes successfully. So a successful refresh auto-deploys.
+- **`refresh-data.yml`** &mdash; runs every collector daily at 04:00 UTC (and on demand), commits any changes under `public/data/` back to `main`. Each collector runs with `continue-on-error: true` so one bad source doesn't block the rest, then a final "Report collector outcomes" step writes a per-collector summary table and exits non-zero if any **critical** collector (everything except twitter) failed. That marks the run as failed in the Actions UI and triggers GitHub's default "workflow failed" email so silent breakage gets noticed. The commit/push step runs before the report step, so partial-success data still ships.
+- **`deploy.yml`** &mdash; builds the Vite SPA and deploys to GitHub Pages. Triggered on push to `main`, on demand, and when `refresh-data.yml` finishes successfully. So a successful refresh auto-deploys. (Partial-success refreshes still deploy via the `push` trigger fired by the refresh's commit, even when the report step then fails the run.)
 
 ### Secrets and variables
 

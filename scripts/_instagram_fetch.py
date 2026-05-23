@@ -100,6 +100,23 @@ def media_entries(m) -> list[dict]:
     ]
 
 
+def _bootstrap(cl, sessionid, username, password) -> None:
+    """Fresh auth from sessionid (preferred) or username/password."""
+    if sessionid:
+        cl.login_by_sessionid(sessionid)
+    else:
+        cl.login(username, password)
+
+
+def _is_stale_session_error(exc: Exception) -> bool:
+    """Detect IG telling us the cached session is no longer valid."""
+    s = f"{type(exc).__name__}: {exc}".lower()
+    return any(
+        marker in s
+        for marker in ("login_required", "loginrequired", "please wait a few minutes")
+    )
+
+
 def main() -> int:
     try:
         from instagrapi import Client  # type: ignore[import-not-found]
@@ -131,28 +148,46 @@ def main() -> int:
     session_path.parent.mkdir(parents=True, exist_ok=True)
 
     cl = Client()
+    used_fresh_login = False
     try:
         if session_path.exists():
-            # Reuse an established session if we have one cached
             cl.load_settings(str(session_path))
-            if username and password:
-                cl.login(username, password)
-        elif sessionid:
-            # First-time bootstrap from a browser-extracted sessionid
-            cl.login_by_sessionid(sessionid)
         else:
-            cl.login(username, password)
+            _bootstrap(cl, sessionid, username, password)
+            used_fresh_login = True
         cl.dump_settings(str(session_path))
     except Exception as exc:  # noqa: BLE001
         print(f"login failed: {exc}", file=sys.stderr)
         return 1
 
-    try:
+    def fetch():
         user_id = cl.user_id_from_username(target)
-        medias = cl.user_medias(user_id, amount=limit)
+        return cl.user_medias(user_id, amount=limit)
+
+    try:
+        medias = fetch()
     except Exception as exc:  # noqa: BLE001
-        print(f"fetch failed: {exc}", file=sys.stderr)
-        return 1
+        # Cached session is stale (sessionid was rotated or IG invalidated it).
+        # Burn the cache, re-bootstrap from the configured sessionid, and retry
+        # once. Without this the workflow stays broken until the cache key bumps
+        # even after the user updates INSTAGRAM_SESSIONID.
+        if _is_stale_session_error(exc) and not used_fresh_login and (sessionid or (username and password)):
+            print(f"cached session invalid ({exc}); re-bootstrapping", file=sys.stderr)
+            try:
+                session_path.unlink(missing_ok=True)
+            except OSError:
+                pass
+            cl = Client()
+            try:
+                _bootstrap(cl, sessionid, username, password)
+                cl.dump_settings(str(session_path))
+                medias = fetch()
+            except Exception as exc2:  # noqa: BLE001
+                print(f"fetch failed after re-bootstrap: {exc2}", file=sys.stderr)
+                return 1
+        else:
+            print(f"fetch failed: {exc}", file=sys.stderr)
+            return 1
 
     posts = []
     for m in medias:
