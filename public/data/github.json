@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T08:00:22.308Z",
+  "generatedAt": "2026-05-24T07:26:54.085Z",
   "username": "c-m-hunt",
   "profile": {
     "name": "Chris Hunt",
@@ -38,43 +38,6 @@
   "contributionCalendar": {
     "totalContributions": 1726,
     "weeks": [
-      [
-        {
-          "date": "2025-05-18",
-          "count": 2,
-          "level": 1
-        },
-        {
-          "date": "2025-05-19",
-          "count": 0,
-          "level": 0
-        },
-        {
-          "date": "2025-05-20",
-          "count": 2,
-          "level": 1
-        },
-        {
-          "date": "2025-05-21",
-          "count": 2,
-          "level": 1
-        },
-        {
-          "date": "2025-05-22",
-          "count": 2,
-          "level": 1
-        },
-        {
-          "date": "2025-05-23",
-          "count": 2,
-          "level": 1
-        },
-        {
-          "date": "2025-05-24",
-          "count": 0,
-          "level": 0
-        }
-      ],
       [
         {
           "date": "2025-05-25",
@@ -1997,6 +1960,13 @@
           "date": "2026-05-23",
           "count": 1,
           "level": 1
+        }
+      ],
+      [
+        {
+          "date": "2026-05-24",
+          "count": 0,
+          "level": 0
         }
       ]
     ]
