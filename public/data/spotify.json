@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T07:58:16.135Z",
+  "generatedAt": "2026-05-27T08:10:49.684Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -26,6 +26,16 @@
       ]
     },
     {
+      "id": "2evydP72Z45DouM4uMGsIE",
+      "name": "Ash",
+      "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000517498682e9f2a5bd699d19fc54a",
+      "genres": [
+        "britpop",
+        "power pop"
+      ]
+    },
+    {
       "id": "0fgYKF9Avljex0L9Wt5b8Z",
       "name": "Echo & the Bunnymen",
       "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z",
@@ -34,16 +44,6 @@
         "new wave",
         "post-punk",
         "gothic rock"
-      ]
-    },
-    {
-      "id": "2evydP72Z45DouM4uMGsIE",
-      "name": "Ash",
-      "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE",
-      "imageUrl": "https://i.scdn.co/image/ab6761610000517498682e9f2a5bd699d19fc54a",
-      "genres": [
-        "britpop",
-        "power pop"
       ]
     },
     {
@@ -96,13 +96,11 @@
       "genres": []
     },
     {
-      "id": "14Gi3Uph96lpNB3utkoVAD",
-      "name": "Hard-Fi",
-      "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
-      "genres": [
-        "britpop"
-      ]
+      "id": "6zlR5ttMfMNmwf2lecU9Cc",
+      "name": "Sam Fender",
+      "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
+      "genres": []
     }
   ],
   "topTracks": [
