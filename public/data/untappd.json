@@ -1,8 +1,47 @@
 {
-  "generatedAt": "2026-06-03T09:00:54.473Z",
+  "generatedAt": "2026-06-04T08:24:52.586Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1575238778",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575238778",
+      "checkedInAt": "2026-06-04T01:57:00.000Z",
+      "beer": "Berry Lemon Sour",
+      "brewery": "Code Beer Co.",
+      "venue": "Graduate by Hilton Lincoln",
+      "rating": 3.75,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-352763_21b54.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-352763_21b54.jpeg"
+    },
+    {
+      "id": "1575144862",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575144862",
+      "checkedInAt": "2026-06-03T18:02:06.000Z",
+      "beer": "Belgian White",
+      "brewery": "Blue Moon Brewing Company",
+      "venue": "Sweet Georgia's Juke Joint",
+      "rating": 3.25,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-3839_e7733_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-127804_1a670.jpeg"
+    },
+    {
+      "id": "1575103744",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575103744",
+      "checkedInAt": "2026-06-03T13:46:28.000Z",
+      "beer": "420 Extra Pale Ale",
+      "brewery": "SweetWater Brewing Company",
+      "venue": null,
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5912_bb69b_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1224_32b19.jpeg"
+    },
     {
       "id": "1563539574",
       "url": "https://untappd.com/user/cmhunt/checkin/1563539574",
@@ -613,50 +652,11 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5548803_610c6_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1179_b868c.jpeg"
-    },
-    {
-      "id": "1394921861",
-      "url": "https://untappd.com/user/cmhunt/checkin/1394921861",
-      "checkedInAt": "2024-06-30T21:59:50.000Z",
-      "beer": "Hobo Chic",
-      "brewery": "Zony Mash Beer Project",
-      "venue": "30°/-90°",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-3448088_8efaa_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-435907_94d93.jpeg"
-    },
-    {
-      "id": "1394845369",
-      "url": "https://untappd.com/user/cmhunt/checkin/1394845369",
-      "checkedInAt": "2024-06-30T19:02:46.000Z",
-      "beer": "Just Jam",
-      "brewery": "Gnarly Barley Brewing",
-      "venue": "Tracey's",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": "https://images.untp.beer/crop?width=1280&height=1280&stripmeta=true&url=https://untappd.s3.amazonaws.com/photos/2024_06_30/386f934ef295e92e7adc9ed6d42ead43_c_1394845369_raw.jpg",
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5332302_ca372_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-16570_39ce5.jpeg"
-    },
-    {
-      "id": "1394792032",
-      "url": "https://untappd.com/user/cmhunt/checkin/1394792032",
-      "checkedInAt": "2024-06-30T17:04:22.000Z",
-      "beer": "Jucifer",
-      "brewery": "Gnarly Barley Brewing",
-      "venue": "Tracey's",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2038053_8a8fb_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-16570_39ce5.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.41,
+    "averageRating": 3.37,
     "topBreweries": [
       {
         "name": "Abita Brewing Company",
@@ -675,20 +675,28 @@
         "count": 2
       },
       {
-        "name": "Gnarly Barley Brewing",
+        "name": "Kulmbacher Brauerei",
         "count": 2
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 554,
-    "uniqueBeers": 401,
-    "totalBadges": 575,
+    "totalCheckins": 557,
+    "uniqueBeers": 403,
+    "totalBadges": 579,
     "totalFriends": 9,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
   "badges": [
+    {
+      "id": "1395950848",
+      "name": "Beer Gear Summer Giveaway",
+      "description": "Chill Out. Gear Up. Win Big. We've teamed up with New Trail Brewing, Bushnell, Lems Shoes, RovR, Thule, and Tifosi Optics, our friends who live and breathe outdoor beer life, to put together one seriously stacked summer prize package. Every outdoor check-in gets you an entry to a free giveaway!",
+      "imageUrl": "https://assets.untappd.com/badges/BeerGear-Summer-2026-Badge_1000x1000.jpg",
+      "earnedAt": "2026-06-03T13:46:28.000Z",
+      "level": null
+    },
     {
       "id": "1385131666",
       "name": "For the Can",
@@ -776,14 +784,6 @@
       "imageUrl": "https://assets.untappd.com/badges/Punch_Untappd_Badge-01_lg.jpg",
       "earnedAt": "2024-07-01T22:04:50.000Z",
       "level": null
-    },
-    {
-      "id": "1215770996",
-      "name": "Draft City",
-      "description": "Fresh from the tap is one of the best ways to enjoy a beer. Just try to use a glass and not drink directly from the tap, as tempting as it may be. That's 5 checkins with the serving style of Draft. Try 5 more for Level 2!",
-      "imageUrl": "https://assets.untappd.com/badges/bdg_DraftCity_lg.jpg",
-      "earnedAt": "2024-06-30T21:59:51.000Z",
-      "level": 1
     }
   ],
   "favourites": [
