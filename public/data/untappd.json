@@ -1,8 +1,60 @@
 {
-  "generatedAt": "2026-06-04T08:24:52.586Z",
+  "generatedAt": "2026-06-05T08:13:14.016Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1575431337",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575431337",
+      "checkedInAt": "2026-06-05T01:00:34.000Z",
+      "beer": "Double Pickles on the Dime",
+      "brewery": "White Elm Brewing Company",
+      "venue": "HopCat",
+      "rating": 1.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-271322_fdf28.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-271322_fdf28.jpeg"
+    },
+    {
+      "id": "1575421863",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575421863",
+      "checkedInAt": "2026-06-05T00:08:15.000Z",
+      "beer": "805",
+      "brewery": "Firestone Walker Brewing Company",
+      "venue": "HopCat",
+      "rating": 2.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-124504_44f17_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-524_96d52.jpeg"
+    },
+    {
+      "id": "1575416082",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575416082",
+      "checkedInAt": "2026-06-04T23:39:00.000Z",
+      "beer": "Madam Boot's Lemon/Berry Sour",
+      "brewery": "Boss City Brewing Co.",
+      "venue": "HopCat",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-493761_b4014.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-493761_b4014.jpeg"
+    },
+    {
+      "id": "1575404466",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575404466",
+      "checkedInAt": "2026-06-04T22:44:05.000Z",
+      "beer": "Queen City Kolsch",
+      "brewery": "First Street Brewing Company",
+      "venue": "HopCat",
+      "rating": null,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-266366_9b1af.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-266366_9b1af.jpeg"
+    },
     {
       "id": "1575238778",
       "url": "https://untappd.com/user/cmhunt/checkin/1575238778",
@@ -600,68 +652,12 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5521405_1f6d5_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-241_baeae.jpeg"
-    },
-    {
-      "id": "1395150158",
-      "url": "https://untappd.com/user/cmhunt/checkin/1395150158",
-      "checkedInAt": "2024-07-02T01:12:42.000Z",
-      "beer": "Purple Haze",
-      "brewery": "Abita Brewing Company",
-      "venue": "Copper Monkey",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4995_f3982_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-10_c49a3.jpeg"
-    },
-    {
-      "id": "1395114150",
-      "url": "https://untappd.com/user/cmhunt/checkin/1395114150",
-      "checkedInAt": "2024-07-01T22:04:49.000Z",
-      "beer": "Jockamo Juicy IPA",
-      "brewery": "Abita Brewing Company",
-      "venue": "Curio",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-3975162_5169f_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-10_c49a3.jpeg"
-    },
-    {
-      "id": "1395037850",
-      "url": "https://untappd.com/user/cmhunt/checkin/1395037850",
-      "checkedInAt": "2024-07-01T16:53:23.000Z",
-      "beer": "Purple Haze",
-      "brewery": "Abita Brewing Company",
-      "venue": "Copper Monkey",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4995_f3982_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-10_c49a3.jpeg"
-    },
-    {
-      "id": "1394940707",
-      "url": "https://untappd.com/user/cmhunt/checkin/1394940707",
-      "checkedInAt": "2024-06-30T23:01:36.000Z",
-      "beer": "Shiner Lemonade Shandy",
-      "brewery": "Spoetzl Brewery",
-      "venue": "30°/-90°",
-      "rating": null,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5548803_610c6_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1179_b868c.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.37,
+    "averageRating": 3.29,
     "topBreweries": [
-      {
-        "name": "Abita Brewing Company",
-        "count": 3
-      },
       {
         "name": "BrewDog",
         "count": 2
@@ -677,18 +673,30 @@
       {
         "name": "Kulmbacher Brauerei",
         "count": 2
+      },
+      {
+        "name": "Twickenham Fine Ales",
+        "count": 2
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 557,
-    "uniqueBeers": 403,
-    "totalBadges": 579,
+    "totalCheckins": 561,
+    "uniqueBeers": 407,
+    "totalBadges": 585,
     "totalFriends": 9,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
   "badges": [
+    {
+      "id": "1396252612",
+      "name": "Long Live Cold Beer",
+      "description": "Celebrating cold beer as a well-earned reward after the day’s miles, waves, work &amp; memories. It’s more than a beer, it’s a way of life. Here’s to good times and an ice cold 805. Check us out at https://www.805beer.com/",
+      "imageUrl": "https://assets.untappd.com/badges/FW_UnTappd_2026_Badge_805%20%282%29.jpg",
+      "earnedAt": "2026-06-05T00:08:16.000Z",
+      "level": null
+    },
     {
       "id": "1395950848",
       "name": "Beer Gear Summer Giveaway",
@@ -775,14 +783,6 @@
       "description": "Ready, set, gold! Are you ready for a Podium Party?!? At Untappd, we love checking in beers (some say for sport), and this year, there's an easy way to earn your spot on the podium.",
       "imageUrl": "https://assets.untappd.com/badges/UTC-Olympics-2024_400x400.png",
       "earnedAt": "2024-07-31T16:22:35.000Z",
-      "level": null
-    },
-    {
-      "id": "1215970366",
-      "name": "Punch Cigars’ IPA Day",
-      "description": "Happy National IPA Day from your friends at Punch Cigars! Earn this badge by checking any IPA between July 1 and August 1. Plus, learn more about the ultimate cigar for beer lovers here: punchcigars.com",
-      "imageUrl": "https://assets.untappd.com/badges/Punch_Untappd_Badge-01_lg.jpg",
-      "earnedAt": "2024-07-01T22:04:50.000Z",
       "level": null
     }
   ],
