@@ -1,8 +1,34 @@
 {
-  "generatedAt": "2026-06-05T08:13:14.016Z",
+  "generatedAt": "2026-06-06T07:21:32.639Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1575744350",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575744350",
+      "checkedInAt": "2026-06-06T00:01:04.000Z",
+      "beer": "Hazy Little Thing",
+      "brewery": "Sierra Nevada Brewing Co.",
+      "venue": "HopCat",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2412786_c2d78_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1142_ddcfe.jpeg"
+    },
+    {
+      "id": "1575733707",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575733707",
+      "checkedInAt": "2026-06-05T23:27:39.000Z",
+      "beer": "Vanilla Bean Blonde Ale",
+      "brewery": "Infusion Brewing Company",
+      "venue": "HopCat",
+      "rating": 3.75,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-622119_25e50_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-31802_5dbb4.jpeg"
+    },
     {
       "id": "1575431337",
       "url": "https://untappd.com/user/cmhunt/checkin/1575431337",
@@ -626,42 +652,12 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5472652_fa0ad_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-546207_35ed2.jpeg"
-    },
-    {
-      "id": "1397911558",
-      "url": "https://untappd.com/user/cmhunt/checkin/1397911558",
-      "checkedInAt": "2024-07-11T19:40:37.000Z",
-      "beer": "Campfire",
-      "brewery": "Two Tribes",
-      "venue": null,
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5035467_c15af_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-223314_68778.jpeg"
-    },
-    {
-      "id": "1397911331",
-      "url": "https://untappd.com/user/cmhunt/checkin/1397911331",
-      "checkedInAt": "2024-07-11T19:40:02.000Z",
-      "beer": "Wingman Session IPA",
-      "brewery": "BrewDog",
-      "venue": null,
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5521405_1f6d5_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-241_baeae.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.29,
+    "averageRating": 3.32,
     "topBreweries": [
-      {
-        "name": "BrewDog",
-        "count": 2
-      },
       {
         "name": "Brooklyn Brewery",
         "count": 2
@@ -677,11 +673,15 @@
       {
         "name": "Twickenham Fine Ales",
         "count": 2
+      },
+      {
+        "name": "Athenian Brewery",
+        "count": 1
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 561,
+    "totalCheckins": 563,
     "uniqueBeers": 407,
     "totalBadges": 585,
     "totalFriends": 9,
