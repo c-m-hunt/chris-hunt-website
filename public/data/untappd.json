@@ -1,8 +1,34 @@
 {
-  "generatedAt": "2026-06-06T07:21:32.639Z",
+  "generatedAt": "2026-06-07T07:58:57.222Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1576183246",
+      "url": "https://untappd.com/user/cmhunt/checkin/1576183246",
+      "checkedInAt": "2026-06-06T23:29:08.000Z",
+      "beer": "EIN PILS: German Pilsner",
+      "brewery": "Boiler Lager Works",
+      "venue": "Boiler Brewing Company",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6659046_d44b9_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-579197_363b0.jpeg"
+    },
+    {
+      "id": "1576165741",
+      "url": "https://untappd.com/user/cmhunt/checkin/1576165741",
+      "checkedInAt": "2026-06-06T22:40:57.000Z",
+      "beer": "Double Barrel Toasted",
+      "brewery": "Boiler Brewing Co.",
+      "venue": "Boiler Brewing Company",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6474486_900f0_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-260986_b95e8.jpeg"
+    },
     {
       "id": "1575744350",
       "url": "https://untappd.com/user/cmhunt/checkin/1575744350",
@@ -626,37 +652,11 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2885563_da69c_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-259_0f253.jpeg"
-    },
-    {
-      "id": "1404181888",
-      "url": "https://untappd.com/user/cmhunt/checkin/1404181888",
-      "checkedInAt": "2024-07-31T17:45:35.000Z",
-      "beer": "Strawberry Sundae",
-      "brewery": "Vault City Brewing",
-      "venue": "The Earl of Essex",
-      "rating": 3.75,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4836999_0eefb_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-399292_20941.jpeg"
-    },
-    {
-      "id": "1404153909",
-      "url": "https://untappd.com/user/cmhunt/checkin/1404153909",
-      "checkedInAt": "2024-07-31T16:22:34.000Z",
-      "beer": "American Pale Ale",
-      "brewery": "Saint Monday",
-      "venue": "The Earl of Essex",
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5472652_fa0ad_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-546207_35ed2.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.32,
+    "averageRating": 3.35,
     "topBreweries": [
       {
         "name": "Brooklyn Brewery",
@@ -681,10 +681,10 @@
     ]
   },
   "lifetime": {
-    "totalCheckins": 563,
-    "uniqueBeers": 407,
-    "totalBadges": 585,
-    "totalFriends": 9,
+    "totalCheckins": 565,
+    "uniqueBeers": 409,
+    "totalBadges": 586,
+    "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
