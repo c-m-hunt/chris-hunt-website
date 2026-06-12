@@ -1,8 +1,34 @@
 {
-  "generatedAt": "2026-06-11T08:51:21.824Z",
+  "generatedAt": "2026-06-12T08:38:36.892Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1577090008",
+      "url": "https://untappd.com/user/cmhunt/checkin/1577090008",
+      "checkedInAt": "2026-06-12T00:39:43.000Z",
+      "beer": "Glacier Til Seasonal Caramel Cider",
+      "brewery": "Glacier Brewhouse",
+      "venue": "Aragon Tavern",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-4123_70ce3.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-4123_70ce3.jpeg"
+    },
+    {
+      "id": "1576941462",
+      "url": "https://untappd.com/user/cmhunt/checkin/1576941462",
+      "checkedInAt": "2026-06-11T15:20:02.000Z",
+      "beer": "Pineapple Wheat",
+      "brewery": "Ashland Brewing Company",
+      "venue": null,
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-577918_1b071.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-577918_1b071.jpeg"
+    },
     {
       "id": "1576183246",
       "url": "https://untappd.com/user/cmhunt/checkin/1576183246",
@@ -626,42 +652,12 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-51595_df269_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-53_fcc51.jpeg"
-    },
-    {
-      "id": "1412045153",
-      "url": "https://untappd.com/user/cmhunt/checkin/1412045153",
-      "checkedInAt": "2024-08-25T17:38:25.000Z",
-      "beer": "Modelo Especial",
-      "brewery": "Grupo Modelo",
-      "venue": "The Burrito - Comida Mexicana",
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6277_5ffcb_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-GrupoModeloSAdeCV_618.jpeg"
-    },
-    {
-      "id": "1406368758",
-      "url": "https://untappd.com/user/cmhunt/checkin/1406368758",
-      "checkedInAt": "2024-08-07T16:23:04.000Z",
-      "beer": "The Stonewall Inn IPA",
-      "brewery": "Brooklyn Brewery",
-      "venue": "Duke Of York",
-      "rating": 2.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2885563_da69c_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-259_0f253.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.35,
+    "averageRating": 3.39,
     "topBreweries": [
-      {
-        "name": "Brooklyn Brewery",
-        "count": 2
-      },
       {
         "name": "Camden Town Brewery",
         "count": 2
@@ -675,20 +671,32 @@
         "count": 2
       },
       {
+        "name": "Ashland Brewing Company",
+        "count": 1
+      },
+      {
         "name": "Athenian Brewery",
         "count": 1
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 565,
-    "uniqueBeers": 409,
-    "totalBadges": 586,
+    "totalCheckins": 567,
+    "uniqueBeers": 411,
+    "totalBadges": 589,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
   "badges": [
+    {
+      "id": "1397640939",
+      "name": "World Pint 2026: United States",
+      "description": "Congrats, you've unlocked the World Pint 2026: United States badge! Join the World’s Biggest Watch Party! Level up match day and tap freshly brewed craft beer with Pinter straight from your fridge for kickoff. Grab our tournament brew schedule and build the perfect home stadium setup. Join the Watch Party!",
+      "imageUrl": "https://assets.untappd.com/promo/2778899902_UNITED-STATES-UTC-WorldPint-Badges-25.png",
+      "earnedAt": "2026-06-11T15:20:03.000Z",
+      "level": null
+    },
     {
       "id": "1396252612",
       "name": "Long Live Cold Beer",
@@ -776,14 +784,6 @@
       "imageUrl": "https://assets.untappd.com/badges/bdg_pure-garden-bliss_lg.jpg",
       "earnedAt": "2024-07-31T16:22:35.000Z",
       "level": 1
-    },
-    {
-      "id": "1225093574",
-      "name": "Podium Party (2024)",
-      "description": "Ready, set, gold! Are you ready for a Podium Party?!? At Untappd, we love checking in beers (some say for sport), and this year, there's an easy way to earn your spot on the podium.",
-      "imageUrl": "https://assets.untappd.com/badges/UTC-Olympics-2024_400x400.png",
-      "earnedAt": "2024-07-31T16:22:35.000Z",
-      "level": null
     }
   ],
   "favourites": [
