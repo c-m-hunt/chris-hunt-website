@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-06-15T10:30:17.391Z",
+  "generatedAt": "2026-06-16T09:32:33.184Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1578307946",
+      "url": "https://untappd.com/user/cmhunt/checkin/1578307946",
+      "checkedInAt": "2026-06-16T03:32:50.000Z",
+      "beer": "Oasis® Amber",
+      "brewery": "BJ’s Restaurant & Brewhouse",
+      "venue": "BJ's Restaurant & Brewhouse",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-28203_8a6cc_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-7132_1222b.jpeg"
+    },
     {
       "id": "1577090008",
       "url": "https://untappd.com/user/cmhunt/checkin/1577090008",
@@ -639,24 +652,11 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-RoyalIonianPils_106420.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-CorfuBeerLtd_19876.jpeg"
-    },
-    {
-      "id": "1415098925",
-      "url": "https://untappd.com/user/cmhunt/checkin/1415098925",
-      "checkedInAt": "2024-09-06T18:24:23.000Z",
-      "beer": "Alfa (Aλφα) Beer",
-      "brewery": "Athenian Brewery",
-      "venue": null,
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-51595_df269_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-53_fcc51.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.39,
+    "averageRating": 3.38,
     "topBreweries": [
       {
         "name": "Camden Town Brewery",
@@ -675,15 +675,15 @@
         "count": 1
       },
       {
-        "name": "Athenian Brewery",
+        "name": "BJ’s Restaurant & Brewhouse",
         "count": 1
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 567,
-    "uniqueBeers": 411,
-    "totalBadges": 589,
+    "totalCheckins": 568,
+    "uniqueBeers": 412,
+    "totalBadges": 593,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
