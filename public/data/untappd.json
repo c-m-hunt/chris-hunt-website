@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-06-16T09:32:33.184Z",
+  "generatedAt": "2026-06-17T09:07:32.128Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1578402373",
+      "url": "https://untappd.com/user/cmhunt/checkin/1578402373",
+      "checkedInAt": "2026-06-16T20:04:38.000Z",
+      "beer": "Modelo Chelada Especial",
+      "brewery": "Grupo Modelo",
+      "venue": "The Gunslinger",
+      "rating": 1,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-457152_da542_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-GrupoModeloSAdeCV_618.jpeg"
+    },
     {
       "id": "1578307946",
       "url": "https://untappd.com/user/cmhunt/checkin/1578307946",
@@ -639,24 +652,11 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1600799_61e2f_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-195234_7d821.jpeg"
-    },
-    {
-      "id": "1416292155",
-      "url": "https://untappd.com/user/cmhunt/checkin/1416292155",
-      "checkedInAt": "2024-09-10T11:02:34.000Z",
-      "beer": "Royal Ionian Pilsner",
-      "brewery": "Corfu Microbrewery",
-      "venue": "Gefura",
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-RoyalIonianPils_106420.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-CorfuBeerLtd_19876.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.38,
+    "averageRating": 3.33,
     "topBreweries": [
       {
         "name": "Camden Town Brewery",
@@ -681,14 +681,22 @@
     ]
   },
   "lifetime": {
-    "totalCheckins": 568,
-    "uniqueBeers": 412,
-    "totalBadges": 593,
+    "totalCheckins": 569,
+    "uniqueBeers": 413,
+    "totalBadges": 594,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
   "badges": [
+    {
+      "id": "1399425217",
+      "name": "World Pint 2026: Mexico",
+      "description": "Congrats, you've unlocked the World Pint 2026: Mexico badge! Keep checking in beers to score badges from the other 47 countries competing in the world's biggest football competition. Keep up to date on future badges by following us on social @untappd!",
+      "imageUrl": "https://assets.untappd.com/promo/7d02b75fb4_MEXICO-UTC-WorldPint-Badges-23.png",
+      "earnedAt": "2026-06-16T20:04:38.000Z",
+      "level": null
+    },
     {
       "id": "1397640939",
       "name": "World Pint 2026: United States",
@@ -776,14 +784,6 @@
       "imageUrl": "https://assets.untappd.com/badges/bdg_IBD24.jpg",
       "earnedAt": "2024-08-07T16:23:05.000Z",
       "level": null
-    },
-    {
-      "id": "1225093577",
-      "name": "Pure Garden Bliss",
-      "description": "What's better than enjoying a beer outside with food, music, games all in an enjoyable atmosphere? We couldn't think of anything. That's a beer at 5 different venues with the category of Beer Garden. Visit 5 more for Level 2!",
-      "imageUrl": "https://assets.untappd.com/badges/bdg_pure-garden-bliss_lg.jpg",
-      "earnedAt": "2024-07-31T16:22:35.000Z",
-      "level": 1
     }
   ],
   "favourites": [
