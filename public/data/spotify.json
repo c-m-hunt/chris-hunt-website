@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T09:08:30.944Z",
+  "generatedAt": "2026-06-18T08:53:02.896Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -31,8 +31,7 @@
       "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE",
       "imageUrl": "https://i.scdn.co/image/ab6761610000517498682e9f2a5bd699d19fc54a",
       "genres": [
-        "britpop",
-        "power pop"
+        "britpop"
       ]
     },
     {
