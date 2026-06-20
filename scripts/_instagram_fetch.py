@@ -24,8 +24,20 @@ from __future__ import annotations
 import json
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
+
+# Exit code meaning "couldn't fetch because Instagram is rate-limiting us, but
+# nothing is actually broken". The Node collector treats this as a soft skip:
+# it keeps the existing instagram.json and exits 0 so the workflow doesn't page
+# on an unavoidable, transient 429 from a shared CI IP.
+RATE_LIMITED_EXIT = 3
+
+# Backoff (seconds) between in-run retries when a fetch hits a 429. Modest on
+# purpose — IG rate-limits a flagged IP for minutes, so if these don't clear it
+# we soft-skip rather than burn the whole step budget.
+RATE_LIMIT_BACKOFFS = [20, 40]
 
 
 def iso(dt) -> str:
@@ -111,9 +123,17 @@ def _bootstrap(cl, sessionid, username, password) -> None:
 def _is_stale_session_error(exc: Exception) -> bool:
     """Detect IG telling us the cached session is no longer valid."""
     s = f"{type(exc).__name__}: {exc}".lower()
+    return any(marker in s for marker in ("login_required", "loginrequired"))
+
+
+def _is_rate_limited_error(exc: Exception) -> bool:
+    """Detect IG throttling us (429 / "please wait"). Distinct from a stale
+    session: re-logging-in under a throttle just digs the hole deeper, so the
+    caller backs off and soft-skips instead of re-bootstrapping."""
+    s = f"{type(exc).__name__}: {exc}".lower()
     return any(
         marker in s
-        for marker in ("login_required", "loginrequired", "please wait a few minutes")
+        for marker in ("429", "too many requests", "rate limit", "please wait a few minutes")
     )
 
 
@@ -148,6 +168,9 @@ def main() -> int:
     session_path.parent.mkdir(parents=True, exist_ok=True)
 
     cl = Client()
+    # Space out requests a little so we look less like a bot and trip IG's 429
+    # throttle less often.
+    cl.delay_range = [1, 3]
     used_fresh_login = False
     try:
         if session_path.exists():
@@ -164,8 +187,26 @@ def main() -> int:
         user_id = cl.user_id_from_username(target)
         return cl.user_medias(user_id, amount=limit)
 
+    def fetch_with_retry():
+        """Fetch, retrying transient 429s with backoff. Raises the last error
+        if it isn't a rate-limit, or after the backoffs are exhausted."""
+        for attempt in range(len(RATE_LIMIT_BACKOFFS) + 1):
+            try:
+                return fetch()
+            except Exception as exc:  # noqa: BLE001
+                if _is_rate_limited_error(exc) and attempt < len(RATE_LIMIT_BACKOFFS):
+                    wait = RATE_LIMIT_BACKOFFS[attempt]
+                    print(
+                        f"instagram rate limited ({exc}); "
+                        f"retry {attempt + 1}/{len(RATE_LIMIT_BACKOFFS)} in {wait}s",
+                        file=sys.stderr,
+                    )
+                    time.sleep(wait)
+                    continue
+                raise
+
     try:
-        medias = fetch()
+        medias = fetch_with_retry()
     except Exception as exc:  # noqa: BLE001
         # Cached session is stale (sessionid was rotated or IG invalidated it).
         # Burn the cache, re-bootstrap from the configured sessionid, and retry
@@ -178,13 +219,29 @@ def main() -> int:
             except OSError:
                 pass
             cl = Client()
+            cl.delay_range = [1, 3]
             try:
                 _bootstrap(cl, sessionid, username, password)
                 cl.dump_settings(str(session_path))
-                medias = fetch()
+                medias = fetch_with_retry()
             except Exception as exc2:  # noqa: BLE001
+                if _is_rate_limited_error(exc2):
+                    print(
+                        f"instagram rate limited after re-bootstrap ({exc2}); "
+                        "preserving existing data",
+                        file=sys.stderr,
+                    )
+                    return RATE_LIMITED_EXIT
                 print(f"fetch failed after re-bootstrap: {exc2}", file=sys.stderr)
                 return 1
+        elif _is_rate_limited_error(exc):
+            # Unavoidable transient throttle (usually a shared CI IP). Don't fail
+            # the job — let the Node collector keep the existing posts.
+            print(
+                f"instagram rate limited after retries ({exc}); preserving existing data",
+                file=sys.stderr,
+            )
+            return RATE_LIMITED_EXIT
         else:
             print(f"fetch failed: {exc}", file=sys.stderr)
             return 1

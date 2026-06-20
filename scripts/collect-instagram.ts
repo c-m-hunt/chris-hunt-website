@@ -25,6 +25,9 @@ import {
 
 const SOURCE = 'instagram'
 const PYTHON_SCRIPT = resolve(REPO_ROOT, 'scripts', '_instagram_fetch.py')
+// Mirrors RATE_LIMITED_EXIT in _instagram_fetch.py: IG throttled us (429) but
+// nothing is broken. Treat as a soft skip — keep existing data, exit 0.
+const RATE_LIMITED_EXIT = 3
 
 async function preserveExisting(file: string): Promise<InstagramData | null> {
   if (!existsSync(file)) return null
@@ -90,6 +93,16 @@ async function main(): Promise<void> {
 
   try {
     const { stdout, stderr, code } = await runPython()
+    if (code === RATE_LIMITED_EXIT) {
+      const tail = stderr.trim().slice(-500) || 'instagram rate limited'
+      logSkipped(SOURCE, `rate limited; preserving existing data (${tail})`)
+      const existing = await preserveExisting(file)
+      if (existing) {
+        const refreshed: InstagramData = { ...existing, generatedAt: nowIso() }
+        await writeJson(file, refreshed)
+      }
+      return
+    }
     if (code !== 0) {
       const tail = stderr.trim().slice(-500) || `python3 exited ${code}`
       logError(SOURCE, new Error(tail))
