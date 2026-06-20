@@ -23,10 +23,13 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+
+import requests
 
 # Exit code meaning "couldn't fetch because Instagram is rate-limiting us, but
 # nothing is actually broken". The Node collector treats this as a soft skip:
@@ -38,6 +41,16 @@ RATE_LIMITED_EXIT = 3
 # purpose — IG rate-limits a flagged IP for minutes, so if these don't clear it
 # we soft-skip rather than burn the whole step budget.
 RATE_LIMIT_BACKOFFS = [20, 40]
+
+# Self-host post images. IG's CDN (scontent.cdninstagram.com) URLs are signed
+# and expire within days, so hotlinking them means broken images on the site a
+# little while after each fetch. Instead we download each displayed image at
+# collection time into public/data/instagram-media/ and rewrite the JSON to a
+# site-relative path, so the images are permanent and committed with the data.
+MEDIA_DIR = Path(os.environ.get("IG_MEDIA_DIR", "public/data/instagram-media"))
+# Path stored in instagram.json, relative to the site root. The frontend
+# resolves it against Vite's BASE_URL (see src/sections/Social.tsx).
+MEDIA_URL_PREFIX = "data/instagram-media"
 
 
 def iso(dt) -> str:
@@ -110,6 +123,56 @@ def media_entries(m) -> list[dict]:
             "alt": None,
         }
     ]
+
+
+def _ext_from_url(url: str, default: str = ".jpg") -> str:
+    path = url.split("?", 1)[0]
+    m = re.search(r"\.(jpe?g|png|webp|gif)$", path, re.IGNORECASE)
+    return f".{m.group(1).lower()}" if m else default
+
+
+def _download(url: str, dest: Path, session: requests.Session) -> bool:
+    """Download url to dest. Returns True on success; on failure the caller
+    keeps the original (expiring) remote url as a best-effort fallback."""
+    try:
+        resp = session.get(url, timeout=30)
+        resp.raise_for_status()
+        dest.write_bytes(resp.content)
+        return True
+    except Exception as exc:  # noqa: BLE001
+        print(f"failed to download {url[:80]}: {exc}", file=sys.stderr)
+        return False
+
+
+def localize_media(posts: list[dict]) -> None:
+    """Download each post's displayed image into MEDIA_DIR and rewrite its URL
+    to a site-relative path. The frontend shows media[0]'s `url` for images and
+    `thumbnail_url` for videos, so those are the fields we localize. Prunes any
+    files in MEDIA_DIR no longer referenced by the current post set."""
+    if not posts:
+        return
+    MEDIA_DIR.mkdir(parents=True, exist_ok=True)
+    session = requests.Session()
+    session.headers.update({"User-Agent": "Mozilla/5.0"})
+
+    keep: set[str] = set()
+    for post in posts:
+        for idx, media in enumerate(post.get("media", [])):
+            field = "thumbnail_url" if media.get("type") == "video" else "url"
+            src = media.get(field)
+            if not src or not src.startswith("http"):
+                continue
+            name = f"{post['id']}_{idx}{_ext_from_url(src)}"
+            if _download(src, MEDIA_DIR / name, session):
+                media[field] = f"{MEDIA_URL_PREFIX}/{name}"
+                keep.add(name)
+
+    for f in MEDIA_DIR.iterdir():
+        if f.is_file() and f.name not in keep and f.name != ".gitkeep":
+            try:
+                f.unlink()
+            except OSError:
+                pass
 
 
 def _bootstrap(cl, sessionid, username, password) -> None:
@@ -274,6 +337,8 @@ def main() -> int:
                 },
             }
         )
+
+    localize_media(posts)
 
     out = {
         "user": target,
