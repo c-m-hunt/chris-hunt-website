@@ -1,8 +1,203 @@
 {
-  "generatedAt": "2026-05-23T06:40:47.623Z",
+  "generatedAt": "2026-06-20T07:55:06.360Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1578402373",
+      "url": "https://untappd.com/user/cmhunt/checkin/1578402373",
+      "checkedInAt": "2026-06-16T20:04:38.000Z",
+      "beer": "Modelo Chelada Especial",
+      "brewery": "Grupo Modelo",
+      "venue": "The Gunslinger",
+      "rating": 1,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-457152_da542_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-GrupoModeloSAdeCV_618.jpeg"
+    },
+    {
+      "id": "1578307946",
+      "url": "https://untappd.com/user/cmhunt/checkin/1578307946",
+      "checkedInAt": "2026-06-16T03:32:50.000Z",
+      "beer": "Oasis® Amber",
+      "brewery": "BJ’s Restaurant & Brewhouse",
+      "venue": "BJ's Restaurant & Brewhouse",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-28203_8a6cc_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-7132_1222b.jpeg"
+    },
+    {
+      "id": "1577090008",
+      "url": "https://untappd.com/user/cmhunt/checkin/1577090008",
+      "checkedInAt": "2026-06-12T00:39:43.000Z",
+      "beer": "Glacier Til Seasonal Caramel Cider",
+      "brewery": "Glacier Brewhouse",
+      "venue": "Aragon Tavern",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-4123_70ce3.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-4123_70ce3.jpeg"
+    },
+    {
+      "id": "1576941462",
+      "url": "https://untappd.com/user/cmhunt/checkin/1576941462",
+      "checkedInAt": "2026-06-11T15:20:02.000Z",
+      "beer": "Pineapple Wheat",
+      "brewery": "Ashland Brewing Company",
+      "venue": null,
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-577918_1b071.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-577918_1b071.jpeg"
+    },
+    {
+      "id": "1576183246",
+      "url": "https://untappd.com/user/cmhunt/checkin/1576183246",
+      "checkedInAt": "2026-06-06T23:29:08.000Z",
+      "beer": "EIN PILS: German Pilsner",
+      "brewery": "Boiler Lager Works",
+      "venue": "Boiler Brewing Company",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6659046_d44b9_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-579197_363b0.jpeg"
+    },
+    {
+      "id": "1576165741",
+      "url": "https://untappd.com/user/cmhunt/checkin/1576165741",
+      "checkedInAt": "2026-06-06T22:40:57.000Z",
+      "beer": "Double Barrel Toasted",
+      "brewery": "Boiler Brewing Co.",
+      "venue": "Boiler Brewing Company",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6474486_900f0_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-260986_b95e8.jpeg"
+    },
+    {
+      "id": "1575744350",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575744350",
+      "checkedInAt": "2026-06-06T00:01:04.000Z",
+      "beer": "Hazy Little Thing",
+      "brewery": "Sierra Nevada Brewing Co.",
+      "venue": "HopCat",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2412786_c2d78_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1142_ddcfe.jpeg"
+    },
+    {
+      "id": "1575733707",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575733707",
+      "checkedInAt": "2026-06-05T23:27:39.000Z",
+      "beer": "Vanilla Bean Blonde Ale",
+      "brewery": "Infusion Brewing Company",
+      "venue": "HopCat",
+      "rating": 3.75,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-622119_25e50_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-31802_5dbb4.jpeg"
+    },
+    {
+      "id": "1575431337",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575431337",
+      "checkedInAt": "2026-06-05T01:00:34.000Z",
+      "beer": "Double Pickles on the Dime",
+      "brewery": "White Elm Brewing Company",
+      "venue": "HopCat",
+      "rating": 1.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-271322_fdf28.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-271322_fdf28.jpeg"
+    },
+    {
+      "id": "1575421863",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575421863",
+      "checkedInAt": "2026-06-05T00:08:15.000Z",
+      "beer": "805",
+      "brewery": "Firestone Walker Brewing Company",
+      "venue": "HopCat",
+      "rating": 2.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-124504_44f17_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-524_96d52.jpeg"
+    },
+    {
+      "id": "1575416082",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575416082",
+      "checkedInAt": "2026-06-04T23:39:00.000Z",
+      "beer": "Madam Boot's Lemon/Berry Sour",
+      "brewery": "Boss City Brewing Co.",
+      "venue": "HopCat",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-493761_b4014.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-493761_b4014.jpeg"
+    },
+    {
+      "id": "1575404466",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575404466",
+      "checkedInAt": "2026-06-04T22:44:05.000Z",
+      "beer": "Queen City Kolsch",
+      "brewery": "First Street Brewing Company",
+      "venue": "HopCat",
+      "rating": null,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-266366_9b1af.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-266366_9b1af.jpeg"
+    },
+    {
+      "id": "1575238778",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575238778",
+      "checkedInAt": "2026-06-04T01:57:00.000Z",
+      "beer": "Berry Lemon Sour",
+      "brewery": "Code Beer Co.",
+      "venue": "Graduate by Hilton Lincoln",
+      "rating": 3.75,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-352763_21b54.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-352763_21b54.jpeg"
+    },
+    {
+      "id": "1575144862",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575144862",
+      "checkedInAt": "2026-06-03T18:02:06.000Z",
+      "beer": "Belgian White",
+      "brewery": "Blue Moon Brewing Company",
+      "venue": "Sweet Georgia's Juke Joint",
+      "rating": 3.25,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-3839_e7733_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-127804_1a670.jpeg"
+    },
+    {
+      "id": "1575103744",
+      "url": "https://untappd.com/user/cmhunt/checkin/1575103744",
+      "checkedInAt": "2026-06-03T13:46:28.000Z",
+      "beer": "420 Extra Pale Ale",
+      "brewery": "SweetWater Brewing Company",
+      "venue": null,
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5912_bb69b_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1224_32b19.jpeg"
+    },
     {
       "id": "1563539574",
       "url": "https://untappd.com/user/cmhunt/checkin/1563539574",
@@ -390,7 +585,7 @@
       "rating": 3.25,
       "comment": "",
       "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-8676_f27a8_sm.jpeg",
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-8676_7c167_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-2386_ee12a.jpeg"
     },
     {
@@ -457,238 +652,75 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1600799_61e2f_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-195234_7d821.jpeg"
-    },
-    {
-      "id": "1416292155",
-      "url": "https://untappd.com/user/cmhunt/checkin/1416292155",
-      "checkedInAt": "2024-09-10T11:02:34.000Z",
-      "beer": "Royal Ionian Pilsner",
-      "brewery": "Corfu Microbrewery",
-      "venue": "Gefura",
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-RoyalIonianPils_106420.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-CorfuBeerLtd_19876.jpeg"
-    },
-    {
-      "id": "1415098925",
-      "url": "https://untappd.com/user/cmhunt/checkin/1415098925",
-      "checkedInAt": "2024-09-06T18:24:23.000Z",
-      "beer": "Alfa (Aλφα) Beer",
-      "brewery": "Athenian Brewery",
-      "venue": null,
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-51595_df269_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-53_fcc51.jpeg"
-    },
-    {
-      "id": "1412045153",
-      "url": "https://untappd.com/user/cmhunt/checkin/1412045153",
-      "checkedInAt": "2024-08-25T17:38:25.000Z",
-      "beer": "Modelo Especial",
-      "brewery": "Grupo Modelo",
-      "venue": "The Burrito - Comida Mexicana",
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6277_5ffcb_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-GrupoModeloSAdeCV_618.jpeg"
-    },
-    {
-      "id": "1406368758",
-      "url": "https://untappd.com/user/cmhunt/checkin/1406368758",
-      "checkedInAt": "2024-08-07T16:23:04.000Z",
-      "beer": "The Stonewall Inn IPA",
-      "brewery": "Brooklyn Brewery",
-      "venue": "Duke Of York",
-      "rating": 2.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2885563_da69c_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-259_0f253.jpeg"
-    },
-    {
-      "id": "1404181888",
-      "url": "https://untappd.com/user/cmhunt/checkin/1404181888",
-      "checkedInAt": "2024-07-31T17:45:35.000Z",
-      "beer": "Strawberry Sundae",
-      "brewery": "Vault City Brewing",
-      "venue": "The Earl of Essex",
-      "rating": 3.75,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4836999_0eefb_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-399292_20941.jpeg"
-    },
-    {
-      "id": "1404153909",
-      "url": "https://untappd.com/user/cmhunt/checkin/1404153909",
-      "checkedInAt": "2024-07-31T16:22:34.000Z",
-      "beer": "American Pale Ale",
-      "brewery": "Saint Monday",
-      "venue": "The Earl of Essex",
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5472652_fa0ad_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-546207_35ed2.jpeg"
-    },
-    {
-      "id": "1397911558",
-      "url": "https://untappd.com/user/cmhunt/checkin/1397911558",
-      "checkedInAt": "2024-07-11T19:40:37.000Z",
-      "beer": "Campfire",
-      "brewery": "Two Tribes",
-      "venue": null,
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5035467_c15af_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-223314_68778.jpeg"
-    },
-    {
-      "id": "1397911331",
-      "url": "https://untappd.com/user/cmhunt/checkin/1397911331",
-      "checkedInAt": "2024-07-11T19:40:02.000Z",
-      "beer": "Wingman Session IPA",
-      "brewery": "BrewDog",
-      "venue": null,
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5521405_1f6d5_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-241_baeae.jpeg"
-    },
-    {
-      "id": "1395150158",
-      "url": "https://untappd.com/user/cmhunt/checkin/1395150158",
-      "checkedInAt": "2024-07-02T01:12:42.000Z",
-      "beer": "Purple Haze",
-      "brewery": "Abita Brewing Company",
-      "venue": "Copper Monkey",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4995_f3982_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-10_c49a3.jpeg"
-    },
-    {
-      "id": "1395114150",
-      "url": "https://untappd.com/user/cmhunt/checkin/1395114150",
-      "checkedInAt": "2024-07-01T22:04:49.000Z",
-      "beer": "Jockamo Juicy IPA",
-      "brewery": "Abita Brewing Company",
-      "venue": "Curio",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-3975162_5169f_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-10_c49a3.jpeg"
-    },
-    {
-      "id": "1395037850",
-      "url": "https://untappd.com/user/cmhunt/checkin/1395037850",
-      "checkedInAt": "2024-07-01T16:53:23.000Z",
-      "beer": "Purple Haze",
-      "brewery": "Abita Brewing Company",
-      "venue": "Copper Monkey",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4995_f3982_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-10_c49a3.jpeg"
-    },
-    {
-      "id": "1394940707",
-      "url": "https://untappd.com/user/cmhunt/checkin/1394940707",
-      "checkedInAt": "2024-06-30T23:01:36.000Z",
-      "beer": "Shiner Lemonade Shandy",
-      "brewery": "Spoetzl Brewery",
-      "venue": "30°/-90°",
-      "rating": null,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5548803_610c6_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1179_b868c.jpeg"
-    },
-    {
-      "id": "1394921861",
-      "url": "https://untappd.com/user/cmhunt/checkin/1394921861",
-      "checkedInAt": "2024-06-30T21:59:50.000Z",
-      "beer": "Hobo Chic",
-      "brewery": "Zony Mash Beer Project",
-      "venue": "30°/-90°",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-3448088_8efaa_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-435907_94d93.jpeg"
-    },
-    {
-      "id": "1394845369",
-      "url": "https://untappd.com/user/cmhunt/checkin/1394845369",
-      "checkedInAt": "2024-06-30T19:02:46.000Z",
-      "beer": "Just Jam",
-      "brewery": "Gnarly Barley Brewing",
-      "venue": "Tracey's",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": "https://images.untp.beer/crop?width=1280&height=1280&stripmeta=true&url=https://untappd.s3.amazonaws.com/photos/2024_06_30/386f934ef295e92e7adc9ed6d42ead43_c_1394845369_raw.jpg",
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5332302_ca372_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-16570_39ce5.jpeg"
-    },
-    {
-      "id": "1394792032",
-      "url": "https://untappd.com/user/cmhunt/checkin/1394792032",
-      "checkedInAt": "2024-06-30T17:04:22.000Z",
-      "beer": "Jucifer",
-      "brewery": "Gnarly Barley Brewing",
-      "venue": "Tracey's",
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2038053_8a8fb_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-16570_39ce5.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.41,
+    "averageRating": 3.33,
     "topBreweries": [
-      {
-        "name": "Abita Brewing Company",
-        "count": 3
-      },
-      {
-        "name": "BrewDog",
-        "count": 2
-      },
-      {
-        "name": "Brooklyn Brewery",
-        "count": 2
-      },
       {
         "name": "Camden Town Brewery",
         "count": 2
       },
       {
-        "name": "Gnarly Barley Brewing",
+        "name": "Kulmbacher Brauerei",
         "count": 2
+      },
+      {
+        "name": "Twickenham Fine Ales",
+        "count": 2
+      },
+      {
+        "name": "Ashland Brewing Company",
+        "count": 1
+      },
+      {
+        "name": "BJ’s Restaurant & Brewhouse",
+        "count": 1
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 554,
-    "uniqueBeers": 401,
-    "totalBadges": 575,
-    "totalFriends": 9,
+    "totalCheckins": 569,
+    "uniqueBeers": 413,
+    "totalBadges": 594,
+    "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
   "badges": [
+    {
+      "id": "1399425217",
+      "name": "World Pint 2026: Mexico",
+      "description": "Congrats, you've unlocked the World Pint 2026: Mexico badge! Keep checking in beers to score badges from the other 47 countries competing in the world's biggest football competition. Keep up to date on future badges by following us on social @untappd!",
+      "imageUrl": "https://assets.untappd.com/promo/7d02b75fb4_MEXICO-UTC-WorldPint-Badges-23.png",
+      "earnedAt": "2026-06-16T20:04:38.000Z",
+      "level": null
+    },
+    {
+      "id": "1397640939",
+      "name": "World Pint 2026: United States",
+      "description": "Congrats, you've unlocked the World Pint 2026: United States badge! Join the World’s Biggest Watch Party! Level up match day and tap freshly brewed craft beer with Pinter straight from your fridge for kickoff. Grab our tournament brew schedule and build the perfect home stadium setup. Join the Watch Party!",
+      "imageUrl": "https://assets.untappd.com/promo/2778899902_UNITED-STATES-UTC-WorldPint-Badges-25.png",
+      "earnedAt": "2026-06-11T15:20:03.000Z",
+      "level": null
+    },
+    {
+      "id": "1396252612",
+      "name": "Long Live Cold Beer",
+      "description": "Celebrating cold beer as a well-earned reward after the day’s miles, waves, work &amp; memories. It’s more than a beer, it’s a way of life. Here’s to good times and an ice cold 805. Check us out at https://www.805beer.com/",
+      "imageUrl": "https://assets.untappd.com/badges/FW_UnTappd_2026_Badge_805%20%282%29.jpg",
+      "earnedAt": "2026-06-05T00:08:16.000Z",
+      "level": null
+    },
+    {
+      "id": "1395950848",
+      "name": "Beer Gear Summer Giveaway",
+      "description": "Chill Out. Gear Up. Win Big. We've teamed up with New Trail Brewing, Bushnell, Lems Shoes, RovR, Thule, and Tifosi Optics, our friends who live and breathe outdoor beer life, to put together one seriously stacked summer prize package. Every outdoor check-in gets you an entry to a free giveaway!",
+      "imageUrl": "https://assets.untappd.com/badges/BeerGear-Summer-2026-Badge_1000x1000.jpg",
+      "earnedAt": "2026-06-03T13:46:28.000Z",
+      "level": null
+    },
     {
       "id": "1385131666",
       "name": "For the Can",
@@ -752,38 +784,6 @@
       "imageUrl": "https://assets.untappd.com/badges/bdg_IBD24.jpg",
       "earnedAt": "2024-08-07T16:23:05.000Z",
       "level": null
-    },
-    {
-      "id": "1225093577",
-      "name": "Pure Garden Bliss",
-      "description": "What's better than enjoying a beer outside with food, music, games all in an enjoyable atmosphere? We couldn't think of anything. That's a beer at 5 different venues with the category of Beer Garden. Visit 5 more for Level 2!",
-      "imageUrl": "https://assets.untappd.com/badges/bdg_pure-garden-bliss_lg.jpg",
-      "earnedAt": "2024-07-31T16:22:35.000Z",
-      "level": 1
-    },
-    {
-      "id": "1225093574",
-      "name": "Podium Party (2024)",
-      "description": "Ready, set, gold! Are you ready for a Podium Party?!? At Untappd, we love checking in beers (some say for sport), and this year, there's an easy way to earn your spot on the podium.",
-      "imageUrl": "https://assets.untappd.com/badges/UTC-Olympics-2024_400x400.png",
-      "earnedAt": "2024-07-31T16:22:35.000Z",
-      "level": null
-    },
-    {
-      "id": "1215970366",
-      "name": "Punch Cigars’ IPA Day",
-      "description": "Happy National IPA Day from your friends at Punch Cigars! Earn this badge by checking any IPA between July 1 and August 1. Plus, learn more about the ultimate cigar for beer lovers here: punchcigars.com",
-      "imageUrl": "https://assets.untappd.com/badges/Punch_Untappd_Badge-01_lg.jpg",
-      "earnedAt": "2024-07-01T22:04:50.000Z",
-      "level": null
-    },
-    {
-      "id": "1215770996",
-      "name": "Draft City",
-      "description": "Fresh from the tap is one of the best ways to enjoy a beer. Just try to use a glass and not drink directly from the tap, as tempting as it may be. That's 5 checkins with the serving style of Draft. Try 5 more for Level 2!",
-      "imageUrl": "https://assets.untappd.com/badges/bdg_DraftCity_lg.jpg",
-      "earnedAt": "2024-06-30T21:59:51.000Z",
-      "level": 1
     }
   ],
   "favourites": [
