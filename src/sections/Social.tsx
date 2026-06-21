@@ -108,8 +108,15 @@ function InstagramPanel() {
     <ul className="ig-grid">
       {instagram.posts.map((p) => {
         const first = p.media[0]
-        const previewUrl =
+        const rawPreview =
           first?.type === 'image' ? first.url : first?.type === 'video' ? first.thumbnail_url : null
+        // Images are self-hosted under public/data (repo-relative path); resolve
+        // them against Vite's base path. Remote URLs (legacy/fallback) pass through.
+        const previewUrl = rawPreview
+          ? rawPreview.startsWith('http')
+            ? rawPreview
+            : `${import.meta.env.BASE_URL}${rawPreview}`
+          : null
         return (
           <li key={p.id} className="ig-card">
             {p.media_type === 'carousel' && p.media.length > 1 ? (

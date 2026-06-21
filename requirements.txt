@@ -1,1 +1,4 @@
 instagrapi>=2.5,<3.0
+# Used by _instagram_fetch.py to download post images for self-hosting. Already
+# a transitive dep of instagrapi; pinned here so the import is explicit.
+requests>=2.31
