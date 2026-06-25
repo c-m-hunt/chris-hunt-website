@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T07:52:53.301Z",
+  "generatedAt": "2026-06-25T07:54:12.397Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -21,20 +21,14 @@
       "name": "Wolf Alice",
       "url": "https://open.spotify.com/artist/3btzEQD6sugImIHPMRgkwV",
       "imageUrl": "https://i.scdn.co/image/ab67616100005174517744f1b17b914a3ac923b7",
-      "genres": [
-        "indie"
-      ]
+      "genres": []
     },
     {
       "id": "0fgYKF9Avljex0L9Wt5b8Z",
       "name": "Echo & the Bunnymen",
       "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z",
       "imageUrl": "https://i.scdn.co/image/2bff77f9ef0e1bbb46d40607f15893e4f09403d5",
-      "genres": [
-        "new wave",
-        "post-punk",
-        "gothic rock"
-      ]
+      "genres": []
     },
     {
       "id": "2evydP72Z45DouM4uMGsIE",
@@ -52,7 +46,8 @@
       "imageUrl": "https://i.scdn.co/image/ab676161000051744e2bad0461555bce665deff7",
       "genres": [
         "britpop",
-        "madchester"
+        "indie",
+        "indie rock"
       ]
     },
     {
@@ -60,7 +55,9 @@
       "name": "VOILÀ",
       "url": "https://open.spotify.com/artist/6NnBBumbcMYsaPTHFhPtXD",
       "imageUrl": "https://i.scdn.co/image/ab6761610000517406964cf923704541b6222601",
-      "genres": []
+      "genres": [
+        "indie"
+      ]
     },
     {
       "id": "11wRdbnoYqRddKBrpHt4Ue",
@@ -69,8 +66,7 @@
       "imageUrl": "https://i.scdn.co/image/ab676161000051748fafeb8428e1f8873d078d03",
       "genres": [
         "britpop",
-        "indie",
-        "indie rock"
+        "madchester"
       ]
     },
     {
@@ -94,7 +90,11 @@
       "name": "Sam Fender",
       "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
       "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
-      "genres": []
+      "genres": [
+        "new wave",
+        "post-punk",
+        "gothic rock"
+      ]
     }
   ],
   "topTracks": [
