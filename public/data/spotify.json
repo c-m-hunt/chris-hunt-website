@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T07:54:12.397Z",
+  "generatedAt": "2026-06-26T08:01:55.638Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -21,14 +21,20 @@
       "name": "Wolf Alice",
       "url": "https://open.spotify.com/artist/3btzEQD6sugImIHPMRgkwV",
       "imageUrl": "https://i.scdn.co/image/ab67616100005174517744f1b17b914a3ac923b7",
-      "genres": []
+      "genres": [
+        "indie"
+      ]
     },
     {
       "id": "0fgYKF9Avljex0L9Wt5b8Z",
       "name": "Echo & the Bunnymen",
       "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z",
       "imageUrl": "https://i.scdn.co/image/2bff77f9ef0e1bbb46d40607f15893e4f09403d5",
-      "genres": []
+      "genres": [
+        "britpop",
+        "indie",
+        "indie rock"
+      ]
     },
     {
       "id": "2evydP72Z45DouM4uMGsIE",
@@ -44,11 +50,7 @@
       "name": "Shed Seven",
       "url": "https://open.spotify.com/artist/3iejrAcqxYoVgyxp6zkWgs",
       "imageUrl": "https://i.scdn.co/image/ab676161000051744e2bad0461555bce665deff7",
-      "genres": [
-        "britpop",
-        "indie",
-        "indie rock"
-      ]
+      "genres": []
     },
     {
       "id": "6NnBBumbcMYsaPTHFhPtXD",
@@ -56,7 +58,9 @@
       "url": "https://open.spotify.com/artist/6NnBBumbcMYsaPTHFhPtXD",
       "imageUrl": "https://i.scdn.co/image/ab6761610000517406964cf923704541b6222601",
       "genres": [
-        "indie"
+        "new wave",
+        "post-punk",
+        "gothic rock"
       ]
     },
     {
@@ -64,26 +68,23 @@
       "name": "Kasabian",
       "url": "https://open.spotify.com/artist/11wRdbnoYqRddKBrpHt4Ue",
       "imageUrl": "https://i.scdn.co/image/ab676161000051748fafeb8428e1f8873d078d03",
-      "genres": [
-        "britpop",
-        "madchester"
-      ]
+      "genres": []
     },
     {
       "id": "14Gi3Uph96lpNB3utkoVAD",
       "name": "Hard-Fi",
       "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
       "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
-      "genres": [
-        "britpop"
-      ]
+      "genres": []
     },
     {
       "id": "3rIZMv9rysU7JkLzEaC5Jp",
       "name": "Snow Patrol",
       "url": "https://open.spotify.com/artist/3rIZMv9rysU7JkLzEaC5Jp",
       "imageUrl": "https://i.scdn.co/image/ab676161000051749b328846dc38b0a620da1ce2",
-      "genres": []
+      "genres": [
+        "britpop"
+      ]
     },
     {
       "id": "6zlR5ttMfMNmwf2lecU9Cc",
@@ -91,9 +92,8 @@
       "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
       "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
       "genres": [
-        "new wave",
-        "post-punk",
-        "gothic rock"
+        "britpop",
+        "madchester"
       ]
     }
   ],
