@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T08:01:55.638Z",
+  "generatedAt": "2026-06-27T07:25:24.898Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -57,11 +57,7 @@
       "name": "VOILÀ",
       "url": "https://open.spotify.com/artist/6NnBBumbcMYsaPTHFhPtXD",
       "imageUrl": "https://i.scdn.co/image/ab6761610000517406964cf923704541b6222601",
-      "genres": [
-        "new wave",
-        "post-punk",
-        "gothic rock"
-      ]
+      "genres": []
     },
     {
       "id": "11wRdbnoYqRddKBrpHt4Ue",
@@ -75,7 +71,11 @@
       "name": "Hard-Fi",
       "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
       "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
-      "genres": []
+      "genres": [
+        "new wave",
+        "post-punk",
+        "gothic rock"
+      ]
     },
     {
       "id": "3rIZMv9rysU7JkLzEaC5Jp",

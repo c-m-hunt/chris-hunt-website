@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-06-26T08:01:54.861Z",
+  "generatedAt": "2026-06-27T07:25:24.083Z",
   "username": "cmhunt",
-  "totalAttended": 87,
+  "totalAttended": 88,
   "gigs": [
+    {
+      "id": "3b413894",
+      "date": "2026-06-25",
+      "artist": "Take That",
+      "artistMbid": "24d2505b-388c-46cc-8a64-48223ea6d78d",
+      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f178f6de04c418fb584509452e24",
+      "artistSpotifyUrl": "https://open.spotify.com/artist/1XgFuvRd7r5g0h844A5ZUQ",
+      "venue": "London Stadium",
+      "city": "London",
+      "country": "United Kingdom",
+      "tour": "The Circus Live 2026",
+      "setlistUrl": "https://www.setlist.fm/setlist/take-that/2026/london-stadium-london-england-3b413894.html"
+    },
     {
       "id": "6b404ace",
       "date": "2026-03-18",
