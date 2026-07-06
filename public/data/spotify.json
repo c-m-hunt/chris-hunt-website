@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T07:36:52.466Z",
+  "generatedAt": "2026-07-06T08:40:30.331Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -232,6 +232,25 @@
       }
     },
     {
+      "id": "0I0m4rf0wrlBJm3ozrfoOd",
+      "name": "The Angel - North London Forever",
+      "url": "https://open.spotify.com/track/0I0m4rf0wrlBJm3ozrfoOd",
+      "durationMs": 238013,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Louis Dunford",
+          "url": "https://open.spotify.com/artist/7JQQENqbvCU2R9xeI9G342"
+        }
+      ],
+      "album": {
+        "name": "Be Lucky",
+        "url": "https://open.spotify.com/album/6BSoos2q0ZXPpA5NLRUb3m",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e027aab732b521e9ec3eeb4a64c",
+        "releaseDate": "2025-02-14"
+      }
+    },
+    {
       "id": "7sO3MetCgc75SWlOyTifgQ",
       "name": "Going Up",
       "url": "https://open.spotify.com/track/7sO3MetCgc75SWlOyTifgQ",
@@ -267,25 +286,6 @@
         "url": "https://open.spotify.com/album/7hTO36Q2JbuQLjSOcXqrIL",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e0252419c9a9ede9b1ef1dfe5ed",
         "releaseDate": "2025-10-03"
-      }
-    },
-    {
-      "id": "6uarvsJtpQmkzGrDBIGzOf",
-      "name": "For The Dead",
-      "url": "https://open.spotify.com/track/6uarvsJtpQmkzGrDBIGzOf",
-      "durationMs": 204946,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Be My Light, Be My Guide EP",
-        "url": "https://open.spotify.com/album/1RnMqqK1QoOG8quEbDoKnR",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0224d23a36cd93e982bb107c59",
-        "releaseDate": "1994-12-01"
       }
     }
   ]
