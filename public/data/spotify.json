@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T08:40:30.331Z",
+  "generatedAt": "2026-07-07T07:51:31.731Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -83,17 +83,19 @@
       ]
     },
     {
+      "id": "6DlKk9ibc9dCgvyNPGNXdH",
+      "name": "The K's",
+      "url": "https://open.spotify.com/artist/6DlKk9ibc9dCgvyNPGNXdH",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174645edb1b3c066b4f7d5c90fb",
+      "genres": [
+        "indie"
+      ]
+    },
+    {
       "id": "3rIZMv9rysU7JkLzEaC5Jp",
       "name": "Snow Patrol",
       "url": "https://open.spotify.com/artist/3rIZMv9rysU7JkLzEaC5Jp",
       "imageUrl": "https://i.scdn.co/image/ab676161000051749b328846dc38b0a620da1ce2",
-      "genres": []
-    },
-    {
-      "id": "6zlR5ttMfMNmwf2lecU9Cc",
-      "name": "Sam Fender",
-      "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
-      "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
       "genres": []
     }
   ],
