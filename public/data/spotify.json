@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T06:37:47.334Z",
+  "generatedAt": "2026-07-09T07:54:08.009Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -63,6 +63,15 @@
       "genres": []
     },
     {
+      "id": "6DlKk9ibc9dCgvyNPGNXdH",
+      "name": "The K's",
+      "url": "https://open.spotify.com/artist/6DlKk9ibc9dCgvyNPGNXdH",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174645edb1b3c066b4f7d5c90fb",
+      "genres": [
+        "indie"
+      ]
+    },
+    {
       "id": "11wRdbnoYqRddKBrpHt4Ue",
       "name": "Kasabian",
       "url": "https://open.spotify.com/artist/11wRdbnoYqRddKBrpHt4Ue",
@@ -80,15 +89,6 @@
       "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
       "genres": [
         "britpop"
-      ]
-    },
-    {
-      "id": "6DlKk9ibc9dCgvyNPGNXdH",
-      "name": "The K's",
-      "url": "https://open.spotify.com/artist/6DlKk9ibc9dCgvyNPGNXdH",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174645edb1b3c066b4f7d5c90fb",
-      "genres": [
-        "indie"
       ]
     },
     {
