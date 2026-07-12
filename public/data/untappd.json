@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-07-11T06:22:20.331Z",
+  "generatedAt": "2026-07-12T06:41:45.714Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1584810895",
+      "url": "https://untappd.com/user/cmhunt/checkin/1584810895",
+      "checkedInAt": "2026-07-11T15:43:13.000Z",
+      "beer": "La Rubia",
+      "brewery": "Wynwood Brewing Company",
+      "venue": null,
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-138054_6771c_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-24944_1a991.jpeg"
+    },
     {
       "id": "1578402373",
       "url": "https://untappd.com/user/cmhunt/checkin/1578402373",
@@ -639,24 +652,11 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-9657_f1704_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-konabrewingcompany_1988.jpeg"
-    },
-    {
-      "id": "1416494539",
-      "url": "https://untappd.com/user/cmhunt/checkin/1416494539",
-      "checkedInAt": "2024-09-11T17:29:56.000Z",
-      "beer": "SXOLLIE Granny Smith Apple",
-      "brewery": "SXOLLIE",
-      "venue": "The Lyttelton Arms",
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1600799_61e2f_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-195234_7d821.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.33,
+    "averageRating": 3.32,
     "topBreweries": [
       {
         "name": "Camden Town Brewery",
@@ -681,14 +681,22 @@
     ]
   },
   "lifetime": {
-    "totalCheckins": 569,
-    "uniqueBeers": 413,
-    "totalBadges": 594,
+    "totalCheckins": 570,
+    "uniqueBeers": 414,
+    "totalBadges": 598,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
   "badges": [
+    {
+      "id": "1406455173",
+      "name": "Mr. Punch’s Cigar (Eastern USA)",
+      "description": "This ain’t the Official Cigar of Beer Lovers for nothing. Discover everything Punch Cigars has to offer at punchcigars.com. For sale in the U.S. only.",
+      "imageUrl": "https://assets.untappd.com/badges/Punch_Untappd_Badge2026.jpg",
+      "earnedAt": "2026-07-11T15:43:14.000Z",
+      "level": null
+    },
     {
       "id": "1399425217",
       "name": "World Pint 2026: Mexico",
@@ -775,14 +783,6 @@
       "description": "The community has spoken and the 2025 Brewery Madness Champion is none other than the legends at Tree House Brewing Company! When it comes to making beloved beers, nobody does it quite like Tree House and this makes them back-to-back champs of our annual Brewery Madness tournament. This badge celebrates their 2025 Brewery Madness victory!",
       "imageUrl": "https://assets.untappd.com/promo/56b7dc8071_wfp19_badge_untappd_brewery_madness_2025.jpg",
       "earnedAt": "2025-04-13T19:34:56.000Z",
-      "level": null
-    },
-    {
-      "id": "1228184875",
-      "name": "International Beer Day (2024)",
-      "description": "Hoppy International Beer Day! Beer serves as the common thread that links us worldwide, possessing the ability to bring people together in a unique way. Beer has played a significant role in shaping countless of our most cherished memories. And if there’s one thing we’ve learned along the way, beer is best when shared with others.",
-      "imageUrl": "https://assets.untappd.com/badges/bdg_IBD24.jpg",
-      "earnedAt": "2024-08-07T16:23:05.000Z",
       "level": null
     }
   ],
