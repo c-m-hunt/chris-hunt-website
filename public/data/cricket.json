@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T06:16:17.548Z",
+  "generatedAt": "2026-07-19T06:42:21.397Z",
   "playerId": 12761,
   "playerName": "Chris Hunt",
   "club": {
@@ -8,7 +8,7 @@
   },
   "career": {
     "batting": {
-      "matches": 263,
+      "matches": 264,
       "innings": 135,
       "notOuts": 58,
       "runs": 772,
@@ -24,15 +24,15 @@
       "ducks": 17
     },
     "bowling": {
-      "matches": 263,
-      "innings": 263,
-      "overs": 2111.1,
+      "matches": 264,
+      "innings": 264,
+      "overs": 2120.1,
       "maidens": 310,
-      "runs": 8430,
-      "wickets": 325,
-      "average": 25.94,
-      "economy": 3.99,
-      "strikeRate": 39,
+      "runs": 8479,
+      "wickets": 327,
+      "average": 25.93,
+      "economy": 4,
+      "strikeRate": 38.9,
       "bestBowling": {
         "wickets": 5,
         "runs": 12,
@@ -50,7 +50,7 @@
     {
       "year": 2026,
       "batting": {
-        "matches": 2,
+        "matches": 3,
         "innings": 2,
         "notOuts": 2,
         "runs": 24,
@@ -66,15 +66,15 @@
         "balls": 21
       },
       "bowling": {
-        "matches": 2,
-        "innings": 2,
-        "overs": 14,
+        "matches": 3,
+        "innings": 3,
+        "overs": 23,
         "maidens": 2,
-        "runs": 60,
-        "wickets": 4,
-        "average": 15,
-        "economy": 4.29,
-        "strikeRate": 21,
+        "runs": 109,
+        "wickets": 6,
+        "average": 18.17,
+        "economy": 4.74,
+        "strikeRate": 23,
         "bestBowling": {
           "wickets": 3,
           "runs": 37,
