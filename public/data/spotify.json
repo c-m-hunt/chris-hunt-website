@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T06:38:39.492Z",
+  "generatedAt": "2026-07-24T06:36:47.503Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -248,7 +248,7 @@
       "album": {
         "name": "Ocean Rain (Expanded; 2007 Remaster)",
         "url": "https://open.spotify.com/album/3V4j1tMdQqpq8nwW02UOiW",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bced3fdc09557f0e81c3cbed",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02790200cd2e2a202c8834e3ab",
         "releaseDate": "1984-05-04"
       }
     },
