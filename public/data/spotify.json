@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T06:42:45.627Z",
+  "generatedAt": "2026-08-03T07:39:06.903Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -63,15 +63,6 @@
       ]
     },
     {
-      "id": "3SXwqSqAoBz9WCI9PDQzY6",
-      "name": "Fontaines D.C.",
-      "url": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174c4b9cd69cf77ce41487dd69a",
-      "genres": [
-        "post-punk"
-      ]
-    },
-    {
       "id": "11wRdbnoYqRddKBrpHt4Ue",
       "name": "Kasabian",
       "url": "https://open.spotify.com/artist/11wRdbnoYqRddKBrpHt4Ue",
@@ -89,6 +80,15 @@
       "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
       "genres": [
         "britpop"
+      ]
+    },
+    {
+      "id": "3SXwqSqAoBz9WCI9PDQzY6",
+      "name": "Fontaines D.C.",
+      "url": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174c4b9cd69cf77ce41487dd69a",
+      "genres": [
+        "post-punk"
       ]
     },
     {
@@ -158,25 +158,6 @@
       }
     },
     {
-      "id": "1SXfmiR8dii7Tbe4n4IwKh",
-      "name": "We Could Be Kings",
-      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
-      "durationMs": 315333,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Drawn To The Deep End",
-        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
-        "releaseDate": "1997-01-01"
-      }
-    },
-    {
       "id": "4zlRCThoy7Wops9GF11kQX",
       "name": "Nothing Lasts Forever",
       "url": "https://open.spotify.com/track/4zlRCThoy7Wops9GF11kQX",
@@ -192,6 +173,25 @@
         "name": "Evergreen (Expanded)",
         "url": "https://open.spotify.com/album/7ynWqEk1YxxZ2TYf1v6imE",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e02ac3c6b9e1431a93333de893b",
+        "releaseDate": "1997-01-01"
+      }
+    },
+    {
+      "id": "1SXfmiR8dii7Tbe4n4IwKh",
+      "name": "We Could Be Kings",
+      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
+      "durationMs": 315333,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Drawn To The Deep End",
+        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
         "releaseDate": "1997-01-01"
       }
     },
