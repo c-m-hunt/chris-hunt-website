@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-04T06:37:44.388Z",
+  "generatedAt": "2026-08-05T06:38:19.921Z",
   "nowPlaying": {
-    "isPlaying": false,
-    "progressMs": 0,
+    "isPlaying": true,
+    "progressMs": 1186140,
     "track": null
   },
   "topArtists": [
@@ -83,6 +83,13 @@
       ]
     },
     {
+      "id": "6zlR5ttMfMNmwf2lecU9Cc",
+      "name": "Sam Fender",
+      "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
+      "genres": []
+    },
+    {
       "id": "3SXwqSqAoBz9WCI9PDQzY6",
       "name": "Fontaines D.C.",
       "url": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6",
@@ -90,13 +97,6 @@
       "genres": [
         "post-punk"
       ]
-    },
-    {
-      "id": "6zlR5ttMfMNmwf2lecU9Cc",
-      "name": "Sam Fender",
-      "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
-      "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
-      "genres": []
     }
   ],
   "topTracks": [
