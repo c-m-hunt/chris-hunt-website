@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-05T06:38:19.921Z",
+  "generatedAt": "2026-08-06T06:41:42.659Z",
   "nowPlaying": {
-    "isPlaying": true,
-    "progressMs": 1186140,
+    "isPlaying": false,
+    "progressMs": 0,
     "track": null
   },
   "topArtists": [
@@ -74,6 +74,15 @@
       ]
     },
     {
+      "id": "3SXwqSqAoBz9WCI9PDQzY6",
+      "name": "Fontaines D.C.",
+      "url": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174c4b9cd69cf77ce41487dd69a",
+      "genres": [
+        "post-punk"
+      ]
+    },
+    {
       "id": "14Gi3Uph96lpNB3utkoVAD",
       "name": "Hard-Fi",
       "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
@@ -88,15 +97,6 @@
       "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
       "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
       "genres": []
-    },
-    {
-      "id": "3SXwqSqAoBz9WCI9PDQzY6",
-      "name": "Fontaines D.C.",
-      "url": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174c4b9cd69cf77ce41487dd69a",
-      "genres": [
-        "post-punk"
-      ]
     }
   ],
   "topTracks": [
