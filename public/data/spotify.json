@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T05:18:49.888Z",
+  "generatedAt": "2026-08-12T05:44:57.897Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -33,8 +33,16 @@
       "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE",
       "imageUrl": "https://i.scdn.co/image/ab6761610000517498682e9f2a5bd699d19fc54a",
       "genres": [
-        "britpop"
+        "britpop",
+        "power pop"
       ]
+    },
+    {
+      "id": "6NnBBumbcMYsaPTHFhPtXD",
+      "name": "VOILÀ",
+      "url": "https://open.spotify.com/artist/6NnBBumbcMYsaPTHFhPtXD",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000517406964cf923704541b6222601",
+      "genres": []
     },
     {
       "id": "3iejrAcqxYoVgyxp6zkWgs",
@@ -45,13 +53,6 @@
         "britpop",
         "madchester"
       ]
-    },
-    {
-      "id": "6NnBBumbcMYsaPTHFhPtXD",
-      "name": "VOILÀ",
-      "url": "https://open.spotify.com/artist/6NnBBumbcMYsaPTHFhPtXD",
-      "imageUrl": "https://i.scdn.co/image/ab6761610000517406964cf923704541b6222601",
-      "genres": []
     },
     {
       "id": "6DlKk9ibc9dCgvyNPGNXdH",
@@ -72,14 +73,12 @@
       ]
     },
     {
-      "id": "11wRdbnoYqRddKBrpHt4Ue",
-      "name": "Kasabian",
-      "url": "https://open.spotify.com/artist/11wRdbnoYqRddKBrpHt4Ue",
-      "imageUrl": "https://i.scdn.co/image/ab676161000051748fafeb8428e1f8873d078d03",
+      "id": "14Gi3Uph96lpNB3utkoVAD",
+      "name": "Hard-Fi",
+      "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
       "genres": [
-        "britpop",
-        "indie",
-        "indie rock"
+        "britpop"
       ]
     },
     {
@@ -92,13 +91,11 @@
       ]
     },
     {
-      "id": "14Gi3Uph96lpNB3utkoVAD",
-      "name": "Hard-Fi",
-      "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
-      "genres": [
-        "britpop"
-      ]
+      "id": "6zlR5ttMfMNmwf2lecU9Cc",
+      "name": "Sam Fender",
+      "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
+      "genres": []
     }
   ],
   "topTracks": [
@@ -179,25 +176,6 @@
       }
     },
     {
-      "id": "1SXfmiR8dii7Tbe4n4IwKh",
-      "name": "We Could Be Kings",
-      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
-      "durationMs": 315333,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Drawn To The Deep End",
-        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
-        "releaseDate": "1997-01-01"
-      }
-    },
-    {
       "id": "0R9kzxELIjM21HyfN8v2cG",
       "name": "A Life Less Ordinary - 2011 Remaster",
       "url": "https://open.spotify.com/track/0R9kzxELIjM21HyfN8v2cG",
@@ -217,22 +195,22 @@
       }
     },
     {
-      "id": "0I0m4rf0wrlBJm3ozrfoOd",
-      "name": "The Angel - North London Forever",
-      "url": "https://open.spotify.com/track/0I0m4rf0wrlBJm3ozrfoOd",
-      "durationMs": 238013,
+      "id": "1SXfmiR8dii7Tbe4n4IwKh",
+      "name": "We Could Be Kings",
+      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
+      "durationMs": 315333,
       "previewUrl": null,
       "artists": [
         {
-          "name": "Louis Dunford",
-          "url": "https://open.spotify.com/artist/7JQQENqbvCU2R9xeI9G342"
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
         }
       ],
       "album": {
-        "name": "Be Lucky",
-        "url": "https://open.spotify.com/album/6BSoos2q0ZXPpA5NLRUb3m",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e027aab732b521e9ec3eeb4a64c",
-        "releaseDate": "2025-02-14"
+        "name": "Drawn To The Deep End",
+        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
+        "releaseDate": "1997-01-01"
       }
     },
     {
@@ -271,6 +249,25 @@
         "url": "https://open.spotify.com/album/0TXcd8jwKkHP3IamgFHeRJ",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e023bd77b6b6b09c2fd932c7e50",
         "releaseDate": "1980-07-18"
+      }
+    },
+    {
+      "id": "0I0m4rf0wrlBJm3ozrfoOd",
+      "name": "The Angel - North London Forever",
+      "url": "https://open.spotify.com/track/0I0m4rf0wrlBJm3ozrfoOd",
+      "durationMs": 238013,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Louis Dunford",
+          "url": "https://open.spotify.com/artist/7JQQENqbvCU2R9xeI9G342"
+        }
+      ],
+      "album": {
+        "name": "Be Lucky",
+        "url": "https://open.spotify.com/album/6BSoos2q0ZXPpA5NLRUb3m",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e027aab732b521e9ec3eeb4a64c",
+        "releaseDate": "2025-02-14"
       }
     },
     {
