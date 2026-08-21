@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T04:47:39.127Z",
+  "generatedAt": "2026-08-21T04:49:57.136Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -176,22 +176,22 @@
       }
     },
     {
-      "id": "0R9kzxELIjM21HyfN8v2cG",
-      "name": "A Life Less Ordinary - 2011 Remaster",
-      "url": "https://open.spotify.com/track/0R9kzxELIjM21HyfN8v2cG",
-      "durationMs": 256653,
+      "id": "35E2eKIEXXnP5q9L51iOAk",
+      "name": "The Killing Moon",
+      "url": "https://open.spotify.com/track/35E2eKIEXXnP5q9L51iOAk",
+      "durationMs": 348293,
       "previewUrl": null,
       "artists": [
         {
-          "name": "Ash",
-          "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE"
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
         }
       ],
       "album": {
-        "name": "’94 - ’04: The Singles",
-        "url": "https://open.spotify.com/album/0uV5GeV3nhXpRJon6fAFwS",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02fa5aa19f591040818ec864d9",
-        "releaseDate": "2019-05-31"
+        "name": "Ocean Rain (Expanded; 2007 Remaster)",
+        "url": "https://open.spotify.com/album/3V4j1tMdQqpq8nwW02UOiW",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02790200cd2e2a202c8834e3ab",
+        "releaseDate": "1984-05-04"
       }
     },
     {
@@ -211,25 +211,6 @@
         "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
         "releaseDate": "1997-01-01"
-      }
-    },
-    {
-      "id": "35E2eKIEXXnP5q9L51iOAk",
-      "name": "The Killing Moon",
-      "url": "https://open.spotify.com/track/35E2eKIEXXnP5q9L51iOAk",
-      "durationMs": 348293,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
-        }
-      ],
-      "album": {
-        "name": "Ocean Rain (Expanded; 2007 Remaster)",
-        "url": "https://open.spotify.com/album/3V4j1tMdQqpq8nwW02UOiW",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02790200cd2e2a202c8834e3ab",
-        "releaseDate": "1984-05-04"
       }
     },
     {
@@ -271,22 +252,41 @@
       }
     },
     {
-      "id": "5kdSAdohifQTqXMcszp43M",
-      "name": "Jump in the Line",
-      "url": "https://open.spotify.com/track/5kdSAdohifQTqXMcszp43M",
-      "durationMs": 207232,
+      "id": "6uarvsJtpQmkzGrDBIGzOf",
+      "name": "For The Dead",
+      "url": "https://open.spotify.com/track/6uarvsJtpQmkzGrDBIGzOf",
+      "durationMs": 204946,
       "previewUrl": null,
       "artists": [
         {
-          "name": "Ash",
-          "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE"
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
         }
       ],
       "album": {
-        "name": "Ad Astra",
-        "url": "https://open.spotify.com/album/7hTO36Q2JbuQLjSOcXqrIL",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0252419c9a9ede9b1ef1dfe5ed",
-        "releaseDate": "2025-10-03"
+        "name": "Be My Light, Be My Guide EP",
+        "url": "https://open.spotify.com/album/1RnMqqK1QoOG8quEbDoKnR",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0224d23a36cd93e982bb107c59",
+        "releaseDate": "1994-12-01"
+      }
+    },
+    {
+      "id": "0ZJ3raOAZl4rZYVOAqIXjv",
+      "name": "Heads Will Roll",
+      "url": "https://open.spotify.com/track/0ZJ3raOAZl4rZYVOAqIXjv",
+      "durationMs": 213106,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Porcupine (Expanded; 2004 Remaster)",
+        "url": "https://open.spotify.com/album/4brJ6hWYqPj1sccgk390dC",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0245edc8619870211a90daa4a7",
+        "releaseDate": "1983-02-04"
       }
     }
   ]
