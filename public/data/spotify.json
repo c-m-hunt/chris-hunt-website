@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T04:49:35.615Z",
+  "generatedAt": "2026-08-26T04:51:14.221Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -73,21 +73,21 @@
       ]
     },
     {
-      "id": "14Gi3Uph96lpNB3utkoVAD",
-      "name": "Hard-Fi",
-      "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
-      "genres": [
-        "britpop"
-      ]
-    },
-    {
       "id": "3SXwqSqAoBz9WCI9PDQzY6",
       "name": "Fontaines D.C.",
       "url": "https://open.spotify.com/artist/3SXwqSqAoBz9WCI9PDQzY6",
       "imageUrl": "https://i.scdn.co/image/ab6761610000517450d562d05673af1ca1380a07",
       "genres": [
         "post-punk"
+      ]
+    },
+    {
+      "id": "14Gi3Uph96lpNB3utkoVAD",
+      "name": "Hard-Fi",
+      "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
+      "genres": [
+        "britpop"
       ]
     },
     {
@@ -176,25 +176,6 @@
       }
     },
     {
-      "id": "35E2eKIEXXnP5q9L51iOAk",
-      "name": "The Killing Moon",
-      "url": "https://open.spotify.com/track/35E2eKIEXXnP5q9L51iOAk",
-      "durationMs": 348293,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
-        }
-      ],
-      "album": {
-        "name": "Ocean Rain (Expanded; 2007 Remaster)",
-        "url": "https://open.spotify.com/album/3V4j1tMdQqpq8nwW02UOiW",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02790200cd2e2a202c8834e3ab",
-        "releaseDate": "1984-05-04"
-      }
-    },
-    {
       "id": "1SXfmiR8dii7Tbe4n4IwKh",
       "name": "We Could Be Kings",
       "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
@@ -214,10 +195,10 @@
       }
     },
     {
-      "id": "7sO3MetCgc75SWlOyTifgQ",
-      "name": "Going Up",
-      "url": "https://open.spotify.com/track/7sO3MetCgc75SWlOyTifgQ",
-      "durationMs": 239466,
+      "id": "35E2eKIEXXnP5q9L51iOAk",
+      "name": "The Killing Moon",
+      "url": "https://open.spotify.com/track/35E2eKIEXXnP5q9L51iOAk",
+      "durationMs": 348293,
       "previewUrl": null,
       "artists": [
         {
@@ -226,10 +207,10 @@
         }
       ],
       "album": {
-        "name": "Crocodiles (Expanded; 2007 Remaster)",
-        "url": "https://open.spotify.com/album/0TXcd8jwKkHP3IamgFHeRJ",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e023bd77b6b6b09c2fd932c7e50",
-        "releaseDate": "1980-07-18"
+        "name": "Ocean Rain (Expanded; 2007 Remaster)",
+        "url": "https://open.spotify.com/album/3V4j1tMdQqpq8nwW02UOiW",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02790200cd2e2a202c8834e3ab",
+        "releaseDate": "1984-05-04"
       }
     },
     {
@@ -249,6 +230,25 @@
         "url": "https://open.spotify.com/album/6BSoos2q0ZXPpA5NLRUb3m",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e027aab732b521e9ec3eeb4a64c",
         "releaseDate": "2025-02-14"
+      }
+    },
+    {
+      "id": "7sO3MetCgc75SWlOyTifgQ",
+      "name": "Going Up",
+      "url": "https://open.spotify.com/track/7sO3MetCgc75SWlOyTifgQ",
+      "durationMs": 239466,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Crocodiles (Expanded; 2007 Remaster)",
+        "url": "https://open.spotify.com/album/0TXcd8jwKkHP3IamgFHeRJ",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e023bd77b6b6b09c2fd932c7e50",
+        "releaseDate": "1980-07-18"
       }
     },
     {
