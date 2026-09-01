@@ -1,21 +1,11 @@
 {
-  "generatedAt": "2026-08-31T10:48:13.176Z",
+  "generatedAt": "2026-09-01T09:22:50.217Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
     "track": null
   },
   "topArtists": [
-    {
-      "id": "5Rsu72e1qrjIUtxH6Zmy9K",
-      "name": "Gene",
-      "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174bce5e2ea48f7f198c507b73e",
-      "genres": [
-        "britpop",
-        "madchester"
-      ]
-    },
     {
       "id": "0fgYKF9Avljex0L9Wt5b8Z",
       "name": "Echo & the Bunnymen",
@@ -28,14 +18,13 @@
       ]
     },
     {
-      "id": "2evydP72Z45DouM4uMGsIE",
-      "name": "Ash",
-      "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE",
-      "imageUrl": "https://i.scdn.co/image/ab6761610000517498682e9f2a5bd699d19fc54a",
+      "id": "5Rsu72e1qrjIUtxH6Zmy9K",
+      "name": "Gene",
+      "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174bce5e2ea48f7f198c507b73e",
       "genres": [
         "britpop",
-        "madchester",
-        "power pop"
+        "madchester"
       ]
     },
     {
@@ -92,6 +81,17 @@
       ]
     },
     {
+      "id": "2evydP72Z45DouM4uMGsIE",
+      "name": "Ash",
+      "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000517498682e9f2a5bd699d19fc54a",
+      "genres": [
+        "britpop",
+        "madchester",
+        "power pop"
+      ]
+    },
+    {
       "id": "6zlR5ttMfMNmwf2lecU9Cc",
       "name": "Sam Fender",
       "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
@@ -139,25 +139,6 @@
       }
     },
     {
-      "id": "0w3xM9vQtoAn05Iqf7MyGb",
-      "name": "Olympian",
-      "url": "https://open.spotify.com/track/0w3xM9vQtoAn05Iqf7MyGb",
-      "durationMs": 325173,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Olympian",
-        "url": "https://open.spotify.com/album/63pLihcr6nXOYNy0mzUWdV",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e020d8a62430369b60b0edbc2d1",
-        "releaseDate": "1995-01-01"
-      }
-    },
-    {
       "id": "4zlRCThoy7Wops9GF11kQX",
       "name": "Nothing Lasts Forever",
       "url": "https://open.spotify.com/track/4zlRCThoy7Wops9GF11kQX",
@@ -173,25 +154,6 @@
         "name": "Evergreen (Expanded)",
         "url": "https://open.spotify.com/album/7ynWqEk1YxxZ2TYf1v6imE",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e02ac3c6b9e1431a93333de893b",
-        "releaseDate": "1997-01-01"
-      }
-    },
-    {
-      "id": "1SXfmiR8dii7Tbe4n4IwKh",
-      "name": "We Could Be Kings",
-      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
-      "durationMs": 315333,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Drawn To The Deep End",
-        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
         "releaseDate": "1997-01-01"
       }
     },
@@ -253,29 +215,67 @@
       }
     },
     {
-      "id": "6uarvsJtpQmkzGrDBIGzOf",
-      "name": "For The Dead",
-      "url": "https://open.spotify.com/track/6uarvsJtpQmkzGrDBIGzOf",
-      "durationMs": 204946,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Be My Light, Be My Guide EP",
-        "url": "https://open.spotify.com/album/1RnMqqK1QoOG8quEbDoKnR",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0224d23a36cd93e982bb107c59",
-        "releaseDate": "1994-12-01"
-      }
-    },
-    {
       "id": "0ZJ3raOAZl4rZYVOAqIXjv",
       "name": "Heads Will Roll",
       "url": "https://open.spotify.com/track/0ZJ3raOAZl4rZYVOAqIXjv",
       "durationMs": 213106,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Porcupine (Expanded; 2004 Remaster)",
+        "url": "https://open.spotify.com/album/4brJ6hWYqPj1sccgk390dC",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0245edc8619870211a90daa4a7",
+        "releaseDate": "1983-02-04"
+      }
+    },
+    {
+      "id": "1eRyJZwEo3ewJq4hDzFhXO",
+      "name": "Bedbugs and Ballyhoo",
+      "url": "https://open.spotify.com/track/1eRyJZwEo3ewJq4hDzFhXO",
+      "durationMs": 209120,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Echo & The Bunnymen",
+        "url": "https://open.spotify.com/album/6HvylYOCXVdHFtpODOiQCo",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0268bd6aaa6e1bf0efcdb43ba8",
+        "releaseDate": "1987-07-06"
+      }
+    },
+    {
+      "id": "5qzwrPRbnaqSOK545OEJBq",
+      "name": "Seven Seas",
+      "url": "https://open.spotify.com/track/5qzwrPRbnaqSOK545OEJBq",
+      "durationMs": 199386,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Echo & the Bunnymen",
+          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+        }
+      ],
+      "album": {
+        "name": "Ocean Rain (Expanded; 2007 Remaster)",
+        "url": "https://open.spotify.com/album/3V4j1tMdQqpq8nwW02UOiW",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02790200cd2e2a202c8834e3ab",
+        "releaseDate": "1984-05-04"
+      }
+    },
+    {
+      "id": "617ahruubznvqzv7Nas3QX",
+      "name": "The Cutter",
+      "url": "https://open.spotify.com/track/617ahruubznvqzv7Nas3QX",
+      "durationMs": 232746,
       "previewUrl": null,
       "artists": [
         {
