@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-03T08:53:26.189Z",
+  "generatedAt": "2026-09-04T08:48:37.015Z",
   "nowPlaying": {
-    "isPlaying": true,
-    "progressMs": 373782,
+    "isPlaying": false,
+    "progressMs": 0,
     "track": null
   },
   "topArtists": [
