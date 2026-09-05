@@ -1,8 +1,73 @@
 {
-  "generatedAt": "2026-09-04T08:46:05.397Z",
+  "generatedAt": "2026-09-05T08:16:34.232Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1599035078",
+      "url": "https://untappd.com/user/cmhunt/checkin/1599035078",
+      "checkedInAt": "2026-09-04T19:47:02.000Z",
+      "beer": "Forge IPA",
+      "brewery": "Brasserie 3F",
+      "venue": "Chez Stephy",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2454971_1986c_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-328911_30745.jpeg"
+    },
+    {
+      "id": "1598982654",
+      "url": "https://untappd.com/user/cmhunt/checkin/1598982654",
+      "checkedInAt": "2026-09-04T18:19:08.000Z",
+      "beer": "Stephy Pils",
+      "brewery": "Duvel Moortgat",
+      "venue": "Chez Stephy",
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4303565_e0af5_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-167_d9ccf.jpeg"
+    },
+    {
+      "id": "1598866168",
+      "url": "https://untappd.com/user/cmhunt/checkin/1598866168",
+      "checkedInAt": "2026-09-04T11:07:56.000Z",
+      "beer": "Joe & Lou’s “I Do Ale",
+      "brewery": "Beerstorming",
+      "venue": "Untappd at Home",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": "https://images.untp.beer/crop?width=1280&height=1280&stripmeta=true&url=https://untappd.s3.amazonaws.com/photos/2026_09_04/8ab8182b0ff006c4a7f34ee7a3d5201e_c_1598866168_raw.jpg",
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-235633_c957a.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-235633_c957a.jpeg"
+    },
+    {
+      "id": "1598865788",
+      "url": "https://untappd.com/user/cmhunt/checkin/1598865788",
+      "checkedInAt": "2026-09-04T11:02:58.000Z",
+      "beer": "Grimbergen Blonde",
+      "brewery": "Brouwerij Alken-Maes",
+      "venue": "Untappd at Home",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2_e6322_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-264_62c02.jpeg"
+    },
+    {
+      "id": "1598864995",
+      "url": "https://untappd.com/user/cmhunt/checkin/1598864995",
+      "checkedInAt": "2026-09-04T10:51:51.000Z",
+      "beer": "Grimbergen Blonde",
+      "brewery": "Brouwerij Alken-Maes",
+      "venue": "Untappd at Home",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2_e6322_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-264_62c02.jpeg"
+    },
     {
       "id": "1584810895",
       "url": "https://untappd.com/user/cmhunt/checkin/1584810895",
@@ -587,83 +652,18 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6134867_a9b90_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-TwickenhamFineAles_17883_a3947.jpeg"
-    },
-    {
-      "id": "1459111872",
-      "url": "https://untappd.com/user/cmhunt/checkin/1459111872",
-      "checkedInAt": "2025-02-24T16:29:40.000Z",
-      "beer": "Landlord",
-      "brewery": "Timothy Taylor's Brewery",
-      "venue": "The Green Dragon",
-      "rating": 3.25,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-8676_379f5_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-2386_ccbbb.jpeg"
-    },
-    {
-      "id": "1449267458",
-      "url": "https://untappd.com/user/cmhunt/checkin/1449267458",
-      "checkedInAt": "2025-01-11T15:51:27.000Z",
-      "beer": "Mönchshof Kellerbier",
-      "brewery": "Kulmbacher Brauerei",
-      "venue": null,
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-11852_24c0c_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-KulmbacherBrauereiAG_757.jpeg"
-    },
-    {
-      "id": "1449262966",
-      "url": "https://untappd.com/user/cmhunt/checkin/1449262966",
-      "checkedInAt": "2025-01-11T15:35:54.000Z",
-      "beer": "Mönchshof Hell",
-      "brewery": "Kulmbacher Brauerei",
-      "venue": null,
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-25224_8a5a9_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-KulmbacherBrauereiAG_757.jpeg"
-    },
-    {
-      "id": "1434985202",
-      "url": "https://untappd.com/user/cmhunt/checkin/1434985202",
-      "checkedInAt": "2024-11-20T21:50:55.000Z",
-      "beer": "Dennis Hopp'r",
-      "brewery": "Mondo Brewing Company",
-      "venue": null,
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1733320_89d96_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-187680_dac32.jpeg"
-    },
-    {
-      "id": "1421548821",
-      "url": "https://untappd.com/user/cmhunt/checkin/1421548821",
-      "checkedInAt": "2024-09-29T12:15:05.000Z",
-      "beer": "Big Wave",
-      "brewery": "Kona Brewing Hawaii",
-      "venue": "Maple Leaf",
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-9657_f1704_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-konabrewingcompany_1988.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.32,
+    "averageRating": 3.29,
     "topBreweries": [
       {
-        "name": "Camden Town Brewery",
+        "name": "Brouwerij Alken-Maes",
         "count": 2
       },
       {
-        "name": "Kulmbacher Brauerei",
+        "name": "Camden Town Brewery",
         "count": 2
       },
       {
@@ -675,15 +675,15 @@
         "count": 1
       },
       {
-        "name": "BJ’s Restaurant & Brewhouse",
+        "name": "Beerstorming",
         "count": 1
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 570,
-    "uniqueBeers": 414,
-    "totalBadges": 598,
+    "totalCheckins": 575,
+    "uniqueBeers": 418,
+    "totalBadges": 601,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
