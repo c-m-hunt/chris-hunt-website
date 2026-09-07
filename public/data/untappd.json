@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-09-06T08:35:15.455Z",
+  "generatedAt": "2026-09-07T09:13:57.726Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1599659863",
+      "url": "https://untappd.com/user/cmhunt/checkin/1599659863",
+      "checkedInAt": "2026-09-06T11:33:39.000Z",
+      "beer": "Delirium Tremens",
+      "brewery": "Delirium - Huyghe Brewery",
+      "venue": "Golden Bar",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4485_a0f83_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-285_94cce.jpeg"
+    },
     {
       "id": "1599035078",
       "url": "https://untappd.com/user/cmhunt/checkin/1599035078",
@@ -639,19 +652,6 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-174585_fbe58_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-TwickenhamFineAles_17883_a3947.jpeg"
-    },
-    {
-      "id": "1459223956",
-      "url": "https://untappd.com/user/cmhunt/checkin/1459223956",
-      "checkedInAt": "2025-02-25T16:56:57.000Z",
-      "beer": "Onyx",
-      "brewery": "Twickenham Fine Ales",
-      "venue": "The Central Bar (Wetherspoon)",
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6134867_a9b90_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-TwickenhamFineAles_17883_a3947.jpeg"
     }
   ],
   "stats": {
@@ -667,28 +667,36 @@
         "count": 2
       },
       {
-        "name": "Twickenham Fine Ales",
-        "count": 2
-      },
-      {
         "name": "Ashland Brewing Company",
         "count": 1
       },
       {
         "name": "Beerstorming",
         "count": 1
+      },
+      {
+        "name": "BJ’s Restaurant & Brewhouse",
+        "count": 1
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 575,
-    "uniqueBeers": 418,
-    "totalBadges": 601,
+    "totalCheckins": 576,
+    "uniqueBeers": 419,
+    "totalBadges": 604,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
   "badges": [
+    {
+      "id": "1421651041",
+      "name": "Belgian Beer Badge",
+      "description": "Badge unlocked! By checking in 5 Belgian beers, you’ve tapped into Belgium’s UNESCO World Heritage beer culture. Decades of tradition, innovation and world-class brewing in every glass. Discover more: https://tinyurl.com/47y6yjpa",
+      "imageUrl": "https://assets.untappd.com/badges/TVL_UNTAPPD_ALGEMEEN_3.jpg",
+      "earnedAt": "2026-09-06T11:33:40.000Z",
+      "level": null
+    },
     {
       "id": "1406455173",
       "name": "Mr. Punch’s Cigar (Eastern USA)",
@@ -775,14 +783,6 @@
       "description": "Hold on to your beers, unleash your inner paleontologist, and celebrate Untappd's 2025 Mid-Year in Beer presented by the Untappd Shop with this limited-edition badge. Now through July 18, get 50% OFF your first year of Insiders: GET THE DEAL",
       "imageUrl": "https://assets.untappd.com/promo/db6b282476_UTC-MidYIB25-INTL-Badge_1000x1000.png",
       "earnedAt": "2025-07-12T14:19:44.000Z",
-      "level": null
-    },
-    {
-      "id": "1290276278",
-      "name": "Brewery Madness 2025 Winner",
-      "description": "The community has spoken and the 2025 Brewery Madness Champion is none other than the legends at Tree House Brewing Company! When it comes to making beloved beers, nobody does it quite like Tree House and this makes them back-to-back champs of our annual Brewery Madness tournament. This badge celebrates their 2025 Brewery Madness victory!",
-      "imageUrl": "https://assets.untappd.com/promo/56b7dc8071_wfp19_badge_untappd_brewery_madness_2025.jpg",
-      "earnedAt": "2025-04-13T19:34:56.000Z",
       "level": null
     }
   ],
