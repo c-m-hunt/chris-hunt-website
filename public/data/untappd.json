@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-09-07T09:13:57.726Z",
+  "generatedAt": "2026-09-08T08:47:48.172Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1599943777",
+      "url": "https://untappd.com/user/cmhunt/checkin/1599943777",
+      "checkedInAt": "2026-09-07T13:15:21.000Z",
+      "beer": "Curious Brew",
+      "brewery": "Curious Brewing",
+      "venue": "Eurostar 9141 Brussel-Zuid - London St. Pancras",
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-204447_5bd83_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-12733_1a69a.jpeg"
+    },
     {
       "id": "1599659863",
       "url": "https://untappd.com/user/cmhunt/checkin/1599659863",
@@ -639,24 +652,11 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6123904_db43b_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-211325_2ba94.jpeg"
-    },
-    {
-      "id": "1459228187",
-      "url": "https://untappd.com/user/cmhunt/checkin/1459228187",
-      "checkedInAt": "2025-02-25T17:28:55.000Z",
-      "beer": "Naked Ladies",
-      "brewery": "Twickenham Fine Ales",
-      "venue": "The Central Bar (Wetherspoon)",
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-174585_fbe58_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-TwickenhamFineAles_17883_a3947.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.29,
+    "averageRating": 3.3,
     "topBreweries": [
       {
         "name": "Brouwerij Alken-Maes",
@@ -681,9 +681,9 @@
     ]
   },
   "lifetime": {
-    "totalCheckins": 576,
-    "uniqueBeers": 419,
-    "totalBadges": 604,
+    "totalCheckins": 577,
+    "uniqueBeers": 420,
+    "totalBadges": 605,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
