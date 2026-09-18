@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:24:25.931Z",
+  "generatedAt": "2026-09-18T08:59:20.446Z",
   "username": "cmhunt",
   "totalAttended": 88,
   "gigs": [
@@ -229,8 +229,8 @@
       "date": "2024-03-26",
       "artist": "Liam Gallagher John Squire",
       "artistMbid": "b7b35503-6764-474c-a03d-3283d23d6e97",
-      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f17821544d3b4e0a00d209f56743",
-      "artistSpotifyUrl": "https://open.spotify.com/artist/7sjttK1WcZeyLPn3IsQ62L",
+      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f178358effe4ba18cbb4fdfcbdc3",
+      "artistSpotifyUrl": "https://open.spotify.com/artist/5SHxzwjek1Pipl1Yk11UHv",
       "venue": "Troxy",
       "city": "London",
       "country": "United Kingdom",
@@ -931,7 +931,7 @@
       "date": "2014-11-02",
       "artist": "Example",
       "artistMbid": "ddeb3502-8693-4619-b41d-263105f84477",
-      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f1783a4109e4eb1f434b49ba8889",
+      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f178bb2d3a787200d2a5cbf35bcb",
       "artistSpotifyUrl": "https://open.spotify.com/artist/6Vh6UDWfu9PUSXSzAaB3CW",
       "venue": "Cliffs Pavilion",
       "city": "Southend-on-Sea",

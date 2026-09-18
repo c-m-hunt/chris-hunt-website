@@ -1,22 +1,11 @@
 {
-  "generatedAt": "2026-09-17T09:24:26.802Z",
+  "generatedAt": "2026-09-18T08:59:21.515Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
     "track": null
   },
   "topArtists": [
-    {
-      "id": "0fgYKF9Avljex0L9Wt5b8Z",
-      "name": "Echo & the Bunnymen",
-      "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z",
-      "imageUrl": "https://i.scdn.co/image/2bff77f9ef0e1bbb46d40607f15893e4f09403d5",
-      "genres": [
-        "new wave",
-        "post-punk",
-        "gothic rock"
-      ]
-    },
     {
       "id": "5Rsu72e1qrjIUtxH6Zmy9K",
       "name": "Gene",
@@ -33,16 +22,6 @@
       "url": "https://open.spotify.com/artist/6NnBBumbcMYsaPTHFhPtXD",
       "imageUrl": "https://i.scdn.co/image/ab6761610000517406964cf923704541b6222601",
       "genres": []
-    },
-    {
-      "id": "3iejrAcqxYoVgyxp6zkWgs",
-      "name": "Shed Seven",
-      "url": "https://open.spotify.com/artist/3iejrAcqxYoVgyxp6zkWgs",
-      "imageUrl": "https://i.scdn.co/image/ab676161000051748fc5bb2eea832ef6bfd8cbf4",
-      "genres": [
-        "britpop",
-        "madchester"
-      ]
     },
     {
       "id": "3SXwqSqAoBz9WCI9PDQzY6",
@@ -72,6 +51,16 @@
       ]
     },
     {
+      "id": "3iejrAcqxYoVgyxp6zkWgs",
+      "name": "Shed Seven",
+      "url": "https://open.spotify.com/artist/3iejrAcqxYoVgyxp6zkWgs",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051748fc5bb2eea832ef6bfd8cbf4",
+      "genres": [
+        "britpop",
+        "madchester"
+      ]
+    },
+    {
       "id": "14Gi3Uph96lpNB3utkoVAD",
       "name": "Hard-Fi",
       "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
@@ -92,11 +81,20 @@
       ]
     },
     {
-      "id": "6zlR5ttMfMNmwf2lecU9Cc",
-      "name": "Sam Fender",
-      "url": "https://open.spotify.com/artist/6zlR5ttMfMNmwf2lecU9Cc",
-      "imageUrl": "https://i.scdn.co/image/ab676161000051744a3dfbf28e00c02d9d9494e8",
+      "id": "7JQQENqbvCU2R9xeI9G342",
+      "name": "Louis Dunford",
+      "url": "https://open.spotify.com/artist/7JQQENqbvCU2R9xeI9G342",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174c17d17a059b05932cbe257d5",
       "genres": []
+    },
+    {
+      "id": "0EmeFodog0BfCgMzAIvKQp",
+      "name": "Shakira",
+      "url": "https://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000517417f15f351cba70561ad8bcac",
+      "genres": [
+        "latin pop"
+      ]
     }
   ],
   "topTracks": [
@@ -158,136 +156,136 @@
       }
     },
     {
-      "id": "4zlRCThoy7Wops9GF11kQX",
-      "name": "Nothing Lasts Forever",
-      "url": "https://open.spotify.com/track/4zlRCThoy7Wops9GF11kQX",
-      "durationMs": 235173,
+      "id": "3mZ8NcRDZwN7q1JGg9J7Lc",
+      "name": "Sarajevo",
+      "url": "https://open.spotify.com/track/3mZ8NcRDZwN7q1JGg9J7Lc",
+      "durationMs": 205722,
       "previewUrl": null,
       "artists": [
         {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
+          "name": "The K's",
+          "url": "https://open.spotify.com/artist/6DlKk9ibc9dCgvyNPGNXdH"
         }
       ],
       "album": {
-        "name": "Evergreen (Expanded)",
-        "url": "https://open.spotify.com/album/7ynWqEk1YxxZ2TYf1v6imE",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02ac3c6b9e1431a93333de893b",
+        "name": "I Wonder If The World Knows? (Deluxe Edition)",
+        "url": "https://open.spotify.com/album/5dR8cTk0CUrkPQ1cEDPtmN",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02048bf58a96b6fff331e9c76c",
+        "releaseDate": "2024-04-05"
+      }
+    },
+    {
+      "id": "7x8SbKFf6L4zo0Uf3fR932",
+      "name": "Olympian - Live",
+      "url": "https://open.spotify.com/track/7x8SbKFf6L4zo0Uf3fR932",
+      "durationMs": 419013,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Apollo (Live)",
+        "url": "https://open.spotify.com/album/181IigDPIa05Ef1AoJDdnv",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bef03d4fe37ce03b9993a635",
+        "releaseDate": "2026-05-15"
+      }
+    },
+    {
+      "id": "2bFGGsScXp2Tu10jKMCKO6",
+      "name": "Figure You Out",
+      "url": "https://open.spotify.com/track/2bFGGsScXp2Tu10jKMCKO6",
+      "durationMs": 163436,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "VOILÀ",
+          "url": "https://open.spotify.com/artist/6NnBBumbcMYsaPTHFhPtXD"
+        }
+      ],
+      "album": {
+        "name": "Long Story Short",
+        "url": "https://open.spotify.com/album/0fsUPGZdjtXb5F7KJ4FSzk",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02dd7bd7afe1756edff721d273",
+        "releaseDate": "2020-05-22"
+      }
+    },
+    {
+      "id": "0w3xM9vQtoAn05Iqf7MyGb",
+      "name": "Olympian",
+      "url": "https://open.spotify.com/track/0w3xM9vQtoAn05Iqf7MyGb",
+      "durationMs": 325173,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Olympian",
+        "url": "https://open.spotify.com/album/63pLihcr6nXOYNy0mzUWdV",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e020d8a62430369b60b0edbc2d1",
+        "releaseDate": "1995-01-01"
+      }
+    },
+    {
+      "id": "2TNyNqT3RBXhtNV7OiAgiC",
+      "name": "The Narcissist",
+      "url": "https://open.spotify.com/track/2TNyNqT3RBXhtNV7OiAgiC",
+      "durationMs": 245225,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Blur",
+          "url": "https://open.spotify.com/artist/7MhMgCo0Bl0Kukl93PZbYS"
+        }
+      ],
+      "album": {
+        "name": "The Ballad of Darren",
+        "url": "https://open.spotify.com/album/0gIZSG9WUDO3TK0B5y7UtU",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e025feffa3286196bada901fdd1",
+        "releaseDate": "2023-07-21"
+      }
+    },
+    {
+      "id": "41Bg2Mns6NGoskt2cIkeei",
+      "name": "London, Can You Wait? - Live",
+      "url": "https://open.spotify.com/track/41Bg2Mns6NGoskt2cIkeei",
+      "durationMs": 196613,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Apollo (Live)",
+        "url": "https://open.spotify.com/album/181IigDPIa05Ef1AoJDdnv",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bef03d4fe37ce03b9993a635",
+        "releaseDate": "2026-05-15"
+      }
+    },
+    {
+      "id": "1SXfmiR8dii7Tbe4n4IwKh",
+      "name": "We Could Be Kings",
+      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
+      "durationMs": 315333,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Drawn To The Deep End",
+        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
         "releaseDate": "1997-01-01"
-      }
-    },
-    {
-      "id": "35E2eKIEXXnP5q9L51iOAk",
-      "name": "The Killing Moon",
-      "url": "https://open.spotify.com/track/35E2eKIEXXnP5q9L51iOAk",
-      "durationMs": 348293,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
-        }
-      ],
-      "album": {
-        "name": "Ocean Rain (Expanded; 2007 Remaster)",
-        "url": "https://open.spotify.com/album/3V4j1tMdQqpq8nwW02UOiW",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02790200cd2e2a202c8834e3ab",
-        "releaseDate": "1984-05-04"
-      }
-    },
-    {
-      "id": "7sO3MetCgc75SWlOyTifgQ",
-      "name": "Going Up",
-      "url": "https://open.spotify.com/track/7sO3MetCgc75SWlOyTifgQ",
-      "durationMs": 239466,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
-        }
-      ],
-      "album": {
-        "name": "Crocodiles (Expanded; 2007 Remaster)",
-        "url": "https://open.spotify.com/album/0TXcd8jwKkHP3IamgFHeRJ",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e023bd77b6b6b09c2fd932c7e50",
-        "releaseDate": "1980-07-18"
-      }
-    },
-    {
-      "id": "0ZJ3raOAZl4rZYVOAqIXjv",
-      "name": "Heads Will Roll",
-      "url": "https://open.spotify.com/track/0ZJ3raOAZl4rZYVOAqIXjv",
-      "durationMs": 213106,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
-        }
-      ],
-      "album": {
-        "name": "Porcupine (Expanded; 2004 Remaster)",
-        "url": "https://open.spotify.com/album/4brJ6hWYqPj1sccgk390dC",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0245edc8619870211a90daa4a7",
-        "releaseDate": "1983-02-04"
-      }
-    },
-    {
-      "id": "1eRyJZwEo3ewJq4hDzFhXO",
-      "name": "Bedbugs and Ballyhoo",
-      "url": "https://open.spotify.com/track/1eRyJZwEo3ewJq4hDzFhXO",
-      "durationMs": 209120,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
-        }
-      ],
-      "album": {
-        "name": "Echo & The Bunnymen",
-        "url": "https://open.spotify.com/album/6HvylYOCXVdHFtpODOiQCo",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0268bd6aaa6e1bf0efcdb43ba8",
-        "releaseDate": "1987-07-06"
-      }
-    },
-    {
-      "id": "5qzwrPRbnaqSOK545OEJBq",
-      "name": "Seven Seas",
-      "url": "https://open.spotify.com/track/5qzwrPRbnaqSOK545OEJBq",
-      "durationMs": 199386,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
-        }
-      ],
-      "album": {
-        "name": "Ocean Rain (Expanded; 2007 Remaster)",
-        "url": "https://open.spotify.com/album/3V4j1tMdQqpq8nwW02UOiW",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02790200cd2e2a202c8834e3ab",
-        "releaseDate": "1984-05-04"
-      }
-    },
-    {
-      "id": "617ahruubznvqzv7Nas3QX",
-      "name": "The Cutter",
-      "url": "https://open.spotify.com/track/617ahruubznvqzv7Nas3QX",
-      "durationMs": 232746,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Echo & the Bunnymen",
-          "url": "https://open.spotify.com/artist/0fgYKF9Avljex0L9Wt5b8Z"
-        }
-      ],
-      "album": {
-        "name": "Porcupine (Expanded; 2004 Remaster)",
-        "url": "https://open.spotify.com/album/4brJ6hWYqPj1sccgk390dC",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0245edc8619870211a90daa4a7",
-        "releaseDate": "1983-02-04"
       }
     }
   ]
