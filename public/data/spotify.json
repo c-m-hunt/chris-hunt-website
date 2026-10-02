@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T04:26:53.943Z",
+  "generatedAt": "2026-10-02T04:26:38.125Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -22,16 +22,6 @@
       "url": "https://open.spotify.com/artist/6NnBBumbcMYsaPTHFhPtXD",
       "imageUrl": "https://i.scdn.co/image/ab6761610000517406964cf923704541b6222601",
       "genres": []
-    },
-    {
-      "id": "3iejrAcqxYoVgyxp6zkWgs",
-      "name": "Shed Seven",
-      "url": "https://open.spotify.com/artist/3iejrAcqxYoVgyxp6zkWgs",
-      "imageUrl": "https://i.scdn.co/image/ab676161000051748fc5bb2eea832ef6bfd8cbf4",
-      "genres": [
-        "britpop",
-        "madchester"
-      ]
     },
     {
       "id": "3SXwqSqAoBz9WCI9PDQzY6",
@@ -61,6 +51,16 @@
       ]
     },
     {
+      "id": "3iejrAcqxYoVgyxp6zkWgs",
+      "name": "Shed Seven",
+      "url": "https://open.spotify.com/artist/3iejrAcqxYoVgyxp6zkWgs",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051748fc5bb2eea832ef6bfd8cbf4",
+      "genres": [
+        "britpop",
+        "madchester"
+      ]
+    },
+    {
       "id": "14Gi3Uph96lpNB3utkoVAD",
       "name": "Hard-Fi",
       "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
@@ -68,6 +68,13 @@
       "genres": [
         "britpop"
       ]
+    },
+    {
+      "id": "7JQQENqbvCU2R9xeI9G342",
+      "name": "Louis Dunford",
+      "url": "https://open.spotify.com/artist/7JQQENqbvCU2R9xeI9G342",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174c17d17a059b05932cbe257d5",
+      "genres": []
     },
     {
       "id": "2evydP72Z45DouM4uMGsIE",
@@ -81,42 +88,18 @@
       ]
     },
     {
-      "id": "7JQQENqbvCU2R9xeI9G342",
-      "name": "Louis Dunford",
-      "url": "https://open.spotify.com/artist/7JQQENqbvCU2R9xeI9G342",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174c17d17a059b05932cbe257d5",
-      "genres": []
-    },
-    {
-      "id": "0EmeFodog0BfCgMzAIvKQp",
-      "name": "Shakira",
-      "url": "https://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp",
-      "imageUrl": "https://i.scdn.co/image/ab6761610000517417f15f351cba70561ad8bcac",
+      "id": "0epOFNiUfyON9EYx7Tpr6V",
+      "name": "The Strokes",
+      "url": "https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000517498856eea770468af6dd999d9",
       "genres": [
-        "latin pop"
+        "garage rock",
+        "indie rock",
+        "alternative rock"
       ]
     }
   ],
   "topTracks": [
-    {
-      "id": "63Tl9k1sH8tznn3bqoMuyF",
-      "name": "Waka Waka (This Time for Africa) - K-Mix",
-      "url": "https://open.spotify.com/track/63Tl9k1sH8tznn3bqoMuyF",
-      "durationMs": 183946,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Shakira",
-          "url": "https://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp"
-        }
-      ],
-      "album": {
-        "name": "Sale el Sol",
-        "url": "https://open.spotify.com/album/3gR578qnw47M30LVBTjrlW",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e024214ddc9e33e76de6a8ee888",
-        "releaseDate": "2010-10-19"
-      }
-    },
     {
       "id": "0I0m4rf0wrlBJm3ozrfoOd",
       "name": "The Angel - North London Forever",
@@ -134,6 +117,25 @@
         "url": "https://open.spotify.com/album/6BSoos2q0ZXPpA5NLRUb3m",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e027aab732b521e9ec3eeb4a64c",
         "releaseDate": "2025-02-14"
+      }
+    },
+    {
+      "id": "63Tl9k1sH8tznn3bqoMuyF",
+      "name": "Waka Waka (This Time for Africa) - K-Mix",
+      "url": "https://open.spotify.com/track/63Tl9k1sH8tznn3bqoMuyF",
+      "durationMs": 183946,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Shakira",
+          "url": "https://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp"
+        }
+      ],
+      "album": {
+        "name": "Sale el Sol",
+        "url": "https://open.spotify.com/album/3gR578qnw47M30LVBTjrlW",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e024214ddc9e33e76de6a8ee888",
+        "releaseDate": "2010-10-19"
       }
     },
     {
@@ -213,25 +215,6 @@
       }
     },
     {
-      "id": "2TNyNqT3RBXhtNV7OiAgiC",
-      "name": "The Narcissist",
-      "url": "https://open.spotify.com/track/2TNyNqT3RBXhtNV7OiAgiC",
-      "durationMs": 245225,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Blur",
-          "url": "https://open.spotify.com/artist/7MhMgCo0Bl0Kukl93PZbYS"
-        }
-      ],
-      "album": {
-        "name": "The Ballad of Darren",
-        "url": "https://open.spotify.com/album/0gIZSG9WUDO3TK0B5y7UtU",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e025feffa3286196bada901fdd1",
-        "releaseDate": "2023-07-21"
-      }
-    },
-    {
       "id": "41Bg2Mns6NGoskt2cIkeei",
       "name": "London, Can You Wait? - Live",
       "url": "https://open.spotify.com/track/41Bg2Mns6NGoskt2cIkeei",
@@ -286,6 +269,25 @@
         "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
         "releaseDate": "1997-01-01"
+      }
+    },
+    {
+      "id": "0Puj4YlTm6xNzDDADXHMI9",
+      "name": "Sabotage",
+      "url": "https://open.spotify.com/track/0Puj4YlTm6xNzDDADXHMI9",
+      "durationMs": 178440,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Beastie Boys",
+          "url": "https://open.spotify.com/artist/03r4iKL2g2442PT9n2UKsx"
+        }
+      ],
+      "album": {
+        "name": "Ill Communication",
+        "url": "https://open.spotify.com/album/6lfjbwFGzQ6aSNP1N3JlT8",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02436a305db8bd85b820da3e5a",
+        "releaseDate": "1994-05-23"
       }
     }
   ]
