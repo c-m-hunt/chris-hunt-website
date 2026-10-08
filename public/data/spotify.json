@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T04:27:07.138Z",
+  "generatedAt": "2026-10-08T04:27:07.579Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -51,6 +51,15 @@
       ]
     },
     {
+      "id": "14Gi3Uph96lpNB3utkoVAD",
+      "name": "Hard-Fi",
+      "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
+      "genres": [
+        "britpop"
+      ]
+    },
+    {
       "id": "3iejrAcqxYoVgyxp6zkWgs",
       "name": "Shed Seven",
       "url": "https://open.spotify.com/artist/3iejrAcqxYoVgyxp6zkWgs",
@@ -58,15 +67,6 @@
       "genres": [
         "britpop",
         "madchester"
-      ]
-    },
-    {
-      "id": "14Gi3Uph96lpNB3utkoVAD",
-      "name": "Hard-Fi",
-      "url": "https://open.spotify.com/artist/14Gi3Uph96lpNB3utkoVAD",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174d3f44c8bfa80307350951438",
-      "genres": [
-        "britpop"
       ]
     },
     {
@@ -214,6 +214,25 @@
       }
     },
     {
+      "id": "1SXfmiR8dii7Tbe4n4IwKh",
+      "name": "We Could Be Kings",
+      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
+      "durationMs": 315333,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Drawn To The Deep End",
+        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
+        "releaseDate": "1997-01-01"
+      }
+    },
+    {
       "id": "41Bg2Mns6NGoskt2cIkeei",
       "name": "London, Can You Wait? - Live",
       "url": "https://open.spotify.com/track/41Bg2Mns6NGoskt2cIkeei",
@@ -249,25 +268,6 @@
         "url": "https://open.spotify.com/album/63pLihcr6nXOYNy0mzUWdV",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e020d8a62430369b60b0edbc2d1",
         "releaseDate": "1995-01-01"
-      }
-    },
-    {
-      "id": "1SXfmiR8dii7Tbe4n4IwKh",
-      "name": "We Could Be Kings",
-      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
-      "durationMs": 315333,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Drawn To The Deep End",
-        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
-        "releaseDate": "1997-01-01"
       }
     },
     {
