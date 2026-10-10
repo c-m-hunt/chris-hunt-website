@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T04:28:29.062Z",
+  "generatedAt": "2026-10-10T04:25:23.590Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -77,16 +77,6 @@
       "genres": []
     },
     {
-      "id": "2evydP72Z45DouM4uMGsIE",
-      "name": "Ash",
-      "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174577c729a912f526a628eddb4",
-      "genres": [
-        "britpop",
-        "madchester"
-      ]
-    },
-    {
       "id": "0epOFNiUfyON9EYx7Tpr6V",
       "name": "The Strokes",
       "url": "https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V",
@@ -95,6 +85,15 @@
         "garage rock",
         "indie rock",
         "alternative rock"
+      ]
+    },
+    {
+      "id": "0xliTEbFfy5HQHvsTknTkX",
+      "name": "Alphaville",
+      "url": "https://open.spotify.com/artist/0xliTEbFfy5HQHvsTknTkX",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051743f8779bb1c97be855c6b51a8",
+      "genres": [
+        "synthpop"
       ]
     }
   ],
@@ -195,6 +194,25 @@
       }
     },
     {
+      "id": "1SXfmiR8dii7Tbe4n4IwKh",
+      "name": "We Could Be Kings",
+      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
+      "durationMs": 315333,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Drawn To The Deep End",
+        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
+        "releaseDate": "1997-01-01"
+      }
+    },
+    {
       "id": "2bFGGsScXp2Tu10jKMCKO6",
       "name": "Figure You Out",
       "url": "https://open.spotify.com/track/2bFGGsScXp2Tu10jKMCKO6",
@@ -214,10 +232,10 @@
       }
     },
     {
-      "id": "1SXfmiR8dii7Tbe4n4IwKh",
-      "name": "We Could Be Kings",
-      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
-      "durationMs": 315333,
+      "id": "6OUgDgFBPxxDdKE0dgLxJz",
+      "name": "Save Me, I'm Yours",
+      "url": "https://open.spotify.com/track/6OUgDgFBPxxDdKE0dgLxJz",
+      "durationMs": 265506,
       "previewUrl": null,
       "artists": [
         {
@@ -268,25 +286,6 @@
         "url": "https://open.spotify.com/album/63pLihcr6nXOYNy0mzUWdV",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e020d8a62430369b60b0edbc2d1",
         "releaseDate": "1995-01-01"
-      }
-    },
-    {
-      "id": "0Puj4YlTm6xNzDDADXHMI9",
-      "name": "Sabotage",
-      "url": "https://open.spotify.com/track/0Puj4YlTm6xNzDDADXHMI9",
-      "durationMs": 178440,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Beastie Boys",
-          "url": "https://open.spotify.com/artist/03r4iKL2g2442PT9n2UKsx"
-        }
-      ],
-      "album": {
-        "name": "Ill Communication",
-        "url": "https://open.spotify.com/album/6lfjbwFGzQ6aSNP1N3JlT8",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02436a305db8bd85b820da3e5a",
-        "releaseDate": "1994-05-23"
       }
     }
   ]
