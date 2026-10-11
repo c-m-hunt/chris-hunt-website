@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-10-10T04:25:22.893Z",
+  "generatedAt": "2026-10-11T04:27:00.743Z",
   "username": "cmhunt",
-  "totalAttended": 88,
+  "totalAttended": 89,
   "gigs": [
+    {
+      "id": "6b4892a6",
+      "date": "2026-10-09",
+      "artist": "Gene",
+      "artistMbid": "38b6fae0-dd60-47c2-8f46-cf5023d23664",
+      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f178bce5e2ea48f7f198c507b73e",
+      "artistSpotifyUrl": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K",
+      "venue": "Roundhouse",
+      "city": "London",
+      "country": "United Kingdom",
+      "tour": null,
+      "setlistUrl": "https://www.setlist.fm/setlist/gene/2026/roundhouse-london-england-6b4892a6.html"
+    },
     {
       "id": "3b413894",
       "date": "2026-06-25",
@@ -229,8 +242,8 @@
       "date": "2024-03-26",
       "artist": "Liam Gallagher John Squire",
       "artistMbid": "b7b35503-6764-474c-a03d-3283d23d6e97",
-      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f178358effe4ba18cbb4fdfcbdc3",
-      "artistSpotifyUrl": "https://open.spotify.com/artist/5SHxzwjek1Pipl1Yk11UHv",
+      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f17823a08396d484aa0e81d73527",
+      "artistSpotifyUrl": "https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4",
       "venue": "Troxy",
       "city": "London",
       "country": "United Kingdom",
