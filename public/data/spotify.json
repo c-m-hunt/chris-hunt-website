@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T04:27:01.696Z",
+  "generatedAt": "2026-10-12T04:33:47.280Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -14,6 +14,16 @@
       "genres": [
         "britpop",
         "madchester"
+      ]
+    },
+    {
+      "id": "5fScAXreYFnuqwOgBsJgSd",
+      "name": "The Charlatans",
+      "url": "https://open.spotify.com/artist/5fScAXreYFnuqwOgBsJgSd",
+      "imageUrl": "https://i.scdn.co/image/ab6761610000517432f1361e85bd5e0f0943b139",
+      "genres": [
+        "madchester",
+        "britpop"
       ]
     },
     {
@@ -86,15 +96,6 @@
         "indie rock",
         "alternative rock"
       ]
-    },
-    {
-      "id": "0xliTEbFfy5HQHvsTknTkX",
-      "name": "Alphaville",
-      "url": "https://open.spotify.com/artist/0xliTEbFfy5HQHvsTknTkX",
-      "imageUrl": "https://i.scdn.co/image/ab676161000051743f8779bb1c97be855c6b51a8",
-      "genres": [
-        "synthpop"
-      ]
     }
   ],
   "topTracks": [
@@ -156,6 +157,25 @@
       }
     },
     {
+      "id": "1SXfmiR8dii7Tbe4n4IwKh",
+      "name": "We Could Be Kings",
+      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
+      "durationMs": 315333,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "Gene",
+          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+        }
+      ],
+      "album": {
+        "name": "Drawn To The Deep End",
+        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
+        "releaseDate": "1997-01-01"
+      }
+    },
+    {
       "id": "3mZ8NcRDZwN7q1JGg9J7Lc",
       "name": "Sarajevo",
       "url": "https://open.spotify.com/track/3mZ8NcRDZwN7q1JGg9J7Lc",
@@ -175,6 +195,25 @@
       }
     },
     {
+      "id": "59986CmW2PZnfDbgbxxOnc",
+      "name": "Sproston Green",
+      "url": "https://open.spotify.com/track/59986CmW2PZnfDbgbxxOnc",
+      "durationMs": 310160,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "The Charlatans",
+          "url": "https://open.spotify.com/artist/5fScAXreYFnuqwOgBsJgSd"
+        }
+      ],
+      "album": {
+        "name": "Some Friendly",
+        "url": "https://open.spotify.com/album/6Bb253vXd4mFULDwLhNf7u",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02e4162b6b6cb0b24ec845018a",
+        "releaseDate": "1990-09-25"
+      }
+    },
+    {
       "id": "7x8SbKFf6L4zo0Uf3fR932",
       "name": "Olympian - Live",
       "url": "https://open.spotify.com/track/7x8SbKFf6L4zo0Uf3fR932",
@@ -191,25 +230,6 @@
         "url": "https://open.spotify.com/album/181IigDPIa05Ef1AoJDdnv",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bef03d4fe37ce03b9993a635",
         "releaseDate": "2026-05-15"
-      }
-    },
-    {
-      "id": "1SXfmiR8dii7Tbe4n4IwKh",
-      "name": "We Could Be Kings",
-      "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
-      "durationMs": 315333,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Drawn To The Deep End",
-        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
-        "releaseDate": "1997-01-01"
       }
     },
     {
@@ -267,25 +287,6 @@
         "url": "https://open.spotify.com/album/181IigDPIa05Ef1AoJDdnv",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bef03d4fe37ce03b9993a635",
         "releaseDate": "2026-05-15"
-      }
-    },
-    {
-      "id": "0w3xM9vQtoAn05Iqf7MyGb",
-      "name": "Olympian",
-      "url": "https://open.spotify.com/track/0w3xM9vQtoAn05Iqf7MyGb",
-      "durationMs": 325173,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Olympian",
-        "url": "https://open.spotify.com/album/63pLihcr6nXOYNy0mzUWdV",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e020d8a62430369b60b0edbc2d1",
-        "releaseDate": "1995-01-01"
       }
     }
   ]
