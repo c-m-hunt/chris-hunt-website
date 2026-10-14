@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T04:28:31.962Z",
+  "generatedAt": "2026-10-14T04:23:03.344Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
@@ -801,56 +801,56 @@
       "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/797112716"
     },
     {
-      "id": "25462",
-      "beer": "Rekorderlig Wild Berries (Skogsbär)",
-      "brewery": "Åbro Bryggeri",
-      "beerStyle": "Cider - Other Fruit",
-      "beerAbv": 4.5,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-RekorderligWildBerriesCider_25462.jpeg",
-      "rating": 4.5,
-      "count": 3,
-      "firstCheckedInAt": "2016-07-12T14:51:29.000Z",
-      "recentCheckedInAt": "2018-07-15T14:33:25.000Z",
-      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/625349269"
-    },
-    {
-      "id": "44019",
-      "beer": "Stowford Press Medium Dry Cider",
-      "brewery": "Westons Cider",
-      "beerStyle": "Cider - Dry",
-      "beerAbv": 4.5,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-44019_3dd0a_sm.jpeg",
+      "id": "6123904",
+      "beer": "Putty (2025)",
+      "brewery": "Verdant Brewing Co",
+      "beerStyle": "IPA - Imperial / Double New England / Hazy",
+      "beerAbv": 8,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6123904_db43b_sm.jpeg",
       "rating": 4.5,
       "count": 1,
-      "firstCheckedInAt": "2016-07-28T17:00:05.000Z",
-      "recentCheckedInAt": "2016-07-28T17:00:05.000Z",
-      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/341286328"
+      "firstCheckedInAt": "2025-04-13T19:34:55.000Z",
+      "recentCheckedInAt": "2025-04-13T19:34:55.000Z",
+      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/1470896067"
     },
     {
-      "id": "1126639",
-      "beer": "Strongbow Cloudy Apple",
-      "brewery": "Bulmers Cider",
-      "beerStyle": "Cider - Traditional / Apfelwein",
-      "beerAbv": 4,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1126639_0f8a9_sm.jpeg",
-      "rating": 4.5,
-      "count": 4,
-      "firstCheckedInAt": "2016-07-31T12:23:58.000Z",
-      "recentCheckedInAt": "2016-07-31T15:48:32.000Z",
-      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/342876556"
-    },
-    {
-      "id": "384038",
-      "beer": "Hazy Hog",
-      "brewery": "Hogs Back Brewery",
-      "beerStyle": "Cider - Traditional / Apfelwein",
+      "id": "5354447",
+      "beer": "North Star",
+      "brewery": "Põhjala",
+      "beerStyle": "Lager - Dark",
       "beerAbv": 5,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-384038_38788_sm.jpeg",
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5354447_9a675_sm.jpeg",
       "rating": 4.5,
-      "count": 3,
-      "firstCheckedInAt": "2016-08-23T17:52:58.000Z",
-      "recentCheckedInAt": "2016-09-06T17:29:51.000Z",
-      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/357514596"
+      "count": 1,
+      "firstCheckedInAt": "2023-12-19T20:42:40.000Z",
+      "recentCheckedInAt": "2023-12-19T20:42:40.000Z",
+      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/1340766091"
+    },
+    {
+      "id": "4308893",
+      "beer": "Passport Series: Yuzu Saison",
+      "brewery": "Workhorse Brewing Company",
+      "beerStyle": "Farmhouse Ale - Saison",
+      "beerAbv": 6.3,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4308893_126c6_sm.jpeg",
+      "rating": 4.5,
+      "count": 1,
+      "firstCheckedInAt": "2022-06-15T04:44:48.000Z",
+      "recentCheckedInAt": "2022-06-15T04:44:48.000Z",
+      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/1169204387"
+    },
+    {
+      "id": "3246630",
+      "beer": "Rosie's Pig Raspberry Cloudy Cider with Cucumber",
+      "brewery": "Westons Cider",
+      "beerStyle": "Cider - Other Fruit",
+      "beerAbv": 4,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-3246630_722c0_sm.jpeg",
+      "rating": 4.5,
+      "count": 1,
+      "firstCheckedInAt": "2019-08-26T17:54:01.000Z",
+      "recentCheckedInAt": "2019-08-26T17:54:01.000Z",
+      "recentCheckinUrl": "https://untappd.com/user/cmhunt/checkin/797119125"
     }
   ]
 }

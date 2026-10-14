@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T04:31:07.255Z",
+  "generatedAt": "2026-10-14T04:25:36.330Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -157,6 +157,25 @@
       }
     },
     {
+      "id": "59986CmW2PZnfDbgbxxOnc",
+      "name": "Sproston Green",
+      "url": "https://open.spotify.com/track/59986CmW2PZnfDbgbxxOnc",
+      "durationMs": 310160,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "The Charlatans",
+          "url": "https://open.spotify.com/artist/5fScAXreYFnuqwOgBsJgSd"
+        }
+      ],
+      "album": {
+        "name": "Some Friendly",
+        "url": "https://open.spotify.com/album/6Bb253vXd4mFULDwLhNf7u",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02e4162b6b6cb0b24ec845018a",
+        "releaseDate": "1990-09-25"
+      }
+    },
+    {
       "id": "1SXfmiR8dii7Tbe4n4IwKh",
       "name": "We Could Be Kings",
       "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
@@ -195,10 +214,10 @@
       }
     },
     {
-      "id": "59986CmW2PZnfDbgbxxOnc",
-      "name": "Sproston Green",
-      "url": "https://open.spotify.com/track/59986CmW2PZnfDbgbxxOnc",
-      "durationMs": 310160,
+      "id": "5oPwLyvl5yLdlTsr4gT2at",
+      "name": "One To Another",
+      "url": "https://open.spotify.com/track/5oPwLyvl5yLdlTsr4gT2at",
+      "durationMs": 269773,
       "previewUrl": null,
       "artists": [
         {
@@ -207,10 +226,10 @@
         }
       ],
       "album": {
-        "name": "Some Friendly",
-        "url": "https://open.spotify.com/album/6Bb253vXd4mFULDwLhNf7u",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02e4162b6b6cb0b24ec845018a",
-        "releaseDate": "1990-09-25"
+        "name": "Tellin' Stories",
+        "url": "https://open.spotify.com/album/4jbrFMWVw1l8w0UlNFj7om",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0299685e085757a645421baf2a",
+        "releaseDate": "1997-04-21"
       }
     },
     {
@@ -252,41 +271,22 @@
       }
     },
     {
-      "id": "6OUgDgFBPxxDdKE0dgLxJz",
-      "name": "Save Me, I'm Yours",
-      "url": "https://open.spotify.com/track/6OUgDgFBPxxDdKE0dgLxJz",
-      "durationMs": 265506,
+      "id": "31rhJvm1XgJh33GxjfJc8C",
+      "name": "For The Girls",
+      "url": "https://open.spotify.com/track/31rhJvm1XgJh33GxjfJc8C",
+      "durationMs": 293038,
       "previewUrl": null,
       "artists": [
         {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
+          "name": "The Charlatans",
+          "url": "https://open.spotify.com/artist/5fScAXreYFnuqwOgBsJgSd"
         }
       ],
       "album": {
-        "name": "Drawn To The Deep End",
-        "url": "https://open.spotify.com/album/1e6GewtfIvsmnaObS2c2PY",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e021e5b608bd511b27a066897e2",
-        "releaseDate": "1997-01-01"
-      }
-    },
-    {
-      "id": "41Bg2Mns6NGoskt2cIkeei",
-      "name": "London, Can You Wait? - Live",
-      "url": "https://open.spotify.com/track/41Bg2Mns6NGoskt2cIkeei",
-      "durationMs": 196613,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "Gene",
-          "url": "https://open.spotify.com/artist/5Rsu72e1qrjIUtxH6Zmy9K"
-        }
-      ],
-      "album": {
-        "name": "Apollo (Live)",
-        "url": "https://open.spotify.com/album/181IigDPIa05Ef1AoJDdnv",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bef03d4fe37ce03b9993a635",
-        "releaseDate": "2026-05-15"
+        "name": "We Are Love",
+        "url": "https://open.spotify.com/album/6NfDKhBNBIMR1HeStDZqs7",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0277ffa466d067322908bc54a9",
+        "releaseDate": "2025-10-31"
       }
     }
   ]
