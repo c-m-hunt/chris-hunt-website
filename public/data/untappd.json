@@ -1,8 +1,47 @@
 {
-  "generatedAt": "2026-10-14T04:23:03.344Z",
+  "generatedAt": "2026-10-15T04:21:07.411Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1608352590",
+      "url": "https://untappd.com/user/cmhunt/checkin/1608352590",
+      "checkedInAt": "2026-10-14T18:44:28.000Z",
+      "beer": "Vergina (Βεργίνα) Lager",
+      "brewery": "Macedonian Thrace Brewery",
+      "venue": "μπΡΑΚΑτσαΚΙ",
+      "rating": 4,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-106431_4ca58_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1561_b1742.jpeg"
+    },
+    {
+      "id": "1608294634",
+      "url": "https://untappd.com/user/cmhunt/checkin/1608294634",
+      "checkedInAt": "2026-10-14T11:46:35.000Z",
+      "beer": "Medicine Man",
+      "brewery": "Big Smoke Brew Co.",
+      "venue": "Big Smoke Taphouse & Kitchen",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1224628_c152f_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-157464_ecae6.jpeg"
+    },
+    {
+      "id": "1608294592",
+      "url": "https://untappd.com/user/cmhunt/checkin/1608294592",
+      "checkedInAt": "2026-10-14T11:45:43.000Z",
+      "beer": "Electric Eye",
+      "brewery": "Big Smoke Brew Co.",
+      "venue": "Big Smoke Taphouse & Kitchen",
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-875463_51486_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-157464_ecae6.jpeg"
+    },
     {
       "id": "1599943777",
       "url": "https://untappd.com/user/cmhunt/checkin/1599943777",
@@ -613,51 +652,16 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2265236_300bc_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-77087_232d1.jpeg"
-    },
-    {
-      "id": "1479359567",
-      "url": "https://untappd.com/user/cmhunt/checkin/1479359567",
-      "checkedInAt": "2025-05-16T19:33:55.000Z",
-      "beer": "Pioneer Spirit",
-      "brewery": "Twisted Mule",
-      "venue": null,
-      "rating": 4,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
-      "breweryLabel": "https://assets.untappd.com/site/assets/images/temp/badge-brewery-default.png"
-    },
-    {
-      "id": "1475502942",
-      "url": "https://untappd.com/user/cmhunt/checkin/1475502942",
-      "checkedInAt": "2025-05-01T18:53:14.000Z",
-      "beer": "Coal Drop",
-      "brewery": "Tiny Rebel Brewing Co",
-      "venue": "Craftwerk Beers",
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6071773_b3bdf_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-16039_f7792.jpeg"
-    },
-    {
-      "id": "1470896067",
-      "url": "https://untappd.com/user/cmhunt/checkin/1470896067",
-      "checkedInAt": "2025-04-13T19:34:55.000Z",
-      "beer": "Putty (2025)",
-      "brewery": "Verdant Brewing Co",
-      "venue": "Untappd at Home",
-      "rating": 4.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6123904_db43b_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-211325_2ba94.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.3,
+    "averageRating": 3.27,
     "topBreweries": [
+      {
+        "name": "Big Smoke Brew Co.",
+        "count": 2
+      },
       {
         "name": "Brouwerij Alken-Maes",
         "count": 2
@@ -673,17 +677,13 @@
       {
         "name": "Beerstorming",
         "count": 1
-      },
-      {
-        "name": "BJ’s Restaurant & Brewhouse",
-        "count": 1
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 577,
-    "uniqueBeers": 420,
-    "totalBadges": 605,
+    "totalCheckins": 580,
+    "uniqueBeers": 423,
+    "totalBadges": 609,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
