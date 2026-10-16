@@ -1,8 +1,60 @@
 {
-  "generatedAt": "2026-10-15T04:21:07.411Z",
+  "generatedAt": "2026-10-16T04:21:40.599Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1608528288",
+      "url": "https://untappd.com/user/cmhunt/checkin/1608528288",
+      "checkedInAt": "2026-10-15T19:11:18.000Z",
+      "beer": "Mamos (Μάμος)",
+      "brewery": "Athenian Brewery",
+      "venue": null,
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2118069_c6040_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-53_fcc51.jpeg"
+    },
+    {
+      "id": "1608518829",
+      "url": "https://untappd.com/user/cmhunt/checkin/1608518829",
+      "checkedInAt": "2026-10-15T18:39:45.000Z",
+      "beer": "Alfa (Aλφα) Beer",
+      "brewery": "Athenian Brewery",
+      "venue": null,
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-51595_df269_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-53_fcc51.jpeg"
+    },
+    {
+      "id": "1608466613",
+      "url": "https://untappd.com/user/cmhunt/checkin/1608466613",
+      "checkedInAt": "2026-10-15T15:07:16.000Z",
+      "beer": "Nissos (Νήσος) Pilsner",
+      "brewery": "Cyclades Microbrewery at Tinos island",
+      "venue": "Untappd at Home",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-291604_a4932_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-80243_03843.jpeg"
+    },
+    {
+      "id": "1608449259",
+      "url": "https://untappd.com/user/cmhunt/checkin/1608449259",
+      "checkedInAt": "2026-10-15T12:01:00.000Z",
+      "beer": "FIX Hellas",
+      "brewery": "Olympic Brewery",
+      "venue": "Cafe Plaka",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-13276_c01b8_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-3539_8c87b.jpeg"
+    },
     {
       "id": "1608352590",
       "url": "https://untappd.com/user/cmhunt/checkin/1608352590",
@@ -600,64 +652,16 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-13211_4e33d_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-4053_8d6a6.jpeg"
-    },
-    {
-      "id": "1504390464",
-      "url": "https://untappd.com/user/cmhunt/checkin/1504390464",
-      "checkedInAt": "2025-08-10T17:03:47.000Z",
-      "beer": "Legra Pale",
-      "brewery": "Leigh On Sea Brewery",
-      "venue": "Ocean Beach",
-      "rating": 3,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2270778_dce66_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-355295_35bbc.jpeg"
-    },
-    {
-      "id": "1495479612",
-      "url": "https://untappd.com/user/cmhunt/checkin/1495479612",
-      "checkedInAt": "2025-07-12T14:19:43.000Z",
-      "beer": "Session",
-      "brewery": "ShinDigger",
-      "venue": "Lions Den Manchester",
-      "rating": 4,
-      "comment": "Was decent r kid",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1317422_997f9_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-91151_dc9b2.jpeg"
-    },
-    {
-      "id": "1492959454",
-      "url": "https://untappd.com/user/cmhunt/checkin/1492959454",
-      "checkedInAt": "2025-07-03T21:48:29.000Z",
-      "beer": "Corker",
-      "brewery": "Harry's Cider",
-      "venue": "The Dragon Inn (Wetherspoon)",
-      "rating": 3.25,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-4451310_3deeb_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-74293_c33e9.jpeg"
-    },
-    {
-      "id": "1492893354",
-      "url": "https://untappd.com/user/cmhunt/checkin/1492893354",
-      "checkedInAt": "2025-07-03T19:01:50.000Z",
-      "beer": "Barn Screecher",
-      "brewery": "Hunt's",
-      "venue": "The Dragon Inn (Wetherspoon)",
-      "rating": 2.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-2265236_300bc_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-77087_232d1.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.27,
+    "averageRating": 3.28,
     "topBreweries": [
+      {
+        "name": "Athenian Brewery",
+        "count": 2
+      },
       {
         "name": "Big Smoke Brew Co.",
         "count": 2
@@ -673,22 +677,34 @@
       {
         "name": "Ashland Brewing Company",
         "count": 1
-      },
-      {
-        "name": "Beerstorming",
-        "count": 1
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 580,
-    "uniqueBeers": 423,
-    "totalBadges": 609,
+    "totalCheckins": 584,
+    "uniqueBeers": 426,
+    "totalBadges": 614,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
   "badges": [
+    {
+      "id": "1430131516",
+      "name": "Get Them To the Greek",
+      "description": "Greece, known for its wine and ouzo, is home to a growing number of local breweries. While not as widely spread outside the country, the local offerings will sure delight. That's 5 different beers from a brewery from Greece! Try 5 more for Level 2!",
+      "imageUrl": "https://assets.untappd.com/badges/bdg_GetToGreek_lg.jpg",
+      "earnedAt": "2026-10-15T15:07:17.000Z",
+      "level": 1
+    },
+    {
+      "id": "1430131517",
+      "name": "Baking in Balkan",
+      "description": "The craft industry is booming in this area, time to celebrate! That's 5 different beers from one of the following countries: Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Greece, Kosovo, Montenegro, North Macedonia, Romania, Serbia, or Slovenia. Try 5 more for Level 2!",
+      "imageUrl": "https://assets.untappd.com/badges/bdg_baking-in-balkan_lg.jpg",
+      "earnedAt": "2026-10-15T15:07:17.000Z",
+      "level": 1
+    },
     {
       "id": "1421651041",
       "name": "Belgian Beer Badge",
@@ -767,22 +783,6 @@
       "description": "Your favorite badge-hunting badgers return for Untappd Badgevent Week, and you've unlocked Day 3 of this inaugural set of badges. Keep checking in through December 12th, 2025, to complete the set! This holiday season, let’s raise our glasses to the wild ride that has been 2025 and toast to all the good times we had along the way!",
       "imageUrl": "https://assets.untappd.com/promo/8ab720713e_UTC-Badgevent-2025_1000x1000-03.png",
       "earnedAt": "2025-12-10T18:43:18.000Z",
-      "level": null
-    },
-    {
-      "id": "1338708783",
-      "name": "2X",
-      "description": "When a single isn’t enough, make it a double. Doubling the hops and malts in a recipe results in a higher ABV and can pack quite a boozey punch. That's 5 different beers with the style that contains Imperial / Double in its style name. Try 5 more for Level 2!",
-      "imageUrl": "https://assets.untappd.com/badges/bdg_2xCore_lg.jpg",
-      "earnedAt": "2025-10-08T21:40:23.000Z",
-      "level": 1
-    },
-    {
-      "id": "1314110615",
-      "name": "Hold On to Your Beers (2025)",
-      "description": "Hold on to your beers, unleash your inner paleontologist, and celebrate Untappd's 2025 Mid-Year in Beer presented by the Untappd Shop with this limited-edition badge. Now through July 18, get 50% OFF your first year of Insiders: GET THE DEAL",
-      "imageUrl": "https://assets.untappd.com/promo/db6b282476_UTC-MidYIB25-INTL-Badge_1000x1000.png",
-      "earnedAt": "2025-07-12T14:19:44.000Z",
       "level": null
     }
   ],
