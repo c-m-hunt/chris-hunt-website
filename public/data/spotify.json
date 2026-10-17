@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T04:24:14.190Z",
+  "generatedAt": "2026-10-17T04:22:33.196Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -233,6 +233,25 @@
       }
     },
     {
+      "id": "6NDopp0RvOUyA6PCYO4JHX",
+      "name": "Tellin' Stories",
+      "url": "https://open.spotify.com/track/6NDopp0RvOUyA6PCYO4JHX",
+      "durationMs": 313200,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "The Charlatans",
+          "url": "https://open.spotify.com/artist/5fScAXreYFnuqwOgBsJgSd"
+        }
+      ],
+      "album": {
+        "name": "Tellin' Stories",
+        "url": "https://open.spotify.com/album/2JcSP59a6uz4xrtfF5ysgv",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02a1503322ec2345b5721557ec",
+        "releaseDate": "1997-04-21"
+      }
+    },
+    {
       "id": "7x8SbKFf6L4zo0Uf3fR932",
       "name": "Olympian - Live",
       "url": "https://open.spotify.com/track/7x8SbKFf6L4zo0Uf3fR932",
@@ -268,25 +287,6 @@
         "url": "https://open.spotify.com/album/0fsUPGZdjtXb5F7KJ4FSzk",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e02dd7bd7afe1756edff721d273",
         "releaseDate": "2020-05-22"
-      }
-    },
-    {
-      "id": "31rhJvm1XgJh33GxjfJc8C",
-      "name": "For The Girls",
-      "url": "https://open.spotify.com/track/31rhJvm1XgJh33GxjfJc8C",
-      "durationMs": 293038,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "The Charlatans",
-          "url": "https://open.spotify.com/artist/5fScAXreYFnuqwOgBsJgSd"
-        }
-      ],
-      "album": {
-        "name": "We Are Love",
-        "url": "https://open.spotify.com/album/6NfDKhBNBIMR1HeStDZqs7",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e0277ffa466d067322908bc54a9",
-        "releaseDate": "2025-10-31"
       }
     }
   ]

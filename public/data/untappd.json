@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-10-16T04:21:40.599Z",
+  "generatedAt": "2026-10-17T04:19:58.869Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1608641832",
+      "url": "https://untappd.com/user/cmhunt/checkin/1608641832",
+      "checkedInAt": "2026-10-16T10:15:14.000Z",
+      "beer": "Argos Star",
+      "brewery": "ZEOS Brewing",
+      "venue": "Little Tree Books & Coffee",
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": "https://images.untp.beer/crop?width=1280&height=1280&stripmeta=true&url=https://untappd.s3.amazonaws.com/photos/2026_10_16/eead09faf4e701bb112678efb43a8b95_c_1608641832_raw.jpg",
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-313077_e5dbd_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-19884_40a2b.jpeg"
+    },
     {
       "id": "1608528288",
       "url": "https://untappd.com/user/cmhunt/checkin/1608528288",
@@ -639,19 +652,6 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6155131_a71d2_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-407810_6d09c.jpeg"
-    },
-    {
-      "id": "1515013409",
-      "url": "https://untappd.com/user/cmhunt/checkin/1515013409",
-      "checkedInAt": "2025-09-20T16:36:10.000Z",
-      "beer": "Bolleke De Koninck (APA)",
-      "brewery": "Brouwerij De Koninck",
-      "venue": "Petit Cafe",
-      "rating": 3.25,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-13211_4e33d_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-4053_8d6a6.jpeg"
     }
   ],
   "stats": {
@@ -681,9 +681,9 @@
     ]
   },
   "lifetime": {
-    "totalCheckins": 584,
-    "uniqueBeers": 426,
-    "totalBadges": 614,
+    "totalCheckins": 585,
+    "uniqueBeers": 427,
+    "totalBadges": 616,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
