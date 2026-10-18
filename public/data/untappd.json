@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-10-17T04:19:58.869Z",
+  "generatedAt": "2026-10-18T04:20:13.677Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1609146741",
+      "url": "https://untappd.com/user/cmhunt/checkin/1609146741",
+      "checkedInAt": "2026-10-17T17:14:18.000Z",
+      "beer": "Nymphe (Νύμφη)",
+      "brewery": "Athenian Brewery",
+      "venue": "The Art Foundation (TAF Athens)",
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-3234359_d1ada_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-53_fcc51.jpeg"
+    },
     {
       "id": "1608641832",
       "url": "https://untappd.com/user/cmhunt/checkin/1608641832",
@@ -639,19 +652,6 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1624461_02606_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-49152_0487d.jpeg"
-    },
-    {
-      "id": "1519455995",
-      "url": "https://untappd.com/user/cmhunt/checkin/1519455995",
-      "checkedInAt": "2025-10-08T21:40:22.000Z",
-      "beer": "Royal Cookie: French Vanilla Coffee",
-      "brewery": "Funky Fluid",
-      "venue": "Two more beers",
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-6155131_a71d2_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-407810_6d09c.jpeg"
     }
   ],
   "stats": {
@@ -660,7 +660,7 @@
     "topBreweries": [
       {
         "name": "Athenian Brewery",
-        "count": 2
+        "count": 3
       },
       {
         "name": "Big Smoke Brew Co.",
@@ -681,9 +681,9 @@
     ]
   },
   "lifetime": {
-    "totalCheckins": 585,
-    "uniqueBeers": 427,
-    "totalBadges": 616,
+    "totalCheckins": 586,
+    "uniqueBeers": 428,
+    "totalBadges": 617,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
