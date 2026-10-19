@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T04:22:47.125Z",
+  "generatedAt": "2026-10-19T04:25:59.350Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -80,22 +80,22 @@
       ]
     },
     {
+      "id": "2evydP72Z45DouM4uMGsIE",
+      "name": "Ash",
+      "url": "https://open.spotify.com/artist/2evydP72Z45DouM4uMGsIE",
+      "imageUrl": "https://i.scdn.co/image/ab67616100005174577c729a912f526a628eddb4",
+      "genres": [
+        "britpop",
+        "madchester",
+        "power pop"
+      ]
+    },
+    {
       "id": "7JQQENqbvCU2R9xeI9G342",
       "name": "Louis Dunford",
       "url": "https://open.spotify.com/artist/7JQQENqbvCU2R9xeI9G342",
       "imageUrl": "https://i.scdn.co/image/ab67616100005174c17d17a059b05932cbe257d5",
       "genres": []
-    },
-    {
-      "id": "0epOFNiUfyON9EYx7Tpr6V",
-      "name": "The Strokes",
-      "url": "https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V",
-      "imageUrl": "https://i.scdn.co/image/ab6761610000517498856eea770468af6dd999d9",
-      "genres": [
-        "garage rock",
-        "indie rock",
-        "alternative rock"
-      ]
     }
   ],
   "topTracks": [

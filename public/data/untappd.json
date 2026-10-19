@@ -1,8 +1,34 @@
 {
-  "generatedAt": "2026-10-18T04:20:13.677Z",
+  "generatedAt": "2026-10-19T04:23:27.048Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1609559511",
+      "url": "https://untappd.com/user/cmhunt/checkin/1609559511",
+      "checkedInAt": "2026-10-18T18:24:40.000Z",
+      "beer": "Nissos (Νήσος) Pilsner",
+      "brewery": "Cyclades Microbrewery at Tinos island",
+      "venue": "Kazanema",
+      "rating": 3.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-291604_a4932_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-80243_03843.jpeg"
+    },
+    {
+      "id": "1609452828",
+      "url": "https://untappd.com/user/cmhunt/checkin/1609452828",
+      "checkedInAt": "2026-10-18T11:38:23.000Z",
+      "beer": "Fischer Pilsener",
+      "brewery": "Heineken France",
+      "venue": "The Art Foundation (TAF Athens)",
+      "rating": 2.75,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-176816_cd0e2_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1422_214bc.jpeg"
+    },
     {
       "id": "1609146741",
       "url": "https://untappd.com/user/cmhunt/checkin/1609146741",
@@ -626,37 +652,11 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-35984_92a9a_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1096_4f95f.jpeg"
-    },
-    {
-      "id": "1530145188",
-      "url": "https://untappd.com/user/cmhunt/checkin/1530145188",
-      "checkedInAt": "2025-11-22T13:19:39.000Z",
-      "beer": "Vulcan XL426 Gold",
-      "brewery": "Black Box Brewery",
-      "venue": null,
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
-      "breweryLabel": "https://assets.untappd.com/site/assets/images/temp/badge-brewery-default.png"
-    },
-    {
-      "id": "1530145032",
-      "url": "https://untappd.com/user/cmhunt/checkin/1530145032",
-      "checkedInAt": "2025-11-22T13:18:47.000Z",
-      "beer": "Sex & Drugs & Rock & Roll",
-      "brewery": "The Billericay Brewery",
-      "venue": "Naval & Military Club",
-      "rating": 2.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-1624461_02606_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-49152_0487d.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.28,
+    "averageRating": 3.29,
     "topBreweries": [
       {
         "name": "Athenian Brewery",
@@ -675,14 +675,14 @@
         "count": 2
       },
       {
-        "name": "Ashland Brewing Company",
-        "count": 1
+        "name": "Cyclades Microbrewery at Tinos island",
+        "count": 2
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 586,
-    "uniqueBeers": 428,
+    "totalCheckins": 588,
+    "uniqueBeers": 429,
     "totalBadges": 617,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
