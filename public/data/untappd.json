@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-10-19T04:23:27.048Z",
+  "generatedAt": "2026-10-20T04:21:30.407Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1609683210",
+      "url": "https://untappd.com/user/cmhunt/checkin/1609683210",
+      "checkedInAt": "2026-10-19T11:28:03.000Z",
+      "beer": "Mythos",
+      "brewery": "Olympic Brewery",
+      "venue": "Το Στέκι του Αρτέμη",
+      "rating": 2.5,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5650_95ff0_sm.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-3539_8c87b.jpeg"
+    },
     {
       "id": "1609559511",
       "url": "https://untappd.com/user/cmhunt/checkin/1609559511",
@@ -639,24 +652,11 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5438364_b37e9_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-397097_441a7.jpeg"
-    },
-    {
-      "id": "1530145369",
-      "url": "https://untappd.com/user/cmhunt/checkin/1530145369",
-      "checkedInAt": "2025-11-22T13:20:40.000Z",
-      "beer": "Hop Twister",
-      "brewery": "Salopian Brewery",
-      "venue": "Naval & Military Club",
-      "rating": 4.25,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-35984_92a9a_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-1096_4f95f.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.29,
+    "averageRating": 3.25,
     "topBreweries": [
       {
         "name": "Athenian Brewery",
@@ -681,8 +681,8 @@
     ]
   },
   "lifetime": {
-    "totalCheckins": 588,
-    "uniqueBeers": 429,
+    "totalCheckins": 589,
+    "uniqueBeers": 430,
     "totalBadges": 617,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
