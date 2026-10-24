@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-10-23T04:21:53.668Z",
+  "generatedAt": "2026-10-24T04:19:49.402Z",
   "username": "cmhunt",
   "profileUrl": "https://untappd.com/user/cmhunt",
   "checkins": [
+    {
+      "id": "1610416701",
+      "url": "https://untappd.com/user/cmhunt/checkin/1610416701",
+      "checkedInAt": "2026-10-23T18:23:54.000Z",
+      "beer": "Oktoberfest Marzen Lager",
+      "brewery": "Camden Town Brewery",
+      "venue": "Camden Town Brewery",
+      "rating": 3,
+      "comment": "",
+      "imageUrl": null,
+      "beerLabel": "https://assets.untappd.com/site/brewery_logos/brewery-10433_81dff.jpeg",
+      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-10433_81dff.jpeg"
+    },
     {
       "id": "1609683210",
       "url": "https://untappd.com/user/cmhunt/checkin/1609683210",
@@ -639,27 +652,18 @@
       "imageUrl": null,
       "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5214196_dff5e_sm.jpeg",
       "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-194422_a8e1b.jpeg"
-    },
-    {
-      "id": "1530146541",
-      "url": "https://untappd.com/user/cmhunt/checkin/1530146541",
-      "checkedInAt": "2025-11-22T13:27:11.000Z",
-      "beer": "Off the Lip",
-      "brewery": "Darkland Brewery",
-      "venue": "Naval & Military Club",
-      "rating": 3.5,
-      "comment": "",
-      "imageUrl": null,
-      "beerLabel": "https://assets.untappd.com/site/beer_logos/beer-5438364_b37e9_sm.jpeg",
-      "breweryLabel": "https://assets.untappd.com/site/brewery_logos/brewery-397097_441a7.jpeg"
     }
   ],
   "stats": {
     "count": 50,
-    "averageRating": 3.25,
+    "averageRating": 3.24,
     "topBreweries": [
       {
         "name": "Athenian Brewery",
+        "count": 3
+      },
+      {
+        "name": "Camden Town Brewery",
         "count": 3
       },
       {
@@ -671,24 +675,28 @@
         "count": 2
       },
       {
-        "name": "Camden Town Brewery",
-        "count": 2
-      },
-      {
         "name": "Cyclades Microbrewery at Tinos island",
         "count": 2
       }
     ]
   },
   "lifetime": {
-    "totalCheckins": 589,
-    "uniqueBeers": 430,
-    "totalBadges": 617,
+    "totalCheckins": 590,
+    "uniqueBeers": 431,
+    "totalBadges": 619,
     "totalFriends": 10,
     "daysSinceFirstCheckin": null,
     "firstCheckinAt": null
   },
   "badges": [
+    {
+      "id": "1432164274",
+      "name": "Untappd 16th Anniversary",
+      "description": "What an incredible sixteen years of sipping suds, meeting buds, and exploring everything we could get our hands on. To celebrate our sixteenth anniversary, we're dropping our most \"main character energy\" badge ever created. Thank you for being part of the amazing journey! Oh, and make sure you're following us on Instagram for the latest updates and badge drops.",
+      "imageUrl": "https://assets.untappd.com/promo/4a67c08bdd_UTC-16thAnniversary-2026_1000x1000.png",
+      "earnedAt": "2026-10-23T18:23:55.000Z",
+      "level": null
+    },
     {
       "id": "1430131516",
       "name": "Get Them To the Greek",
@@ -775,14 +783,6 @@
       "description": "You’ve unlocked today’s Recappd badge! Any drink you check in helps power your faction as we race toward choosing the next Untappd icon. Explore your year in beer at Recappd and come back tomorrow!",
       "imageUrl": "https://assets.untappd.com/badges/bdg_Recappd_Daily.png",
       "earnedAt": "2026-01-10T13:03:17.000Z",
-      "level": null
-    },
-    {
-      "id": "1352916540",
-      "name": "Untappd Badgevent Week: Day 3",
-      "description": "Your favorite badge-hunting badgers return for Untappd Badgevent Week, and you've unlocked Day 3 of this inaugural set of badges. Keep checking in through December 12th, 2025, to complete the set! This holiday season, let’s raise our glasses to the wild ride that has been 2025 and toast to all the good times we had along the way!",
-      "imageUrl": "https://assets.untappd.com/promo/8ab720713e_UTC-Badgevent-2025_1000x1000-03.png",
-      "earnedAt": "2025-12-10T18:43:18.000Z",
       "level": null
     }
   ],

@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-10-23T04:24:27.899Z",
+  "generatedAt": "2026-10-24T04:22:24.310Z",
   "username": "cmhunt",
-  "totalAttended": 89,
+  "totalAttended": 90,
   "gigs": [
+    {
+      "id": "2b7334ce",
+      "date": "2026-10-23",
+      "artist": "Cast",
+      "artistMbid": "a6f84719-b3da-42f0-be81-8fe03545efed",
+      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f1784516a0c06d4ba94e2bbbc339",
+      "artistSpotifyUrl": "https://open.spotify.com/artist/0vBDEQ1aLZpe4zgn2fPH6Z",
+      "venue": "Electric Ballroom",
+      "city": "London",
+      "country": "United Kingdom",
+      "tour": "Yeah Yeah Yeah",
+      "setlistUrl": "https://www.setlist.fm/setlist/cast/2026/electric-ballroom-london-england-2b7334ce.html"
+    },
     {
       "id": "6b4892a6",
       "date": "2026-10-09",
