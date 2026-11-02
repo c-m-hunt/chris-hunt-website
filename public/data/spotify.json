@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T04:17:32.574Z",
+  "generatedAt": "2026-11-02T04:18:18.157Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
@@ -24,6 +24,15 @@
       "genres": [
         "madchester",
         "britpop"
+      ]
+    },
+    {
+      "id": "4GvOygVQquMaPm8oAc0vXi",
+      "name": "The Streets",
+      "url": "https://open.spotify.com/artist/4GvOygVQquMaPm8oAc0vXi",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051744b7d7580bc3796bb446537fb",
+      "genres": [
+        "uk garage"
       ]
     },
     {
@@ -89,13 +98,6 @@
         "madchester",
         "power pop"
       ]
-    },
-    {
-      "id": "7JQQENqbvCU2R9xeI9G342",
-      "name": "Louis Dunford",
-      "url": "https://open.spotify.com/artist/7JQQENqbvCU2R9xeI9G342",
-      "imageUrl": "https://i.scdn.co/image/ab67616100005174c17d17a059b05932cbe257d5",
-      "genres": []
     }
   ],
   "topTracks": [
