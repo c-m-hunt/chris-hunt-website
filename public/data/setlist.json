@@ -1,8 +1,21 @@
 {
-  "generatedAt": "2026-11-04T04:17:39.087Z",
+  "generatedAt": "2026-11-05T04:17:47.194Z",
   "username": "cmhunt",
-  "totalAttended": 90,
+  "totalAttended": 91,
   "gigs": [
+    {
+      "id": "637e9eb7",
+      "date": "2026-11-03",
+      "artist": "The Streets",
+      "artistMbid": "6f607087-9c46-4bb2-a884-e4efc764554c",
+      "artistImageUrl": "https://i.scdn.co/image/ab6761610000f1784b7d7580bc3796bb446537fb",
+      "artistSpotifyUrl": "https://open.spotify.com/artist/4GvOygVQquMaPm8oAc0vXi",
+      "venue": "Cliffs Pavilion",
+      "city": "Southend-on-Sea",
+      "country": "United Kingdom",
+      "tour": "a grand don't come for free",
+      "setlistUrl": "https://www.setlist.fm/setlist/the-streets/2026/cliffs-pavilion-southend-on-sea-england-637e9eb7.html"
+    },
     {
       "id": "2b7334ce",
       "date": "2026-10-23",

@@ -1,11 +1,20 @@
 {
-  "generatedAt": "2026-11-04T04:17:39.865Z",
+  "generatedAt": "2026-11-05T04:17:48.095Z",
   "nowPlaying": {
     "isPlaying": false,
     "progressMs": 0,
     "track": null
   },
   "topArtists": [
+    {
+      "id": "4GvOygVQquMaPm8oAc0vXi",
+      "name": "The Streets",
+      "url": "https://open.spotify.com/artist/4GvOygVQquMaPm8oAc0vXi",
+      "imageUrl": "https://i.scdn.co/image/ab676161000051744b7d7580bc3796bb446537fb",
+      "genres": [
+        "uk garage"
+      ]
+    },
     {
       "id": "5Rsu72e1qrjIUtxH6Zmy9K",
       "name": "Gene",
@@ -14,15 +23,6 @@
       "genres": [
         "britpop",
         "madchester"
-      ]
-    },
-    {
-      "id": "4GvOygVQquMaPm8oAc0vXi",
-      "name": "The Streets",
-      "url": "https://open.spotify.com/artist/4GvOygVQquMaPm8oAc0vXi",
-      "imageUrl": "https://i.scdn.co/image/ab676161000051744b7d7580bc3796bb446537fb",
-      "genres": [
-        "uk garage"
       ]
     },
     {
@@ -197,6 +197,25 @@
       }
     },
     {
+      "id": "2kFaKj8YhEwf2hLGAnKYwy",
+      "name": "Don't Mug Yourself",
+      "url": "https://open.spotify.com/track/2kFaKj8YhEwf2hLGAnKYwy",
+      "durationMs": 157853,
+      "previewUrl": null,
+      "artists": [
+        {
+          "name": "The Streets",
+          "url": "https://open.spotify.com/artist/4GvOygVQquMaPm8oAc0vXi"
+        }
+      ],
+      "album": {
+        "name": "Original Pirate Material",
+        "url": "https://open.spotify.com/album/6HAJ0LRCEqJeaCDm2lSsq8",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02b35c6da432ec9a1a2f2df1af",
+        "releaseDate": "2002"
+      }
+    },
+    {
       "id": "1SXfmiR8dii7Tbe4n4IwKh",
       "name": "We Could Be Kings",
       "url": "https://open.spotify.com/track/1SXfmiR8dii7Tbe4n4IwKh",
@@ -251,25 +270,6 @@
         "url": "https://open.spotify.com/album/2JcSP59a6uz4xrtfF5ysgv",
         "imageUrl": "https://i.scdn.co/image/ab67616d00001e02a1503322ec2345b5721557ec",
         "releaseDate": "1997-04-21"
-      }
-    },
-    {
-      "id": "2kFaKj8YhEwf2hLGAnKYwy",
-      "name": "Don't Mug Yourself",
-      "url": "https://open.spotify.com/track/2kFaKj8YhEwf2hLGAnKYwy",
-      "durationMs": 157853,
-      "previewUrl": null,
-      "artists": [
-        {
-          "name": "The Streets",
-          "url": "https://open.spotify.com/artist/4GvOygVQquMaPm8oAc0vXi"
-        }
-      ],
-      "album": {
-        "name": "Original Pirate Material",
-        "url": "https://open.spotify.com/album/6HAJ0LRCEqJeaCDm2lSsq8",
-        "imageUrl": "https://i.scdn.co/image/ab67616d00001e02b35c6da432ec9a1a2f2df1af",
-        "releaseDate": "2002"
       }
     },
     {
